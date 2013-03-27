@@ -17,7 +17,6 @@ text-decoration:none;	/*Removes underline from link*/
 padding: 0px 5px 0px 5px; /*T R B L*/
 text-shadow: 1px 1px 1px #FFFFFF;	/**/
 color:#000000; /*Black*/
-background-color:none;	/*Transparent*/
 border-style:none;
 border-width: 3px 0px 3px 0px;	/*T R B L*/
 }
@@ -71,7 +70,6 @@ text-align: center;
 }
 
 .hnavbar {
-background-color:none;
 text-align:center;
 margin-left:auto;
 margin-right:auto;
