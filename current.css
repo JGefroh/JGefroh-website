@@ -1,0 +1,183 @@
+html {
+min-height:100%;
+position:relative;
+}
+
+body {
+margin: 0px 0px 165px 0px;	/*Footer size*/
+background-color:#F5F5F5;
+font-family:"Courier New";
+max-width:100%;
+font-size:20px;
+}
+
+a.nav:link {
+text-decoration:none;
+padding-left:5px;
+padding-right:5px;
+text-shadow: 1px 1px 1px #FFFFFF;
+background-color: #F5F5F5;
+color:#000000;
+}
+
+a.nav:visited {
+color: #000000
+}
+
+a.nav:hover {
+color: #FF0400;
+transition-duration: 0.25s;
+transition-property:color;
+}
+
+a.nav:active {
+color: #FF0400;
+}
+
+a.nav#current {
+border-color:#FF0400;
+border-style:solid;
+border-width: 3px 0px 3px 0px;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+}
+
+.external {
+background: url(images/externallink.png) center right no-repeat;
+padding-right:12px;
+}
+
+.banner {
+border-width: 0px 0px 1px 0px;
+text-align:center;
+border-style: solid;
+background-color: #ABCDEF;
+padding-top:15px;
+padding-bottom:15px;
+}
+
+.banner > p {
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+.center {
+display:block;
+margin-left:auto;
+margin-right:auto;
+vertical-align: middle;
+text-align: center; 
+}
+
+.hnavbar {
+background-color:#F5F5F5;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+margin-bottom:10px;
+min-width:618px;
+font-size: 3em;
+list-style-type:none;
+}
+
+.hnavbar > li {
+display:inline;
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+
+.bodycontainer {
+background-color: white; /*Background color of body container.*/
+
+margin-left: auto;	/*Center*/
+margin-right: auto;	/*Center*/
+max-width:60%;		/*Leave space on sides*/
+min-width: 700px;	/*Don't compress beyond this size*/
+border-radius: 15px 15px 15px 15px; /*TL TR BR BL*/
+border-style:solid;
+border-color: black;
+border-width:1px 1px 1px 1px; /*T R B L*/
+
+padding: 1em 1em 1em 1em;	/*Space between border and words/content*/
+overflow:Auto;
+}
+
+#name {
+font-size: 3.5em;
+}
+
+.footercontainer {
+text-align:center;
+position:absolute;
+bottom:0px;
+height:150px;
+min-width:100%;
+background-color: #ABCDEF;
+border-width: 1px 0px 0px 0px;
+border-style:solid;
+border-color:black;
+vertical-align:text-top;
+}
+
+.footercontainer img {
+border-style:none;
+}
+
+.gallery a {
+color:white;
+}
+
+.gallery_active, .gallery_inactive {
+text-align:center;	/*Used for centering of images*/
+}
+
+.gallery_active .thumbnail img {
+display:block; /*extra spacing fix*/
+border-style:none;
+}
+
+.gallery_inactive .thumbnail img {
+display:block;	/*extra spacing fix.*/
+border-style:none;
+}
+
+.gallery_active .thumbnail {
+border-color:green;
+border-style:solid;
+border-width: 2px 2px 2px 2px; /*T R B L*/
+}
+
+.gallery_inactive .thumbnail {
+border-color:red;
+border-style:solid;
+border-width: 2px 2px 2px 2px; /*T R B L*/
+}
+
+.thumbnail {
+position:relative;	/*Ensures thumbnails stay in main body container*/
+display:inline-block;
+}
+
+.thumbnail .desc { /*Contains styling for image captions*/
+background-color:black;	/*Provides contrast for caption*/
+position:absolute;		/*Allows caption to be on top of picture*/
+opacity: 0.0;			/*Makes it so you can see part of the image*/
+-webkit-opacity:1;		/*Show captions by default on safari/chrome*/
+color:white;			/*Color of the caption*/
+font-size:2em;
+text-align:center;
+display:block;			/*Alignment for span*/
+width:100%;				/*Makes caption take whole width of image*/
+margin-top:-50%;		/*Moves caption up*/
+
+}
+
+
+.thumbnail:hover > .desc {
+opacity:0.80;
+transition-duration: 0.5s;
+transition-property:opacity;
+}
