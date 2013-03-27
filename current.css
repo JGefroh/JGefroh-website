@@ -1,50 +1,49 @@
 html {
 min-height:100%;
 position:relative;
+overflow-y:scroll;
 }
 
 body {
 margin: 0px 0px 165px 0px;	/*Footer size*/
-background-color:#F5F5F5;
+background-color:#e8e8e8; /*Whitish gray*/
 font-family:"Courier New";
-max-width:100%;
-font-size:20px;
+max-width:100%; /*TODO: Check if necessary*/
+font-size:20px; /*Main font size control - rest uses em*/
 }
 
 a.nav:link {
-text-decoration:none;
-padding-left:5px;
-padding-right:5px;
-text-shadow: 1px 1px 1px #FFFFFF;
-background-color: #F5F5F5;
-color:#000000;
+text-decoration:none;	/*Removes underline from link*/
+padding: 0px 5px 0px 5px; /*T R B L*/
+text-shadow: 1px 1px 1px #FFFFFF;	/**/
+color:#000000; /*Black*/
+background-color:none;	/*Transparent*/
+border-style:none;
+border-width: 3px 0px 3px 0px;	/*T R B L*/
 }
 
 a.nav:visited {
-color: #000000
+color: #000000 /*Black*/
 }
 
 a.nav:hover {
-color: #FF0400;
+color: #FF0400; /*Red*/
 transition-duration: 0.25s;
 transition-property:color;
 }
 
 a.nav:active {
-color: #FF0400;
+color: #FF0400; /*Red*/
 }
 
 a.nav#current {
-border-color:#FF0400;
+border-color:#FF0400; /*Red*/
 border-style:solid;
-border-width: 3px 0px 3px 0px;
-border-bottom-left-radius:15px;
-border-bottom-right-radius:15px;
-border-top-left-radius:15px;
-border-top-right-radius:15px;
+border-width: 3px 0px 3px 0px;	/*T R B L*/
+border-radius: 15px 15px 15px 15px; /*TL TR BR BL*/
 }
 
-.external {
+.external {	/*External link image*/
 background: url(images/externallink.png) center right no-repeat;
 padding-right:12px;
 }
@@ -72,7 +71,7 @@ text-align: center;
 }
 
 .hnavbar {
-background-color:#F5F5F5;
+background-color:none;
 text-align:center;
 margin-left:auto;
 margin-right:auto;
@@ -176,7 +175,7 @@ margin-top:-50%;		/*Moves caption up*/
 }
 
 
-.thumbnail:hover > .desc {
+.thumbnail:hover > .desc {	/*Animates*/
 opacity:0.80;
 transition-duration: 0.5s;
 transition-property:opacity;
