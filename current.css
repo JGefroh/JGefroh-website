@@ -19,8 +19,6 @@ body {
 
 /**********BANNER**********/
 .banner {
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
 	background-color: #ABCDEF;
 	padding-top:15px;
 	padding-bottom:15px;
@@ -34,6 +32,7 @@ body {
 
 #name {
 	font-size: 3.5em;
+	font-weight:500;
 }
 
 
@@ -41,13 +40,23 @@ body {
 
 
 /**********HORIZONTAL NAV BAR**********/
+.hnavbar {
+	margin: 10px auto 10px auto;
+	list-style-type:none;
+	font-size: 2.5em;
+	text-align:center;
+	padding: 0px 0px 3px 0px;
+	margin: 0px 0px 15px 0px;
+	background-color:#C0C0C0;
+	border-width: 2px 0px 2px 0px;
+	border-style: groove;
+}
+
 a.nav:link {
-	border-style:none;
-	border-width: 3px 0px 3px 0px;	/*T R B L*/
 	padding: 0px 5px 0px 5px; 		/*T R B L*/
-	color:#000000; /*Black*/
+	color: 	#383838; /*Black*/
 	text-decoration:none;	/*Removes underline from link*/
-	text-shadow: -1px -1px 0px white, 1px 1px 0px white;	/**/
+	text-shadow: -1px -1px 0px #C0C0C0 , 1px 1px 0px #C0C0C0 ;	/**/
 }
 
 a.nav:visited {
@@ -71,12 +80,15 @@ a.nav:active {
 
 a.nav#current {
 	border-color:#FF0400; /*Red*/
-	border-radius: 15px 15px 15px 15px; /*TL TR BR BL*/
 	border-style:solid;
-	border-width: 3px 0px 3px 0px;	/*T R B L*/
+	border-width: 0px 0px 3px 0px;	/*T R B L*/
 }
 
-
+.hnavbar > li {
+	display:inline;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
 
 
 
@@ -92,6 +104,11 @@ a:focus > img {
 	outline-width:5px;
 }
 
+a:hover > img {
+	outline:none;
+}
+
+
 .external {	/*External link image*/
 	background: url(images/externallink.png) center right no-repeat;
 	padding-right:12px;
@@ -104,30 +121,19 @@ a:focus > img {
 	text-align: center; 
 }
 
-.hnavbar {
-	min-width:618px;
-	margin: 10px auto 10px auto;
-	list-style-type:none;
-	font-size: 2.5em;
-	text-align:center;
-}
 
-.hnavbar > li {
-	display:inline;
-	padding: 0px 0px 0px 0px;
-	margin: 0px 0px 0px 0px;
-}
 
+/**********BODY**********/
 .bodycontainer {
 	background-color: white; /*Background color of body container.*/
 	margin-left: auto;	/*Center*/
 	margin-right: auto;	/*Center*/
 	max-width:60%;		/*Leave space on sides*/
-	min-width: 700px;	/*Don't compress beyond this size*/
-	border-radius: 15px 15px 15px 15px; /*TL TR BR BL*/
-	border-style:solid;
+	min-width: 256px;	/*Don't compress beyond this size*/
+	border-radius: 5px 5px 5px 5px; /*TL TR BR BL*/
+	border-style:groove;
 	border-color: black;
-	border-width:1px 1px 1px 1px; /*T R B L*/
+	border-width:2px 2px 2px 2px; /*T R B L*/
 	padding: 1em 1em 1em 1em;	/*Space between border and words/content*/
 	overflow:Auto;
 }
@@ -215,8 +221,8 @@ a:focus > img {
 	height:150px;
 	min-width:100%;
 	background-color: #ABCDEF;
-	border-width: 1px 0px 0px 0px;
-	border-style:solid;
+	border-width: 2px 0px 0px 0px;
+	border-style:groove;
 	border-color:black;
 	vertical-align:text-top;
 }
