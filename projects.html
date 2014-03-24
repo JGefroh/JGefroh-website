@@ -10,15 +10,16 @@ caption: has a bunch of personal projects to show you.
 <div class="container marketing">
     <h1>Projects</h1>
     <p class="lead">
-        Here are some personal projects I have worked on recently.
+        Here are some projects I have worked on recently.
     </p>
     
 <hr class="small">
     <h1 class="text-center">Active Projects</h1>
 
 	<div class="row">
-	    {% include project_teaser.html link="project-website-jgefroh-2014.html" img="images/project-website-jgefroh-2014.png" alt="The current JGefroh.com website."    name="JGefroh.com (Current)" desc="This current website!"                            button="Go deeper." %}
-        {% include project_teaser.html link="project-core.html"                 img="images/project-core.png"                 alt="A diagram of the core architecture." name="Core"                  desc="An entity-composition game/simulation framework." button="Learn more!" %}
+        {% include project_teaser.html name="RMS" desc="An enterprise record management system."  link="project-rms.html" img="images/project-rms.png" alt="Managing records in a system." button="Learn less!" %}
+        {% include project_teaser.html name="JGefroh.com (Current)" desc="This current website!"  link="project-website-jgefroh-2014.html" img="images/project-website-jgefroh-2014.png" alt="The current JGefroh.com website." button="Go deeper." %}
+        {% include project_teaser.html name="Core" desc="An entity-composition game/simulation framework."  link="project-core.html" img="images/project-core.png" alt="A diagram of the core architecture." button="Find your center." %}
     </div><!-- /.row -->
     
 <hr class="small">
@@ -27,9 +28,9 @@ caption: has a bunch of personal projects to show you.
     <div class="row">
     </div>
     <div class="row">
-        {% include project_teaser.html link="project-core-laststand.html" img="images/project-corels.png" alt="An arcade sidescrolling shooter."    name="Last Stand" desc="An epic arcade side-scrolling fight to the death!"                            button="Take a stand." %}
-        {% include project_teaser.html link="project-core-va.html"        img="images/project-coreva.png" alt="An alien invasion."    name="Void Attackers" desc="Fight against an alien invasion...while you can."                                     button="Defend your planet." %}
-        {% include project_teaser.html link="project-website-jgefroh-2013.html"        img="images/project-website-jgefroh-2013.png" alt="The old JGefroh.com."    name="JGefroh.com (2013)" desc="See what this website looked like in 2013!"          button="Look into the past." %}
+        {% include project_teaser.html name="Last Stand" desc="An epic arcade side-scrolling fight to the death!" link="project-core-laststand.html" img="images/project-corels.png" alt="An arcade sidescrolling shooter." button="Take a stand." %}
+        {% include project_teaser.html name="Void Attackers" desc="Fight against an alien invasion...while you can." link="project-core-va.html" img="images/project-coreva.png" alt="An alien invasion."    button="Defend your planet." %}
+        {% include project_teaser.html name="JGefroh.com (2013)" desc="See what this website looked like in 2013!" link="project-website-jgefroh-2013.html" img="images/project-website-jgefroh-2013.png" alt="The old JGefroh.com."  button="Look into the past." %}
     </div><!-- /.row -->
     
     <br />
@@ -44,5 +45,9 @@ caption: has a bunch of personal projects to show you.
         {% include project_teaser.html name="Lamepad" desc="A rapidly produced notepad clone."  link="project-lamepad.html" img="images/project-lamepad.png" alt="Lamepad being lame." button="Take some notes." %}
         {% include project_teaser.html name="NoID" desc="A student entry tracker."  link="project-noid.html" img="images/project-noid.png" alt="NoID in action." button="Enter the lab." %}
         {% include project_teaser.html name="3D Models" desc="A few 3D renders I made."  link="project-3d.html" img="images/project-3dknife.png" alt="A 3d knife." button="View the models!" %}
+    </div><!-- /.row -->
+    
+    <div class="row">
+        {% include project_teaser.html name="My Computer" desc="A gamer needs a gaming rig."  link="project-computer.html" img="images/project-computer.png" alt="My computer." button="Beep boop." %}
     </div><!-- /.row -->
 </div>
