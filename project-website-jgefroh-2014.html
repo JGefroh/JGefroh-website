@@ -1,0 +1,42 @@
+--- 
+layout: pagewithstretchbanner
+title: JGefroh | Projects | JGefroh.com
+active: projects
+header: Joseph Gefroh
+caption: had an old website and updated it.
+---
+
+<div class="container marketing">
+    
+    {% include project_info.html name="JGefroh.com (Current)" status="In Development" date="23MAR14" %}
+    
+    <span class="label label-success">HTML</span>
+    <span class="label label-success">CSS</span>
+    <span class="label label-danger">Bootstrap</span>
+    <span class="label label-danger">Jekyll</span>
+	
+	<br />
+    <br />
+    
+    {% include carousel_start.html id="screenshots" numadditionalslides="1" %}
+    {% include carousel_item.html imgsrc="images/project-website-jgefroh-2014-1.png" isactive="active" %}
+    {% include carousel_item.html imgsrc="images/project-website-jgefroh-2014-2.png" %}
+    {% include carousel_end.html  id="screenshots" numslides="2"%}
+
+    <hr class="hr-small">
+    <div class="row">
+        {% include link_github.html link="https://www.github.com/jgefroh/jgefroh-website" %}
+	    {% include link_internal.html link="index.html" %}
+    </div>
+	<hr class="hr-small">
+	<p>
+            I showed my website to one of my friends and he told me that it "looked old." Ouch. 
+            I showed it to another friend and she told me it was "Windows XP old." It was time for a website overhaul.
+    </p>
+    <p>While I didn't want to use Javascript in my initial website, in this version I use it heavily. 
+    It seems that a vast majority of people have it enabled and my initial concerns about backwards compatibility were unfounded.</p>
+    
+    <p>One of the maintence problems I ran into with my old website was that in order to update the footer or header, I had to do it
+    for every single page. I recently learned about a templating system called Jekyll which allowed me get around that. It also has some cool
+    features like variable injection, which is nice.</p>
+</div>

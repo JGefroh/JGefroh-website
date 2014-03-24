@@ -1,119 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>JGefroh - Projects</title>
-		<link rel="stylesheet" type="text/css" href="current.css"/>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-		<meta name="description" content="This page contains some projects Joseph Gefroh has worked on." />	
-		<meta name="keywords" content="Joseph, Gefroh, JGefroh, software, hawaii, programming, projects" />
-		<meta name="author" content="Joseph Gefroh" />
-	</head>
-	<body>
-		<div class="banner">
-			<p id="name">Joseph Gefroh</p>
-			<p id="tagline">If you build it...</p>
-		</div>
-		<ul class="hnavbar">
-			<li><a class="nav" href="index.html">Home</a></li>
-			<li><a class="nav" href="about.html">About</a></li>
-			<li><a class="nav" id="current" href="projects.html">Projects</a></li>
-		</ul>
-		<div class="bodycontainer">
-			<h1>Projects</h1>
-			<p>Here are some projects that I have worked on recently.
-			Click the thumbnails to find out more!</p>
-			<h2 class="center">Active Projects (In Development)</h2>
-			<p class="center">These are projects that I am currently working on.</p>
-			<div class="gallery_active">
-				<div class="thumbnail">
-					<a href="projects/core.html">
-						<img src="images/core.png" width="240" 
-							height="150" title="Core-LS"  
-							alt="A game framework."/></a>
-					<span class="desc">Core</span>
-				</div>
-			</div>
-			
-			<h2 class="center">Inactive Projects (Not Actively Developed)</h2>
-			<p class="center">These are projects that I have closed.</p>
-			<div class="gallery_inactive"><div class="thumbnail">
-                    <a href="projects/core-last-stand.html">
-                        <img src="images/core_ls_0.png" width="240" 
-                            height="150" title="Core - LS"  
-                            alt="A bullet hell game."/></a>
-                    <span class="desc">Last Stand</span>
-                </div><div class="thumbnail">
-					<a href="projects/core-void-attackers.html">
-						<img src="images/core_va_0.png" width="240"
-							height="150" title="Core-VA"
-							alt="An image of void attackers."/></a>
-					<span class="desc">Core - VA</span>
-				</div><div class="thumbnail">
-					<a href="projects/jgefroh.html">
-						<img src="images/jgefroh.png" width="240"
-							height="150" title="JGefroh.com"
-							alt="An image of this website."/></a>
-					<span class="desc">This Site</span>
-				</div><div class="thumbnail">
-					<a href="projects/shellshock.html">
-						<img src="images/shellshock.png" width="240" 
-							height="150" title="Shellshock"  
-							alt="An image of a game in progress."/></a>
-					<span class="desc">Shellshock</span>
-				</div><div class="thumbnail">
-					<a href="projects/plss.html">
-						<img src="images/plss.png" width="240"
-							height="150" title="PLSS"
-							alt="An image of the PLSS."/></a>
-					<span class="desc">PLSS</span>
-				</div><div class="thumbnail">
-					<a href="projects/imcs.html">
-						<img src="images/im.png" width="240" height="150"
-							title="Instant Messaging Client and Server"
-							alt="A screenshot of an instant messaging client"/></a>
-					<span class="desc">IMCS</span>
-				</div><div class="thumbnail">
-					<a href="projects/lamepad.html">
-					<img src="images/lamepad.png" width="240" height="150"
-						title="Lamepad"
-						alt="A screenshot of a notepad clone."/></a>
-					<span class="desc">Lamepad</span>
-				</div><div class="thumbnail">
-					<a href="projects/noid.html">
-					<img src="images/noid.png" width="240" height="150"
-						title="NoID Student Tracker"
-						alt="A screenshot of the NoID student tracker."/></a>
-					<span class="desc">NoID</span>
-				</div><div class="thumbnail">
-					<img src="images/render_m16.png" width="240" height="150"
-						title="3D Rifle"
-						alt="A render of an rifle."/>
-					<span class="desc">3D Rifle</span>
-				</div><div class="thumbnail">
-					<img src="images/render_kabar.png" width="240" height="150"
-						title="3D Knife"
-						alt="A render of a knife."/>
-					<span class="desc">3D Knife</span>
-				</div><div class="thumbnail">
-					<img src="images/render_normandy.png" width="240" height="150"
-						title="3D Spaceship"
-						alt="A render of a spaceship."/>
-					<span class="desc">3D Ship</span>				
-				</div>
-			</div>
-		</div>
-		<div class="footercontainer">
-			<br/>Copyright &copy; 2014 Joseph Gefroh | All Rights Reserved
-			<br/>Contact me! joseph.gefroh@gmail.com
-			<p>
-		    	<a href="http://validator.w3.org/check?uri=referer"><img
-		      		src="http://www.w3.org/Icons/valid-xhtml11"
-		      		alt="Valid XHTML 1.1" height="31" width="88" /></a>
-		      	<a href="http://jigsaw.w3.org/css-validator/check/referer"><img
-            		src="http://jigsaw.w3.org/css-validator/images/vcss"
-            		alt="Valid CSS!" height="31" width="88" /></a>
-		 	</p>
-		</div>
-	</body>
-</html>
+--- 
+layout: pagewithstretchbanner
+title: JGefroh | Projects
+active: projects
+header: Joseph Gefroh
+caption: has a bunch of personal projects to show you.
+---
 
+
+<div class="container marketing">
+    <h1>Projects</h1>
+    <p class="lead">
+        Here are some personal projects I have worked on recently.
+    </p>
+    
+<hr class="small">
+    <h1 class="text-center">Active Projects</h1>
+
+	<div class="row">
+	    {% include project_teaser.html link="project-website-jgefroh-2014.html" img="images/project-website-jgefroh-2014.png" alt="The current JGefroh.com website."    name="JGefroh.com (Current)" desc="This current website!"                            button="Go deeper." %}
+        {% include project_teaser.html link="project-core.html"                 img="images/project-core.png"                 alt="A diagram of the core architecture." name="Core"                  desc="An entity-composition game/simulation framework." button="Learn more!" %}
+    </div><!-- /.row -->
+    
+<hr class="small">
+
+    <h1 class="text-center">Inactive Projects</h1>
+    <div class="row">
+    </div>
+    <div class="row">
+        {% include project_teaser.html link="project-core-laststand.html" img="images/project-corels.png" alt="An arcade sidescrolling shooter."    name="Last Stand" desc="An epic arcade side-scrolling fight to the death!"                            button="Take a stand." %}
+        {% include project_teaser.html link="project-core-va.html"        img="images/project-coreva.png" alt="An alien invasion."    name="Void Attackers" desc="Fight against an alien invasion...while you can."                                     button="Defend your planet." %}
+        {% include project_teaser.html link="project-website-jgefroh-2013.html"        img="images/project-website-jgefroh-2013.png" alt="The old JGefroh.com."    name="JGefroh.com (2013)" desc="See what this website looked like in 2013!"          button="Look into the past." %}
+    </div><!-- /.row -->
+    
+    <br />
+
+    <div class="row">
+        {% include project_teaser.html name="Shellshock" desc="A first attempt at a game with some interesting results."  link="project-shellshock.html" img="images/project-shellshock.png" alt="The beginnings of something better." button="Learn more!" %}
+        {% include project_teaser.html name="Physician LSS" desc="A prototype web-service API for medical professionals."  link="project-plss.html" img="images/project-plss.png" alt="XML data from the PLSS API." button="Diagnose yourself." %}
+        {% include project_teaser.html name="IMCS" desc="An instant messaging client-server application."  link="project-imcs.html" img="images/project-imcs.png" alt="Chatting with strangers." button="Talk about it." %}
+    </div><!-- /.row -->
+
+    <div class="row">
+        {% include project_teaser.html name="Lamepad" desc="A rapidly produced notepad clone."  link="project-lamepad.html" img="images/project-lamepad.png" alt="Lamepad being lame." button="Take some notes." %}
+        {% include project_teaser.html name="NoID" desc="A student entry tracker."  link="project-noid.html" img="images/project-noid.png" alt="NoID in action." button="Enter the lab." %}
+        {% include project_teaser.html name="3D Models" desc="A few 3D renders I made."  link="project-3d.html" img="images/project-3dknife.png" alt="A 3d knife." button="View the models!" %}
+    </div><!-- /.row -->
+</div>

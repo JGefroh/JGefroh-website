@@ -1,0 +1,24 @@
+html {
+	overflow-y: scroll;
+}
+
+.selected {
+	color: red;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid;
+	border-color: red;
+}
+.img-bordered-1 {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+.logo-circle-clickable {
+	width: 64px;
+	height: 64px;
+	
+}
+.hr-small {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

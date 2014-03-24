@@ -1,0 +1,39 @@
+--- 
+layout: pagewithstretchbanner
+title: JGefroh | Projects | Lamepad
+active: projects
+header: Joseph Gefroh
+caption: uses paint to draw GUI icons.
+---
+
+<div class="container marketing">
+    
+    {% include project_info.html name="Lamepad" status="Finished" date="12FEB13" %}
+    
+    <span class="label label-success">Java</span>
+	
+	<br />
+    <br />
+	
+    {% include carousel_start.html id="screenshots" numadditionalslides="0" %}
+    {% include carousel_item.html imgsrc="images/project-lamepad-1.png" isactive="active" %}
+    {% include carousel_end.html  id="screenshots" numslides="1"%}
+
+    <hr class="hr-small">
+    <div class="row">
+        {% include link_github.html link="https://www.github.com/jgefroh/lamepad" %}
+    </div>
+	<hr class="hr-small">
+            <p>Lamepad was initially a weekend project that ended up taking only
+            a couple of hours to do. I used Java and Swing to create this clone
+            of Microsoft's Notepad application. It has font selection, styling,
+            word-wrap, and even save and load functionality.
+            </p>
+            
+            <p>The one disappointing thing that I didn't resolve was the fact
+            that the font-selection performance was abysmal. There was a one
+            second delay between picking a font and having it selected, causing
+            the program to hang. This has something to do with how the fonts
+            were formatted (using HTML). I would resolve this if I wanted to
+            continue working on it, but I don't.</p>
+</div>
