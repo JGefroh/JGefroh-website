@@ -1,0 +1,35 @@
+--- 
+layout: pagewithstretchbanner
+title: JGefroh | Projects | RMS
+active: projects
+header: Joseph Gefroh
+caption: is managing records.
+---
+
+<div class="container marketing">
+    
+    {% include project_info.html name="Record Management System (RMS)" status="Inactive" date="2014" %}
+    
+    <span class="label label-success">HTML</span>
+    <span class="label label-success">CSS</span>
+    <span class="label label-success">Javascript</span>
+    <span class="label label-danger">AngularJS</span>
+    <span class="label label-danger">Bootstrap</span>
+	
+	<br />
+    <br />
+
+    {% include carousel_start.html id="screenshots" numadditionalslides="0" %}
+    {% include carousel_item.html imgsrc="images/project-todolist-1.png" isactive="active" %}
+    {% include carousel_end.html  id="screenshots" numslides="1"%}
+
+    <hr class="hr-small">
+    <div class="row">
+        {% include link_internal.html link="http://www.todolist.jgefroh.com/" %}
+    </div>
+	<hr class="hr-small">
+            <p>
+                I am making ToDoList as an exercise to help me learn AngularJS. It is a simple application and currently has messy code. I'm sure it will improve over time as I learn AngularJS and best practices for creating web applications with it.
+            </p>
+            
+</div>
