@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Projects</h1>
+    <hr>
+    <div class="row">
+        <div data-ng-repeat="project in projects | orderBy: 'order'"
+             data-project-thumbnail
+             data-project="project"></div>
+    </div>
+</div>

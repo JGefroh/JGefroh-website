@@ -1,0 +1,45 @@
+.navigationActive {
+    border-bottom: 1px solid red;
+}
+
+html {
+    overflow-y: scroll;
+}
+/*Prevents Navigation Bar from overlapping content*/
+body {
+    padding-top: 70px;
+}
+
+.resume-section-header {
+    border-bottom: 1px solid gray;
+}
+.project-thumbnail {
+    border: 1px solid #C0C0C0;
+}
+
+.badge-personal {
+    background-color: blue;
+}
+.badge-production {
+    background-color: green;
+}
+
+.badge-cancelled {
+    background-color: red;
+}
+
+.badge-school {
+    background-color: #269abc;
+}
+
+.badge-completed {
+    background-color: green;
+}
+
+.badge-language {
+    background-color: green;
+}
+
+.badge-framework {
+    background-color: red;
+}

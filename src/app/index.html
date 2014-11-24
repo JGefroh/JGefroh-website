@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html data-ng-app="com.jgefroh.website.2015">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Joseph Gefroh</title>
+
+        <script src="resources/js/jquery-1.11.1.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="resources/js/html5shiv-3.7.2.min.js"></script>
+        <script src="resources/js/respond-1.4.2.min.js"></script>
+        <![endif]-->
+
+        <!--AngularJS-->
+        <script src="resources/js/angular-1.2.23/angular.min.js"></script>
+        <script src="resources/js/angular-1.2.23/angular-resource.min.js"></script>
+        <script src="resources/js/ui-bootstrap-tpls-0.11.0.min.js"></script>
+        <script src="resources/js/ui-router-v0.2.11.min.js"></script>
+
+
+        <!--App Script Files-->
+        <script src="jgefroh_website_2015.min.js"></script>
+
+
+
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="resources/css/application.css" rel="stylesheet">
+    </head>
+    <body data-ng-controller="AppController">
+        <div data-ng-include data-src="'modules/navigation/NavigationView.html'"></div>
+        <div data-ui-view>
+
+        </div>
+    </body>
+</html>

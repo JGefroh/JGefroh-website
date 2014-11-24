@@ -1,0 +1,166 @@
+[
+    {
+        "name": "Skills",
+        "order": 2,
+        "entries": [
+            {
+                "name": "Software Development (General)",
+                "imagePath": "resume/logo-software.png",
+                "description": [
+                    "Experienced developing software both as a full stack developer and as a team lead.",
+                    "Developed SPA web applications, REST/SOAP web services, and modular utilities using various technologies including Java EE, AngularJS, and Google Web Toolkit.",
+                    "Experienced leading and mentoring teams of programmers on various projects.",
+                    "Knowledge of development best practices, methodologies, tools, and techniques.",
+                    "Multi-disciplined in areas including programming, databases, IT, security, and UI/UX."
+                ]
+            },
+            {
+                "name": "Java / Java EE",
+                "blurb": "5 years of experience",
+                "imagePath": "resume/logo-java.png",
+                "description": [
+                    "Developed enterprise web applications, middleware/legacy system adapters, and a simulation/game framework.",
+                    "Experienced with EE technology stack, including usage of EJB, JPA, and CDI.",
+                    "Extensively used common APIs and frameworks including Google Web Toolkit (GWT), Apache Commons, JasperReports, and more.",
+                    "Configured and deployed applications to various application servers, including JBoss and IBM's WebSphere."
+                ]
+            },
+            {
+                "name": "SQL",
+                "blurb": "3 years of experience",
+                "imagePath": "resume/logo-sql.png",
+                "description": [
+                    "Designed and implemented normalized, relational database architectures for multiple applications.",
+                    "Developed database-driven applications.",
+                    "Wrote and tested injection-safe queries and prepared statements for multiple applications. ",
+                    "Familiar with server technologies including Oracle PL/SQL, IBM DB2, MySQL, and Apache Derby."
+                ]
+            },
+            {
+                "name": "AngularJS",
+                "blurb": "6 months of experience",
+                "imagePath": "resume/logo-angularjs.png",
+                "description": [
+                    "Architected, designed, and developed several small-scale web applications using AngularJS.",
+                    "Currently developing several enterprise-scale web applications using an AngularJS front-end and REST back-end.",
+                    "Trained and mentored 6 other developers in learning the AngularJS framework and associated best practices"
+                ]
+            },
+            {
+                "name": "Google Web Toolkit (GWT)",
+                "blurb": "1 year of experience",
+                "imagePath": "resume/logo-gwt.png",
+                "description": [
+                    "Architected, designed, and developed an enterprise record management system with a GWT front-end.",
+                    "Created reusable widget libraries used to provide standardized functionality and look-and-feel across multiple web applications.",
+                    "Trained and mentored other developers in understanding the GWT framework and associated best practices."
+                ]
+            },
+            {
+                "name": "Web Technologies",
+                "blurb": "5 Years of experience",
+                "imagePath": "resume/logo-html.png",
+                "description": [
+                    "Designed and implemented multiple web static web sites using HTML and CSS.",
+                    "Developed several dynamic enterprise web applications using HTML/CSS/JS front-ends and Java backends.",
+                    "Experienced with full stack development involving Javascript front-ends and REST/SOAP web service backends."
+                ]
+            },
+            {
+                "name": "Python",
+                "blurb": "1 year of experience",
+                "imagePath": "resume/logo-python.png",
+                "description": [
+                    "Programmed software including client-server applications and a web service",
+                    "Experienced with core Python 2.7.x libraries."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Education",
+        "order": 3,
+        "entries": [
+            {
+                "name": "Masters of Science in Information Systems",
+                "blurb": "Hawaii Pacific University | Degree Incomplete",
+                "imagePath": "resume/logo-hawaiipacificuniversity.png",
+                "description": [
+                    "4.00 out of 4.00 GPA",
+                    "8 courses / 24 credits remaining"
+                ]
+            },
+            {
+                "name": "B.S. in Computer Science",
+                "blurb": "Hawaii Pacific University | Graduated December 2012",
+                "imagePath": "resume/logo-hawaiipacificuniversity.png",
+                "description": [
+                    "3.99 out of 4.00 GPA",
+                    "Graduated Summa Cum Laude",
+                    "Nominated valedictorian by the Department of Math and Computer Science"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Work Experience",
+        "order": 1,
+        "entries": [
+            {
+                "name": "Full Stack Developer / Team Lead / Systems Analyst / Consultant",
+                "blurb": "eWorld Enterprise Solutions, Inc. | August 2013 - Present",
+                "imagePath": "resume/logo-eworldes.png",
+                "description": [
+                    "Led a 4-member development team in creating enterprise web applications and middleware.",
+                    "Architected, designed, and programmed several enterprise systems that are now in production.",
+                    "Mentored junior developers, teaching them coding, best practices, technologies, and designs.",
+                    "Championed technologies and practices which were adopted as organizational standards."
+                ]
+            },
+            {
+                "name": "Technical Analyst Assistant",
+                "blurb": "Hawaii Pacific University | January 2011 - February 2013",
+                "imagePath": "resume/logo-hawaiipacificuniversity.png",
+                "description": [
+                    "Worked directly with end-users and teammates to resolve 1000+ hardware, software, and network issues.",
+                    "Monitored and maintained a computer lab with 100+ systems and 3500+ weekly users.",
+                    "Trained and mentored 16 teammates in fulfilling relevant job responsibilities.",
+                    "Created reports for management by analyzing datasets with 200,000+ elements."
+                ]
+            },
+            {
+                "name": "Computer Services Consultant",
+                "blurb": "Freelance | January 2006 - Present",
+                "imagePath": "resume/logo-freelance.png",
+                "description": [
+                    "Provided independent computer services to dozens of long-term clients.",
+                    "Consulted with clients and grave professional recommendations for technology purchases and decisions.",
+                    "Deployed, secured, and optimized home Local Area Networks.",
+                    "Custom built dozens of computer systems, including powerful gaming machines and reliable, efficient business PCs.",
+                    "Performed hardware repairs, virus/malware removal, backup/data recovery services, and performance optimization for PCs."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Certifications and Professional Development",
+        "order": 4,
+        "entries": [
+            {
+                "name": "CompTIA Security+ CE",
+                "blurb": "Certified from 2014 - 2017",
+                "imagePath": "resume/logo-security-plus.png",
+                "description": [
+                    "License V2W06WTD4CBESEGR"
+                ]
+            },
+            {
+                "name": "SHAKACON VI Security Conference",
+                "blurb": "Attended 2014",
+                "imagePath": "resume/logo-shakacon.png",
+                "description": [
+                ]
+            }
+        ]
+    }
+]
