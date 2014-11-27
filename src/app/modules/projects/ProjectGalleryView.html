@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Projects</h1>
+    <hr>
+    <div class="row">
+        <div data-ng-repeat="project in projects | orderBy: 'order'">
+            <div data-ng-if="$index % 3 === 0" class="clearfix"></div>
+            <div data-project-thumbnail
+                 data-project="project"></div>
+        </div>
+    </div>
+</div>

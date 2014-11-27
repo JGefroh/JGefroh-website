@@ -1,0 +1,8 @@
+[
+    {
+        "description": "My most recent project was: ToDoList",
+        "actionLabel": "View Project",
+        "actionType": "redirect_project",
+        "order": 1
+    }
+]

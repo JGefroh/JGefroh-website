@@ -1,0 +1,89 @@
+
+html {
+    overflow-y: scroll;
+}
+/*Prevents Navigation Bar from overlapping content*/
+body {
+    padding-top: 70px;
+    min-width: 300px;
+}
+
+
+.navigationActive {
+     border-bottom: 1px solid red;
+ }
+
+
+.resume-section-header {
+    border-bottom: 1px solid gray;
+}
+.project-thumbnail {
+    margin-top: 1em;
+}
+
+.thumbnail-name {
+    font-weight: bold;
+}
+
+.thumbnail {
+    margin-bottom: 0.25em;
+}
+/*
+-------------------------------------------------- */
+
+.stackable {
+    margin-bottom: 0.5em;
+}
+
+
+
+/* Project badge styles
+-------------------------------------------------- */
+
+.badge-personal {
+    background-color: blue;
+}
+.badge-production {
+    background-color: green;
+}
+
+.badge-cancelled {
+    background-color: red;
+}
+
+.badge-school {
+    background-color: #269abc;
+}
+
+.badge-completed {
+    background-color: green;
+}
+
+.badge-language {
+    background-color: green;
+}
+
+.badge-framework {
+    background-color: red;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,55 @@
+<div class="container">
+    <div>
+        <div class="row">
+            <div class="col-xs-5">
+                <h1>{{ project.name }}
+                    <br/>
+                    <span class="small">{{ project.dateStarted }}</span> <span class="small" data-ng-if="project.dateStarted && project.dateCompleted"> - </span><span class="small" data-ng-if="project.dateCompleted">{{ project.dateCompleted }}</span>
+                </h1>
+                <span class="badge" data-ng-repeat="status in project.statuses" style="margin-right: 4px;"
+                      data-ng-class="{'badge-production': status.name === 'In Production',
+                                        'badge-personal': status.name === 'Personal',
+                                        'badge-work': status.name === 'Work',
+                                        'badge-school': status.name === 'School',
+                                        'badge-completed': status.name === 'Completed',
+                                        'badge-developing': status.name === 'Actively Developed',
+                                        'badge-cancelled': status.name === 'Cancelled'
+                                        }">
+                    {{ status.name }}
+                </span>
+                <br/>
+                <br/>
+                <a data-ng-if="project.liveLink" data-ng-href="{{ project.liveLink }}" class="btn btn-default"><span class="fa fa-lg fa-desktop"></span> View Demo</a>
+                <a data-ng-if="project.sourceLink" data-ng-href="{{ project.sourceLink }}" class="btn btn-default"><span class="fa fa-lg fa-github"></span> View Source Code</a>
+            </div>
+            <div class="col-xs-7" style="height:200px; width: 600px;">
+                <div data-carousel interval="3000">
+                    <div data-slide
+                         data-ng-repeat="image in project.images" style="overflow: hidden;"
+                         data-ng-if="!image.isThumbnail">
+                        <img data-ng-src="{{ baseImagePath + image.url }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <p data-ng-repeat="paragraph in project.description.paragraphs">
+                    {{ paragraph }}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Technologies:</h3>
+                <span class="badge" data-ng-repeat="technology in project.technologies" style="margin-right: 4px;"
+                      data-ng-class="{'badge-language': technology.type === 'language',
+                                                'badge-framework': technology.type === 'framework'
+                                                }">
+                    {{ technology.name }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
