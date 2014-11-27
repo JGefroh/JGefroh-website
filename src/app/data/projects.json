@@ -1,7 +1,7 @@
 [
     {
         "name": "Core",
-        "order": 2,
+        "order": 3,
         "dateStarted": "05/2014",
         "statuses": [
             {"name": "Personal"},
@@ -116,16 +116,17 @@
     },
     {
         "name": "Record Management System",
-        "order": 5,
+        "order": 2,
         "dateStarted": "2014",
         "statuses": [
             {"name": "Personal"},
             {"name": "Cancelled"}
         ],
         "liveLink": "http://www.rms.jgefroh.com",
+        "sourceLink": "http://www.github.com/jgefroh/rms",
         "description": {
             "paragraphs": [
-                " RMS was a quick prototype that tested several approaches to the development of a record management system. It used Boostrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. "
+                "RMS was a quick prototype that tested several approaches to the development of a record management system. It used Boostrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. "
             ]
         },
         "images": [
@@ -246,7 +247,7 @@
     },
     {
         "name": "3D Models",
-        "order": 3,
+        "order": 5,
         "dateStarted": "2012",
         "statuses": [
             {"name": "Personal"},

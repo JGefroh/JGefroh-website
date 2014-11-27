@@ -10,7 +10,8 @@ angular
         'com.jgefroh.website.2015.splash',
         'com.jgefroh.website.2015.projects',
         'com.jgefroh.website.2015.resume',
-        'com.jgefroh.website.2015.navigation'
+        'com.jgefroh.website.2015.navigation',
+        'com.jgefroh.website.2015.news'
     ]);
 angular
     .module('com.jgefroh.website.2015')

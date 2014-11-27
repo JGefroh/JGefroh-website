@@ -7,7 +7,8 @@
             })
             .state('splash', {
                 url: '/splash',
-                templateUrl: 'modules/splash/SplashView.html'
+                templateUrl: 'modules/splash/SplashView.html',
+                controller: 'SplashController'
             })
             .state('resume', {
                 url: '/resume',

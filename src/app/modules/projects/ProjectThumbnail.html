@@ -1,11 +1,21 @@
-<div class="col-xs-4 text-center">
+<div class="col-xs-12 col-sm-4 text-center project-thumbnail">
     <img data-ng-click="showProject(project)"
          class="thumbnail img-responsive img-rounded center-block"
          data-ng-src="{{ baseImagePath + (project.images | filter:{isThumbnail: true})[0].url }}"
          style="cursor: pointer;">
     <p>
-        {{ project.name }}<br/>
-        <a data-ng-if="project.liveLink" data-ng-href="{{ project.liveLink }}" class="btn btn-default"><span class="fa fa-lg fa-desktop"></span></a>
-        <a data-ng-if="project.sourceLink" data-ng-href="{{ project.sourceLink }}" class="btn btn-default"><span class="fa fa-lg fa-github"></span></a>
+        <span class="thumbnail-name">{{ project.name }}</span><br/>
+        <a data-ng-if="project.liveLink"
+           data-ng-href="{{ project.liveLink }}"
+           class="btn btn-default"
+           title="View a demo of this project.">
+            <span class="fa fa-lg fa-desktop"></span>
+        </a>
+        <a data-ng-if="project.sourceLink"
+           data-ng-href="{{ project.sourceLink }}"
+           class="btn btn-default"
+           title="View this project's source code on GitHub">
+            <span class="fa fa-lg fa-github"></span>
+        </a>
     </p>
 </div>
