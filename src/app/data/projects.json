@@ -155,7 +155,9 @@
         },
         "images": [
             {"url": "rms/thumb.png", "isThumbnail": "true"},
-            {"url": "rms/1.png"}
+            {"url": "rms/1.png"},
+            {"url": "rms/2.png"},
+            {"url": "rms/3.png"}
         ],
         "technologies": [
             {"name":"Java", "type":"language"},

@@ -1,19 +1,15 @@
 (function () {
-    function SplashController ($scope, $interval, NewsService) {
-/*
-        var updateNewsEntry = function() {
-            NewsService.getRandomNewsEntry().then(function(entry) {
-                $scope.newsEntry = entry;
-            });
+    function SplashController ($scope, ProjectService, NavigationService) {
+        ProjectService.getFeaturedProject().then(function(project) {
+            $scope.project = project;
+        });
+
+        $scope.showProject = function(project) {
+            NavigationService.goTo('/projects/' + project.name);
         };
-        updateNewsEntry();
-        var newsTimer = $interval(updateNewsEntry, 7500);
-        $scope.$on('$destroy', function() {
-            $interval.cancel(newsTimer);
-        });*/
     }
 
     angular
         .module('com.jgefroh.website.2015.splash', [])
-        .controller('SplashController', ['$scope', '$interval', 'NewsService', SplashController]);
+        .controller('SplashController', ['$scope', 'ProjectService', 'NavigationService', SplashController]);
 })();

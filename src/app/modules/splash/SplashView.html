@@ -17,6 +17,25 @@
             </div>
         </div>
     </div>
+
+    <div class="row" data-ng-if="project">
+        <div class="col-xs-12">
+            <div class="jumbotron text-center">
+                <h2> {{ project.name }} <br/>
+                    <span class="small"> {{ project.blurb }}</span>
+                </h2>
+                <div data-carousel interval="3000">
+                    <div data-slide
+                         data-ng-repeat="image in project.images" style="overflow: hidden;"
+                         data-ng-if="!image.isThumbnail">
+                        <img data-ng-src="{{ baseImagePath + image.url }}">
+                    </div>
+                </div>
+                <br/>
+                <button data-ng-click="showProject(project)" class="btn btn-primary btn-lg stackable"><span class="fa fa-eye"></span> View Project</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 
