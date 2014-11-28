@@ -1,6 +1,7 @@
 [
     {
         "name": "Skills",
+        "category": "skills",
         "order": 2,
         "entries": [
             {
@@ -79,6 +80,7 @@
     },
     {
         "name": "Education",
+        "category": "education",
         "order": 3,
         "entries": [
             {
@@ -104,6 +106,7 @@
     },
     {
         "name": "Work Experience",
+        "category": "experience",
         "order": 1,
         "entries": [
             {
@@ -144,6 +147,7 @@
     },
     {
         "name": "Certifications and Professional Development",
+        "category": "education",
         "order": 4,
         "entries": [
             {

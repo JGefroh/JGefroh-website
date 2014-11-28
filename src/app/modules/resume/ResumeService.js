@@ -1,6 +1,7 @@
 (function () {
     function ResumeService($http, $q) {
         var resume = [];
+        var _currentFilter = {category: null};
 
         this.getResume = function() {
             var deferred = $q.defer();
@@ -15,6 +16,14 @@
                 deferred.resolve(resume);
             }
             return deferred.promise;
+        };
+
+        this.setCurrentFilter = function(category) {
+            _currentFilter.category = category;
+        };
+
+        this.getCurrentFilter = function() {
+            return _currentFilter;
         };
     }
 
