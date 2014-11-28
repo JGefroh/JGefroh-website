@@ -28,6 +28,10 @@ body {
 .thumbnail {
     margin-bottom: 0.25em;
 }
+
+.thumbnail:hover {
+    border: 1px blue solid;
+}
 /*
 -------------------------------------------------- */
 
