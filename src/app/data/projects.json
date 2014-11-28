@@ -317,6 +317,7 @@
         "order": 5,
         "dateStarted": "2014",
         "liveLink": "http://www.areyouapotato.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/are-you-a-potato",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
