@@ -150,14 +150,16 @@
         ],
         "description": {
             "sections": [
-                "RMS was a quick prototype that tested several approaches to the development of a record management system. It used Boostrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. "
+                "RMS was a quick prototype that tested several approaches to the development of a record management system. It used Boostrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. ",
+                "I used the lessons I learned in the prototype for an unrelated record management system I was developing at my job that also used GWT."
             ]
         },
         "images": [
             {"url": "rms/thumb.png", "isThumbnail": "true"},
             {"url": "rms/1.png"},
             {"url": "rms/2.png"},
-            {"url": "rms/3.png"}
+            {"url": "rms/3.png"},
+            {"url": "rms/4.png"}
         ],
         "technologies": [
             {"name":"Java", "type":"language"},
