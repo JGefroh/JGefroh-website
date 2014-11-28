@@ -2,7 +2,21 @@
     <h1>Projects</h1>
     <hr>
     <div class="row">
-        <div data-ng-repeat="project in projects | orderBy: 'order'">
+        <div class="col-xs-12 text-center">
+            <button class="btn btn-primary stackable" data-ng-class="{'active':currentFilter.tag === null}" data-ng-click="setTag(null)">All</button>
+            <button class="btn btn-primary stackable" data-ng-class="{'active':currentFilter.tag === 'web'}" data-ng-click="setTag('web')">Websites / Web Applications</button>
+            <button class="btn btn-primary stackable" data-ng-class="{'active':currentFilter.tag === 'api'}" data-ng-click="setTag('api')">APIs / Frameworks</button>
+            <button class="btn btn-primary stackable" data-ng-class="{'active':currentFilter.tag === 'desktop'}" data-ng-click="setTag('desktop')">Desktop Applications</button>
+            <button class="btn btn-primary stackable" data-ng-class="{'active':currentFilter.tag === 'other'}" data-ng-click="setTag('other')">Other</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            Showing {{ (projects | filter: tagFilter).length }} of {{ projects.length }} projects.
+        </div>
+    </div>
+    <div class="row">
+        <div data-ng-repeat="project in projects | orderBy: 'order' | filter: tagFilter">
             <div data-ng-if="$index % 3 === 0" class="clearfix"></div>
             <div data-project-thumbnail
                  data-project="project"></div>

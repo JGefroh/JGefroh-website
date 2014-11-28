@@ -1,6 +1,7 @@
 (function () {
     function ProjectService($http, $q) {
         var projects = [];
+        var _currentFilter = {tag: null};
 
         this.getProjects = function() {
             var deferred = $q.defer();
@@ -29,7 +30,15 @@
                 deferred.resolve(match);
             });
             return deferred.promise;
-        }
+        };
+
+        this.setCurrentFilter = function(tag) {
+            _currentFilter.tag = tag;
+        };
+
+        this.getCurrentFilter = function() {
+            return _currentFilter;
+        };
     }
 
     angular
