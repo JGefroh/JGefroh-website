@@ -7,6 +7,10 @@
                 $scope.project = project;
             });
         }
+
+        $scope.isString = function(object) {
+            return angular.isString(object);
+        }
     }
     angular
         .module("com.jgefroh.website.2015.projects")

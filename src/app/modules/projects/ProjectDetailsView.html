@@ -20,6 +20,7 @@
                 <br/>
                 <br/>
                 <a data-ng-if="project.liveLink" data-ng-href="{{ project.liveLink }}" class="btn btn-default"><span class="fa fa-lg fa-desktop"></span> View Demo</a>
+                <a data-ng-if="project.downloadLink" data-ng-href="{{ project.downloadLink }}" class="btn btn-default"><span class="fa fa-lg fa-download"></span> Download</a>
                 <a data-ng-if="project.sourceLink" data-ng-href="{{ project.sourceLink }}" class="btn btn-default"><span class="fa fa-lg fa-github"></span> View Source Code</a>
             </div>
             <div class="col-xs-7" style="height:200px; width: 600px;">
@@ -35,9 +36,13 @@
         <hr>
         <div class="row">
             <div class="col-xs-12">
-                <p data-ng-repeat="paragraph in project.description.paragraphs">
-                    {{ paragraph }}
-                </p>
+                <div data-ng-repeat="section in project.description.sections">
+                    <ul data-ng-if="section.isList">
+                        <li data-ng-repeat="item in section.items"> {{ item }} </li>
+                    </ul>
+                    <p data-ng-if="section.isHeader" class="lead">{{ section.text }}</p>
+                    <p data-ng-if="isString(section)">{{ section }}</p>
+                </div>
             </div>
         </div>
         <div class="row">

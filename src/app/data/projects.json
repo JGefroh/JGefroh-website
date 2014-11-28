@@ -9,7 +9,7 @@
         ],
         "sourceLink": "http://www.github.com/jgefroh/core",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "Core is a simulation/game framework I developed to assist me in making games. It is a component based entity system, which scraps traditional object oreinted hierarchies in favor of a composition-based approach that defines entities through their component makeup.",
                 "These components are accessed and their data manipulated by a sequence of systems during the game loop. Core is at the center of this and acts as the mediator and controller powering these systems and exchanges.",
                 "Working on this framework has been a fun and engaging learning experience."
@@ -38,7 +38,7 @@
         "sourceLink": "http://www.github.com/jgefroh/todolist",
         "liveLink": "http://www.todolist.jgefroh.com",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "ToDoList is a personal time tracking/task tracking application that made it easier to track what projects and time codes I billed to while at work.",
                 "AngularJS had just been proposed as a potential technology to use for a future project, so I built ToDoList as a way to learn how to use the framework. AngularJS has a really funky learning curve, but I managed to sift through vast amounts of information and learn what some of the best practices were and how the front-ends were architected.",
                 "My efforts paid off because the application was used to train the other developers in using the framework and jumpstart the development of other applications."
@@ -68,8 +68,9 @@
             {"name": "Completed"}
         ],
         "sourceLink": "http://www.github.com/jgefroh/core-last-stand",
+        "downloadLink": "http://github.com/JGefroh/Core-Last-Stand/blob/master/core-last-stand-0.0.16-win.jar?raw=true",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "Last Stand is a 2D side scrolling shooter that I made using my Core framework.",
                 "The purpose of the project was to further test the capabilities of Core by creating a more complex game experience. It really helped me improve the framework by showing me several areas where I was able to improve Core's base functionality."
             ]
@@ -96,7 +97,7 @@
             {"name": "Cancelled"}
         ],
         "description": {
-            "paragraphs": [
+            "sections": [
                 "The Physician License Status Service (PLSS) is a team project I worked on as primary programmer/secondary project manager for a project management course. It was a part of the State of Hawaii's health transformation initiative, and intention was to create an API to facilitate the rapid transfer of information amongst physicians, insurers, and other interested third parties. It is effectively an API adapter that third parties can use to access a state database of license holders and do batch checks to see if licenses are in good standing or not.",
                 "The PLSS API was intended to improve information exchange amongst care providers by decreasing the amount of time required before the status of a licensee could be verified. When a doctor requests patient information to provide care for a patient, he or she would not need to wait as long to receive this information because their license status could be verified by the holder of the information, and not through a chain of third parties and state agencies. ",
                 "We developed the proof-of-concept and a fully functional prototype in Python 3, along with proper documentation and test cases. The API allowed for single and batch license searches using license IDs, names, and license ranges, and returned results in proper XML format. It worked fairly well but, due to a lack of database access, relied on the web interface of an existing website that actively prevented frequent requests using captchas.",
@@ -125,7 +126,7 @@
         "liveLink": "http://www.rms.jgefroh.com",
         "sourceLink": "http://www.github.com/jgefroh/rms",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "RMS was a quick prototype that tested several approaches to the development of a record management system. It used Boostrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. "
             ]
         },
@@ -150,8 +151,9 @@
             {"name": "Completed"}
         ],
         "sourceLink": "http://www.github.com/jgefroh/core-void-attackers",
+        "downloadLink": "http://github.com/JGefroh/Core-Void-Attackers/blob/master/core-void-attackers-0.1.0-win.jar?raw=true",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "I made this version of the arcade game Space Invaders in parallel with my other project, Core. ",
                 "This game was initially intended to demonstrate rendering code and collision checking, but eventually turned into a full blown implementation of Space Invaders.",
                 "It showed me exactly how a game would be implemented using my framework, which was a great learning experience. The program itself is not very polished, but at least I don't have to spend quarters to play Space Invaders anymore! "
@@ -180,7 +182,7 @@
         ],
         "sourceLink": "http://www.github.com/jgefroh/imcs",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "IMCS was an instant messaging client and server that I wrote as a class project for three separate classes: Data Communications, Python, and Modern Programming Practices. Don't worry, I had permission!",
                 "It uses Python's socket interface to send packets via TCP. The information was pure text with a specific command or tag at the beginning. The tag determined how the message would be processed by the server. For example, if I typed in \"/MSG Hello everyone\", the server would process the message as something to be displayed to other users. If I typed in \"/NICK Hello everyone\", the server would change my displayed nickname to \"Hello\" and use the password \"everyone\" as verification.",
                 " Developing this application was a great learning experience. Each challenge that was overcome posed even more challenges. Development showed that Python's TCP sockets were unable to determine when a new message had arrived and what was part of the old message, thanks to TCP's non-guaranteed arrival order for packets. To resolve this, message sizes were added to the protocol. Other issues appeared, such as blocking sockets preventing new connections (resolved with threading and welcome sockets), console output overlapping input lines (resolved with back/forward ASCII codes), memory leaks (resolved with disconnect handlers), and concurrent modification of shared memory (resolved via synchronization, locks, and copies). ",
@@ -207,8 +209,9 @@
             {"name": "Completed"}
         ],
         "sourceLink": "http://www.github.com/jgefroh/lamepad",
+        "downloadLink": "http://github.com/JGefroh/lamepad/blob/master/Lamepad.jar?raw=true",
         "description": {
-            "paragraphs": [
+            "sections": [
                 "Lamepad was initially a weekend project that ended up taking only a couple of hours to do. I used Java and Swing to create this clone of Microsoft's Notepad application. It has font selection, styling, word-wrap, and even save and load functionality. ",
                 "The one disappointing thing that I didn't resolve was the fact that the font-selection performance was abysmal. There was a one second delay between picking a font and having it selected, causing the program to hang. This has something to do with how the fonts were formatted (using HTML). I would resolve this if I wanted to continue working on it, but I don't."
             ]
@@ -230,7 +233,7 @@
             {"name": "Completed"}
         ],
         "description": {
-            "paragraphs": [
+            "sections": [
                 "NoID is a program that was born out of a business need at the university where I used to work. Students were coming into the computer center without their IDs and we had to limit their access when they reached a certain number of \"no ID\" entries. Our old method was to confirm they were a student, write their information down, and check a spreadsheet file and see how many times they entered. We then had to log their information in the spreadsheet, which included their name, id number, the date and time of day, and the number of entries. This was terribly inefficient and would prevent us from helping others or answering helpdesk calls during busy times.",
                 "NoID allowed us to rapidly see if the student had previously entered the computer center without their ID. It automatically tracked the date and time so that all we had to do was press a button to increment the number of times they entered. The program also allowed us to search by name, id number, and number of entries. NoID significantly decreased the amount of time we wasted tracking the information. What used to take a couple of minutes now took less than half a minute!",
                 "Unfortunately, department policies and other decisions prevented NoID's deployment. It eventually became obsolete when we stopped bothering to track the students due to the significant amount of time it took, despite university policies. Oh, well!"
@@ -247,14 +250,14 @@
     },
     {
         "name": "3D Models",
-        "order": 5,
+        "order": 10,
         "dateStarted": "2012",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
         ],
         "description": {
-            "paragraphs": [
+            "sections": [
                 "One of my interests is 3D modeling. I never really put in the time and effort to get good at it, but I did play around with Blender at one point to see what it was like. Although my models are very basic and amateurish, I still had a lot of fun and will likely try again."
             ]
         },
@@ -269,6 +272,161 @@
         ],
         "technologies": [
             {"name":"Blender", "type":"framework"}
+        ]
+    },
+    {
+        "name": "Are You A Potato?",
+        "order": 5,
+        "dateStarted": "2014",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "liveLink": "http://www.areyouapotato.jgefroh.com",
+        "description": {
+            "sections": [
+                "Are You A Potato? helps users answer the most important question of their lives.",
+                "This application was a quick experiment in using JSON data to drive the flow of interaction instead of pre-programmed responses. It also provided an opportunity to laugh. Win-win."
+            ]
+        },
+        "images": [
+            {"url": "areyouapotato/thumb.png", "isThumbnail": "true"},
+            {"url": "areyouapotato/1.png"},
+            {"url": "areyouapotato/2.png"},
+            {"url": "areyouapotato/3.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "name": "JGefroh.com (2015)",
+        "order": 5,
+        "dateStarted": "2014",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "liveLink": "http://www.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website",
+        "description": {
+            "sections": [
+                {"isHeader": true, "text":"I thought my 2014 website overhaul using Jekyll was the bee's knees. That is, until I had to maintain it."},
+                {"isHeader": true, "text":"The Issues"},
+                "One major problem was the amount of effort it took to do anything. In order to fix a typo, I had to start Jekyll, make the fix, rebuild the application, and then redeploy it. Adding new pages took even longer. Because it wasn't effortless to update the website, I didn't update as frequently.",
+                {"isHeader": true, "text":"The Fix"},
+                "Using my new-found AngularJS skills, I took a day and rewrote my website. Once again, I had several criteria in mind:",
+                {"isList": true, "items": ["Simple", "Easy to maintain", "A gallery for my projects", "A place to put my resume and skills", "Compatible with many browsers and window sizes", "Fun to work on", "SEO not required"]},
+                "This new website is much easier to maintain. The content that changes frequently is stored as JSON, which makes editing and redeploying incredibly easy. AngularJS has really allowed me to develop more rapidly than before."
+            ]
+        },
+        "images": [
+            {"url": "2015/thumb.png", "isThumbnail": "true"},
+            {"url": "2015/1.png"},
+            {"url": "2015/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "name": "JGefroh.com (2014)",
+        "order": 5,
+        "dateStarted": "2014",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "liveLink": "http://www.2014.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2014",
+        "description": {
+            "sections": [
+                {"isHeader": true, "text":"I showed my original website to one of my friends, proud of the work I had done. After a mere glance he told me that it \"looked old.\" What? That can't be! It must be a mistake! I quickly showed it to another friend, and she confirmed the bad news: my website was \"Windows XP old.\" It was time to bring my website to the modern age."},
+                {"isHeader": true, "text":"The Overhaul"},
+                "I sat down and thought to myself what requirements I had for the website overhaul. While some of the requirements were the same from my previous website, others had changed. The \"No Javascript\" philosophy was out - most people had Javascript enabled, and I figured it was time to join the club. I wanted to add a place for my resume and wanted a site that was easily updated. ",
+                "In the end I came up with the following list of requirements:",
+                {"isList": true, "items": ["A gallery for my projects", "A modern appearance", "A place to put my resume and skills", "Easily updated with content", "Simple and minimal", "Rapid page loading times", "Compatible with many browsers and window sizes."]},
+                "A modern appearance was easy enough. Everyone was using Bootstrap, so I figured I should learn how to use it as well.",
+                "The difficult part would have been the \"easily updated\" requirement. Footers and navigation bars appear on every page, and would have had to be changed manually. At the time, I decided to use a templating system called Jekyll, which allowed me to split my website into multiple parts and combine them in layouts with a compiler.",
+                "Unfortunately, my attempts to make things easier to maintain failed because I focused on the wrong thing. I tried making layouts, footers, and headers easy to change, but the most frequent changes involved actual content. The process of maintaining the website using Jekyll felt heavyweight, and, as a result, I didn't update it frequently."
+            ]
+        },
+        "images": [
+            {"url": "2014/thumb.png", "isThumbnail": "true"},
+            {"url": "2014/1.png"},
+            {"url": "2014/2.png"}
+        ],
+        "technologies": [
+            {"name":"Bootstrap", "type":"framework"},
+            {"name":"Jekyll", "type":"framework"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"}
+        ]
+    },
+    {
+        "name": "JGefroh.com (2013)",
+        "order": 5,
+        "dateStarted": "2013",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "liveLink": "http://www.2013.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2013",
+        "description": {
+            "sections": [
+                "This was the very first version of my website. I had just gotten out of school and decided I needed an online presence to assist in finding a job.",
+                "Some design criteria I had in mind for the initial website included the following:",
+                {"isList": true, "items": ["A gallery for my projects", "Simple and minimal", "Rapid page loading times", "Compatible with many browsers and window sizes.", "Minimal scrolling to view main content", "No Javascript"]},
+                "Looking back, I should have added \"easy to maintain\" as a criteria. I ran into severe maintenance problems since I had repeated markup everywhere. Lesson(s) learned."
+            ]
+        },
+        "images": [
+            {"url": "2013/thumb.png", "isThumbnail": "true"},
+            {"url": "2013/1.png"},
+            {"url": "2013/2.png"}
+        ],
+        "technologies": [
+            {"name":"X/HTML", "type":"language"},
+            {"name":"CSS", "type":"language"}
+        ]
+    },
+    {
+        "name": "My Computer (2014)",
+        "order": 18,
+        "dateStarted": "2014",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "description": {
+            "sections": [
+                "I built my computer with the sole intention of playing demanding PC games. It's getting old, but it has served me well over the years. ",
+                "Specs:",
+                {"isList": true, "items": ["CPU: Intel i7-860", "GPU: Radeon HD 7970", "Motherboard: ASUS P7P55D EVO", "RAM: 8GB @ 1333mhz", "SSD: Samsung 840 Pro (256GB)",
+                    "HDD: 1x1TB, 1x500GB, 2TB NAS", "PSU: Corsair CMPSU-750TX", "Sound Card: Asus Xonar Essence STX", "CPU Cooler: Noctua NH-U9B", "Tower: Cooler Master HAF 932",
+                    "Monitor 1: Dell U2711 (2560x1440, IPS, 27\", 60hz)", "Monitor 2: LG W2286 (1680x1050, LCD, 22\", 60hz)", "Keyboard: Razer Black Widow (2013)", "Mouse: SteelSeries Sensei"
+                ]}
+            ]
+        },
+        "images": [
+            {"url": "pc-2014/thumb.png", "isThumbnail": "true"},
+            {"url": "pc-2014/1.png"},
+            {"url": "pc-2014/2.png"},
+            {"url": "pc-2014/3.png"},
+            {"url": "pc-2014/4.png"}
+        ],
+        "technologies": [
+            {"name":"Electricity", "type":"framework"},
+            {"name":"Computer Science", "type":"framework"}
         ]
     }
 ]

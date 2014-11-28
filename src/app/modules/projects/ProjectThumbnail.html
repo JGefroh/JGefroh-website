@@ -9,13 +9,19 @@
            data-ng-href="{{ project.liveLink }}"
            class="btn btn-default"
            title="View a demo of this project.">
-            <span class="fa fa-lg fa-desktop"></span>
+           <span class="fa fa-lg fa-desktop"></span>
+        </a>
+        <a data-ng-if="project.downloadLink"
+           data-ng-href="{{ project.downloadLink }}"
+           class="btn btn-default"
+           title="Download an executable of this project.">
+           <span class="fa fa-lg fa-download"></span>
         </a>
         <a data-ng-if="project.sourceLink"
            data-ng-href="{{ project.sourceLink }}"
            class="btn btn-default"
-           title="View this project's source code on GitHub">
-            <span class="fa fa-lg fa-github"></span>
+           title="View this project's source code on GitHub.">
+           <span class="fa fa-lg fa-github"></span>
         </a>
     </p>
 </div>
