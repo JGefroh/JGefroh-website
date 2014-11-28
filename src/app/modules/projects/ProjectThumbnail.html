@@ -2,6 +2,8 @@
     <img data-ng-click="showProject(project)"
          class="thumbnail img-responsive img-rounded center-block"
          data-ng-src="{{ baseImagePath + (project.images | filter:{isThumbnail: true})[0].url }}"
+         data-popover="{{ project.blurb }}"
+         data-popover-trigger="mouseenter"
          style="cursor: pointer;">
     <p>
         <span class="thumbnail-name">{{ project.name }}</span><br/>

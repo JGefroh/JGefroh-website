@@ -33,6 +33,11 @@ body {
     border: 1px blue solid;
 }
 
+
+.popover {
+    border: 1px gray solid;
+}
+
 /*
 -------------------------------------------------- */
 

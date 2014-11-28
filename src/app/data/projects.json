@@ -4,6 +4,7 @@
         "order": 3,
         "dateStarted": "05/2014",
         "sourceLink": "http://www.github.com/jgefroh/core",
+        "blurb": "A component/entity simulation/game framework.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -36,6 +37,7 @@
         "dateCompleted": "09/07/2014",
         "sourceLink": "http://www.github.com/jgefroh/todolist",
         "liveLink": "http://www.todolist.jgefroh.com",
+        "blurb": "A personal time management/task tracking tool.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"},
@@ -72,6 +74,7 @@
         "dateStarted": "06/2014",
         "sourceLink": "http://www.github.com/jgefroh/core-last-stand",
         "downloadLink": "http://github.com/JGefroh/Core-Last-Stand/blob/master/core-last-stand-0.0.16-win.jar?raw=true",
+        "blurb": "A 2D side-scrolling arcade shooter.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -103,6 +106,7 @@
         "name": "Physician License Status Service",
         "order": 4,
         "dateStarted": "2012",
+        "blurb": "A license data retrieval API.",
         "statuses": [
             {"name": "School"},
             {"name": "Cancelled"}
@@ -136,6 +140,7 @@
         "dateStarted": "2014",
         "liveLink": "http://www.rms.jgefroh.com",
         "sourceLink": "http://www.github.com/jgefroh/rms",
+        "blurb": "A prototype/guide for web applications using Google Web Toolkit.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Cancelled"}
@@ -166,6 +171,7 @@
         "dateStarted": "05/2014",
         "sourceLink": "http://www.github.com/jgefroh/core-void-attackers",
         "downloadLink": "http://github.com/JGefroh/Core-Void-Attackers/blob/master/core-void-attackers-0.1.0-win.jar?raw=true",
+        "blurb": "A space invaders clone.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -199,6 +205,7 @@
         "order": 7,
         "dateStarted": "2012",
         "sourceLink": "http://www.github.com/jgefroh/imcs",
+        "blurb": "An IRC-like chat application.",
         "statuses": [
             {"name": "School"},
             {"name": "Completed"}
@@ -233,6 +240,7 @@
         "dateStarted": "02/12/2013",
         "sourceLink": "http://www.github.com/jgefroh/lamepad",
         "downloadLink": "http://github.com/JGefroh/lamepad/blob/master/Lamepad.jar?raw=true",
+        "blurb": "Notepad's red-headed stepchild.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -261,6 +269,7 @@
         "dateStarted": "2012",
         "sourceLink": "http://www.github.com/jgefroh/no-id",
         "downloadLink": "http://github.com/JGefroh/no-id/blob/master/NoID_v1_RC.jar?raw=true",
+        "blurb": "A student access tracker.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -290,6 +299,7 @@
         "name": "3D Models",
         "order": 10,
         "dateStarted": "2012",
+        "blurb": "A foray into art.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -321,6 +331,7 @@
         "dateStarted": "2014",
         "liveLink": "http://www.areyouapotato.jgefroh.com",
         "sourceLink": "http://github.com/JGefroh/are-you-a-potato",
+        "blurb": "An application that makes you reflect on yourself.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -354,6 +365,7 @@
         "dateStarted": "2014",
         "liveLink": "http://www.jgefroh.com",
         "sourceLink": "http://github.com/JGefroh/JGefroh-website",
+        "blurb": "This website.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -391,6 +403,7 @@
         "dateStarted": "2014",
         "liveLink": "http://www.2014.jgefroh.com",
         "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2014",
+        "blurb": "What this website looked like in 2014.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -428,6 +441,7 @@
         "dateStarted": "2013",
         "liveLink": "http://www.2013.jgefroh.com",
         "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2013",
+        "blurb": "The very first version of this website.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
@@ -457,6 +471,7 @@
         "name": "My Computer (2014)",
         "order": 18,
         "dateStarted": "2014",
+        "blurb": "Computers are cool.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"}
