@@ -19,7 +19,8 @@
         <div data-ng-repeat="project in projects | orderBy: 'order' | filter: tagFilter">
             <div data-ng-if="$index % 3 === 0" class="clearfix"></div>
             <div data-project-thumbnail
-                 data-project="project"></div>
+                 data-project="project"
+                 class="col-xs-12 col-sm-4"></div>
         </div>
     </div>
 </div>
