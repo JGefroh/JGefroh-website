@@ -104,6 +104,8 @@
         "name": "HOG - Highly Opinionated Generator",
         "order": -1,
         "dateStarted": "01/18/2015",
+        "sourceLink": "http://www.github.com/jgefroh/hog",
+        "downloadLink": "https://github.com/JGefroh/hog/blob/master/hog-v0.0.1.jar?raw=true",
         "blurb": "A code generator for a Java EE backend (REST Endpoint, Manager, DAO Layer, Entity).",
         "statuses": [
             {"name": "Personal"},
