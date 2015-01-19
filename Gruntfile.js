@@ -40,10 +40,6 @@ module.exports = function(grunt) {
             dev: {
                 src: 'grunt_temp/jgefroh_website_2015_UNCAT.js',
                 dest: 'src/app/jgefroh_website_2015.min.js'
-            },
-            options: {
-                mangle: false,
-                beautify: true
             }
         },
         copy: {

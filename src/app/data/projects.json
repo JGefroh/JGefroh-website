@@ -69,6 +69,68 @@
         ]
     },
     {
+        "name": "UI/UX",
+        "order": 0,
+        "dateStarted": "01/11/2015",
+        "liveLink": "http://www.uiux.jgefroh.com",
+        "blurb": "A User Interface/User Experience guide and widget library using AngularJS.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "In Production"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "UI/UX is a project I've had in my mind for a long time. I'm greatly interested in the subject of User Interface/User Experience and I love learning ways to make programs easier to use. I've always wanted to create a site demoing some of the knowledge and theories out there.",
+                "It also gave me the opportunity to work on a reusable widget library that I can use in my other AngularJS projects."
+            ]
+        },
+        "images": [
+            {"url": "uiux/thumb.png", "isThumbnail": "true"},
+            {"url": "uiux/1.png"},
+            {"url": "uiux/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "name": "HOG - Highly Opinionated Generator",
+        "order": -1,
+        "dateStarted": "01/18/2015",
+        "blurb": "A code generator for a Java EE backend (REST Endpoint, Manager, DAO Layer, Entity).",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "In Production"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "HOG, the Highly Opinionated Generator, is a code generator that automatically stubs out the backend for a domain object. This lets me quickly develop prototypes and get started on implementing business logic instead of boilerplate code.",
+                "HOG is currently able to generate a full REST endpoint, a manager layer with CRUD operations, a DAO layer, and a properly annotated JPA Entity, albeit geared towards use in non-ideal conditions.",
+                "I used HOG to practice a different coding style where everything is strongly typed and no primitives are passed. While I've yet to determine if the benefits are worth the added effort, it was an interesting experience."
+            ]
+        },
+        "images": [
+            {"url": "hog/thumb.png", "isThumbnail": "true"},
+            {"url": "hog/1.png"},
+            {"url": "hog/2.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"},
+            {"name":"Swing", "type":"framework"}
+        ]
+    },
+    {
         "name": "Last Stand",
         "order": 3,
         "dateStarted": "06/2014",
