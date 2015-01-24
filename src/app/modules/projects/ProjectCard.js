@@ -12,11 +12,11 @@
             scope: {
                 project: "="
             },
-            templateUrl: "ProjectThumbnail.html",
+            templateUrl: "ProjectCard.html",
             controller: ['$scope', 'NavigationService', 'baseImagePath', ProjectThumbnailController]
         };
     }
     angular
         .module("com.jgefroh.website.2015.projects")
-        .directive("projectThumbnail", ProjectThumbnail);
+        .directive("projectCard", ProjectThumbnail);
 })();
