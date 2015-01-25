@@ -25,6 +25,16 @@
                 templateUrl: 'modules/projects/ProjectDetailsView.html',
                 controller: 'ProjectDetailsController'
             })
+            .state('blog', {
+                url: '/blog',
+                templateUrl: 'modules/blog/BlogView.html',
+                controller: 'BlogController'
+            })
+            .state('blog_post', {
+                url: '/blog/posts/:url',
+                templateUrl: 'modules/blog/BlogView.html',
+                controller: 'BlogController'
+            })
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'modules/contact/ContactView.html'

@@ -38,6 +38,15 @@ body {
     border: 1px gray solid;
 }
 
+/* Blog Styles
+-------------------------------------------------- */
+.blog-post {
+    font-size: 1.2em;
+}
+
+.blog-post-selected {
+    background-color: rgb(222, 250, 165);
+}
 /*
 -------------------------------------------------- */
 
