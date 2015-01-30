@@ -1,8 +1,14 @@
 [
   {
+    "name": "A Commentary on Comments",
+    "blurb": "This is a comment.",
+    "url": "2015-25-01-a-commentary-on-comments",
+    "date": "2014/01/25"
+  },
+  {
     "name": "Technically a Blog",
     "blurb": "An explanation of the general architecture of this blog.",
-    "url": "2015-24-01-first-post.html",
+    "url": "2015-24-01-first-post",
     "date": "2014/01/24"
   }
 ]

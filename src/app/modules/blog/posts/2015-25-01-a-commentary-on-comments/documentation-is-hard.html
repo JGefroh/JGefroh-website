@@ -1,0 +1,60 @@
+<h3>API Documentation is Hard</h3>
+<p>Consider this API for an audio device:</p>
+<pre>
+void setVolume(int volume)
+int getVolume();
+</pre>
+<br/>
+<p>A developer might be a bit careless with their documentation and add the following comments:</p>
+
+<pre>
+/**
+* Sets the volume.
+* @param volume the volume
+*/
+void setVolume(int volume)
+
+/**
+* Gets the volume.
+* @return the volume
+*/
+int getVolume();
+</pre>
+
+<br/>
+<p>That's absolutely useless documentation, even on a public API. It's just noise.</p>
+<p>It could have been made more useful with the following information:</p>
+
+<pre>
+/**
+* Sets the volume.
+* @param volume the volume, from 0-100 inclusive.
+*/
+void setVolume(int volume)
+
+/**
+* Gets the volume.
+* @return the volume, from 0-100 inclusive.
+*/
+int getVolume();
+</pre>
+
+<br/>
+<p>While more detailed, there is a hidden maintenance cost: what happens if the maximum volume changes from 100 to 1000? A developer would likely forget to update the comments, turning them into liars.</p>
+<p>Maybe a definition of the behavior would be better:</p>
+
+<pre>
+/**
+* Sets the volume.
+* @param volume the volume - if maximum is exceed, will be set to the maximum
+*/
+void setVolume(int volume)
+
+/**
+* Gets the volume.
+* @return the volume
+*/
+int getVolume();
+</pre>
+
+<p>Even then, the comments are kind of useless.</p>

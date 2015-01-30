@@ -16,7 +16,6 @@
             return deferred.promise;
         };
 
-
         this.getPostWithUrl = function(url) {
             var deferred = $q.defer();
             var match = null;
@@ -27,6 +26,12 @@
             });
             deferred.resolve(match);
             return deferred.promise;
+        };
+
+        this.getLatestBlogPost = function() {
+            return this.getPosts().then(function(posts) {
+                return posts[0];
+            });
         }
     }
     angular

@@ -10,7 +10,11 @@
 
         this.getParameter = function(parameterName) {
             return $stateParams[parameterName];
-        }
+        };
+
+        this.setParameter = function(parameterName, value) {
+            $stateParams[parameterName] = value;
+        };
     }
     angular
         .module('com.jgefroh.website.2015.navigation')

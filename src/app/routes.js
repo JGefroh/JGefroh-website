@@ -35,6 +35,11 @@
                 templateUrl: 'modules/blog/BlogView.html',
                 controller: 'BlogController'
             })
+            .state('blog_post_section', {
+                url: '/blog/posts/:url/:section',
+                templateUrl: 'modules/blog/BlogView.html',
+                controller: 'BlogController'
+            })
             .state('contact', {
                 url: '/contact',
                 templateUrl: 'modules/contact/ContactView.html'

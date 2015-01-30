@@ -15,13 +15,18 @@
             NavigationService.goTo('/blog/posts/' + post.url);
         };
 
+        $scope.showSection = function(sectionName) {
+            NavigationService.goTo('/blog/posts/' + getUrlParameter() + '/' + sectionName);
+        };
+
         $scope.getPostUrl = function() {
-            if (getUrlParameter()) {
+            if (getUrlParameter() && getSectionParameter()) {
+                return 'modules/blog/posts/' + getUrlParameter() + '/' + getSectionParameter();
+            }
+            else if (getUrlParameter()) {
                 return 'modules/blog/posts/' + getUrlParameter();
             }
-            else {
-                return null;
-            }
+            return null;
 
         };
 
@@ -36,6 +41,10 @@
 
         function getUrlParameter() {
             return NavigationService.getParameter('url');
+        }
+
+        function getSectionParameter() {
+            return NavigationService.getParameter('section');
         }
     }
 

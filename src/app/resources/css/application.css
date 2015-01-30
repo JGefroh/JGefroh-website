@@ -1,13 +1,19 @@
-
 html {
     overflow-y: scroll;
 }
 /*Prevents Navigation Bar from overlapping content*/
 body {
-    padding-top: 70px;
+    padding-top: 50px;
     min-width: 300px;
 }
 
+.splash-content {
+    font-size: 1.2em;
+}
+
+.keyword {
+    font-weight: bold;
+}
 
 .navigationActive {
      border-bottom: 1px solid red;

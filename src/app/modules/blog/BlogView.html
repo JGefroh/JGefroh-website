@@ -10,7 +10,7 @@
         </div>
         <div class="col-xs-8" data-ng-if="getPostUrl()">
             <h3>{{ selectedPost.name }} - <span class="small" data-ng-bind="selectedPost.date"></span></h3>
-            <div data-ng-include data-src="getPostUrl()"></div>
+            <div data-ng-include data-src="getPostUrl() + '.html'" class="blog-post"></div>
         </div>
     </div>
 </div>

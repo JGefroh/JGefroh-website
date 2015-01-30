@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="jumbotron">
+<div class="jumbotron">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <img class="img-circle img-responsive center-block" src="resources/images/photo-self-1.png" />
@@ -17,22 +17,71 @@
             </div>
         </div>
     </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-8 splash-content">
+            <h3>About Me</h3>
+            <p>
+                I've been working at eWorld Enterprise Solutions since 2013 developing enterprise-scale solutions for a variety of clients.
+            </p>
 
-    <div class="row" data-ng-if="project">
-        <div class="col-xs-12">
-            <div class="jumbotron text-center" style="padding-bottom: 1em; padding-top: 1em; margin-bottom: 1em;">
-                <h2> {{ project.name }} <br/>
-                    <span class="small"> {{ project.blurb }}</span>
-                </h2>
-                <div data-carousel interval="3000">
-                    <div data-slide
-                         data-ng-repeat="image in project.images" style="overflow: hidden;"
-                         data-ng-if="!image.isThumbnail">
-                        <img data-ng-src="{{ baseImagePath + image.url }}">
-                    </div>
+            <p>
+                I've used <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, <span class="keyword">Javascript</span>, and frameworks like <span class="keyword">AngularJS</span> and <span class="keyword">Google Web Toolkit (GWT)</span>, to develop front-end interfaces with a focus on
+                <span class="keyword">UI/UX</span> to provide a great user experience through intuitive designs.
+            </p>
+
+            <p>
+                I've used the <span class="keyword">Java EE</span> stack with <span class="keyword">Hibernate ORM</span>, and <span class="keyword">REST/SOAP web services</span> to develop modular, maintainable, secure,
+                database-driven back-ends to support the myriad of business rules that govern enterprise operations. I've worked with various application servers including <span class="keyword">JBoss</span>, <span class="keyword">Websphere</span>, and <span class="keyword">Tomcat</span>, and database servers including <span class="keyword">DB2</span>, <span class="keyword">Oracle</span>, and <span class="keyword">MySQL</span>.
+            </p>
+
+            <p>
+                Some of the hats I've worn include <span class="keyword">full stack programmer</span>, systems analyst, consultant, <span class="keyword">team lead</span>, <span class="keyword">UI/UX analyst</span>, security analyst, and IT technician.
+            </p>
+
+            <p>
+                I've mentored teammates in agile, gave presentations on programming and best practices, and championed initiatives that led to lasting organization-wide changes.
+            </p>
+        </div>
+        <div class="col-xs-12 col-md-4 text-center">
+            <div class="row">
+                <div class="col-xs-6 col-md-12">
+                    <h3>Featured Project</h3>
+                    <img data-ng-click="showProject(project)"
+                         class="thumbnail img-responsive img-rounded center-block"
+                         data-ng-src="{{ baseImagePath + (project.images | filter:{isThumbnail: true})[0].url }}"
+                         data-popover="{{ project.blurb }}"
+                         data-popover-trigger="mouseenter"
+                         style="cursor: pointer;">
+                    <span data-ng-bind="project.name" style="font-weight: bold;"></span>
+                    <p>
+                        <a data-ng-if="project.liveLink"
+                           data-ng-href="{{ project.liveLink }}"
+                           class="btn btn-default"
+                           title="View a demo of this project.">
+                            <span class="fa fa-lg fa-desktop"></span>
+                        </a>
+                        <a data-ng-if="project.downloadLink"
+                           data-ng-href="{{ project.downloadLink }}"
+                           class="btn btn-default"
+                           title="Download an executable of this project.">
+                            <span class="fa fa-lg fa-download"></span>
+                        </a>
+                        <a data-ng-if="project.sourceLink"
+                           data-ng-href="{{ project.sourceLink }}"
+                           class="btn btn-default"
+                           title="View this project's source code on GitHub.">
+                            <span class="fa fa-lg fa-github"></span>
+                        </a>
+                    </p>
                 </div>
-                <br/>
-                <button data-ng-click="showProject(project)" class="btn btn-primary btn-lg stackable"><span class="fa fa-eye"></span> View Project</button>
+                <div class="col-xs-6 col-md-12">
+                    <h3>Latest Blog Post</h3>
+                    <button class="btn btn-link" data-ng-click="showPost(post)"><span data-ng-bind="post.name" style="font-weight: bold;"></span></button><br/>
+                    <span data-ng-bind="post.date"></span><br/>
+                    <span data-ng-bind="post.blurb"></span>
+                </div>
             </div>
         </div>
     </div>

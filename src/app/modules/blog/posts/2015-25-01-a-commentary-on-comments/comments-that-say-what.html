@@ -1,0 +1,74 @@
+<h3>Avoid Comments that Say What - Use Methods Instead</h3>
+<p>Some developers like to add comments outlining WHAT the code is doing:</p>
+<pre>
+private void play() {
+    //print greeting
+    String playerName = "Joseph";
+    String opponentName = "Bill the Computer";
+    System.out.println("Hello " + playerName + " I am " + opponentName);
+    System.out.println("Let's play a number game.");
+
+    while (true) {
+        //print input prompt
+        System.out.print("Please guess a number (max is 5):" );
+
+        //get guess
+        Random number = new Random();
+        int number2 = number.nextInt(5);
+        Scanner reader = new Scanner(System.in);
+        int guess = reader.nextInt();
+
+        //print results
+        if (guess == -1) { //quit
+            System.out.println("buhbye");
+            break;
+        }
+        else if (number2 == guess) { //winning
+            System.out.println("You guessed " + guess + " and I was thinking of " + number2);
+            System.out.println(meep + " you won!");
+        }
+        else if (number2 != guess) { //losing
+            System.out.println("You guessed " + guess + " and I was thinking of " + number2);
+            System.out.println("You lost loser");
+        }
+    }
+}
+</pre>
+
+<p>On the surface it seems easy to understand the code just by reading the comments. However, there are several pitfalls.<p>
+<p>One is that code changes. A comment that is accurate today may not be accurate tomorrow. It's an additional maintenance burden to make sure the comments are up to date and accurate.</p>
+<p>Second is that there is no guarantee that comments can be trusted. The 'get guess' comment in the example above is lying - it's also generating the random number that will be the answer.</p>
+
+<br/>
+<p>It would be easier to understand if these comments were turned into methods with well thought-out names:</p>
+<pre>
+        private void play() {
+          printGreeting();
+          while (true) {
+            printInputPrompt();
+            int guessedNumber = getUserGuess();
+            if (isQuitRequested(guessedNumber)) {
+                printGoodbye();
+                break;
+            }
+            int generatedNumber = generateRandomNumber();
+            printResults(playerName, guessedNumber, generatedNumber);
+        }
+    </pre>
+<p>Not only is it easier to understand WHAT the program is doing, it isolates you from having to deal with HOW the program is doing it.</p>
+<p>It also has the advantage of providing guarantees of when and where a step starts and ends. Because all of the fields and values used by a method are tightly encapsulated in it, you have a gurantee that they won't bleed over into unrelated steps.</p>
+<br/>
+<p>
+    There's definitely the possibility that the method names are lying. However, if a method doesn't produce the right result, you've narrowed it down and can ignore the unrelated methods.
+    With the commented code, there can be a bug in the method, and you would have no way to knowing where it was introduced without tracing it.
+</p>
+<p>
+    Maintenance-wise, method names can also go out of date, but I find that this rarely happens.
+    When a method starts doing something it shouldn't, programmers catch it fairly quickly because a method that lies to them is a lot more serious and detectable than a comment that lies.
+</p>
+<p>
+    Some people complain the code becomes longer as a result, but it is only by a few lines per method - well worth the ease of understanding.
+</p>
+<p>
+    The only unanswered criticism I know of is that using methods makes you have to jump around a lot in the code.
+</p>
