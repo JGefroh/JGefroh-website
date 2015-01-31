@@ -4,7 +4,6 @@ html {
 /*Prevents Navigation Bar from overlapping content*/
 body {
     padding-top: 50px;
-    min-width: 300px;
 }
 
 .splash-content {
