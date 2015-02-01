@@ -1,5 +1,5 @@
 (function () {
-    function BlogController ($scope, NavigationService, BlogService) {
+    function BlogController ($scope, $state, NavigationService, BlogService) {
         initialize();
         function initialize() {
             $scope.selectedPost = {};
@@ -33,6 +33,7 @@
         $scope.getPostWithUrl = function(url) {
             BlogService.getPostWithUrl(url).then(function(post) {
                 $scope.selectedPost = angular.copy(post);
+                $state.current.data.pageSection = $scope.selectedPost.name;
             })
         };
         $scope.isSelected = function(post) {
@@ -50,5 +51,5 @@
 
     angular
         .module('com.jgefroh.website.2015.blog', [])
-        .controller('BlogController', ['$scope', 'NavigationService', 'BlogService', BlogController]);
+        .controller('BlogController', ['$scope', '$state', 'NavigationService', 'BlogService', BlogController]);
 })();

@@ -21,11 +21,19 @@ angular
     .constant('baseImagePath', 'resources/images/');
 
 (function () {
-    function AppController ($rootScope, baseImagePath) {
+    function AppController ($rootScope, $state, $scope, baseImagePath) {
         $rootScope.baseImagePath = baseImagePath;
+
+        $scope.getPageTitle = function() {
+            if (!$state.current.data) {
+                return null;
+            }
+            var pageSection = $state.current.data.pageSection ? ' - ' + $state.current.data.pageSection : '';
+            return $state.current.data.pageTitle + pageSection;
+        };
     }
 
     angular
         .module('com.jgefroh.website.2015')
-        .controller('AppController', ['$rootScope', 'baseImagePath', AppController]);
+        .controller('AppController', ['$rootScope', '$state', '$scope', 'baseImagePath', AppController]);
 })();
