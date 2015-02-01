@@ -46,6 +46,7 @@ module.exports = function(grunt) {
             prod: {
                 files: [
                     {expand: true, cwd: 'src/', src: ['app/**/*.html'], dest: 'prod_dist/'},
+                    {expand: true, cwd: 'src/', src: ['app/**/*.json'], dest: 'prod_dist/'},
                     {expand: true, cwd: 'src/', src: ['app/data/*'], dest: 'prod_dist/'},
                     {expand: true, cwd: 'src/', src: ['app/resources/**/*'], dest: 'prod_dist/'}
                 ]
