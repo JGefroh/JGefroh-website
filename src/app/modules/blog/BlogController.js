@@ -11,6 +11,10 @@
             });
         }
 
+        $scope.isShowingSection = function(sectionName) {
+            return getSectionParameter() === sectionName;
+        };
+
         $scope.showPost = function(post) {
             NavigationService.goTo('/blog/posts/' + post.url);
         };

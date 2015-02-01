@@ -1,0 +1,17 @@
+<div>
+    <div data-ng-include data-src="'modules/blog/posts/2015-31-01-ten-thousand-feet-the-web-application-stack/the-stack.html'"></div>
+    <h3>Data Access</h3>
+    <p>
+        Tbe Data Access layer provides a consistent interface that allows your application to retrieve and manipulate data.
+    </p>
+
+    <label>Why the separation?</label>
+    <p>
+        Data access is in its own layer because the rest of the application shouldn't be concerned with where and how the data is stored. This way, logic to  the data isn't
+        mixed in with business logic, and if a data source changes, the entire application doesn't need to change - only the data access layer does.
+    </p>
+    <p>
+        By having data access separate, an application can actually use multiple data sources, such as a database and a mainframe system, to
+        manipulate data without any other part of the application knowing.
+    <p>
+</div>
