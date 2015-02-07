@@ -1,5 +1,11 @@
 [
   {
+    "name": "Passion Changes Everything",
+    "blurb": "What the Best Software Developers Have in Common",
+    "url": "2015-05-02-passion-changes-everything",
+    "date": "2015/02/05"
+  },
+  {
   "name": "Ten Thousand Feet - The Web Application Stack",
   "blurb": "A high level overview of what a typical web application architecture looks like.",
   "url": "2015-31-01-ten-thousand-feet-the-web-application-stack",
