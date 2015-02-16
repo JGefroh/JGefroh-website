@@ -6,22 +6,9 @@ body {
     padding-top: 50px;
 }
 
-.splash-content {
-    font-size: 1.2em;
-}
-
 .keyword {
     font-weight: bold;
 }
-
-.navigation {
-    color: white;
-}
-
-.navigationActive {
-     border-bottom: 1px solid red;
- }
-
 
 .resume-section-header {
     border-bottom: 1px solid gray;
@@ -45,6 +32,36 @@ body {
 
 .popover {
     border: 1px gray solid;
+}
+
+.small-hr {
+    margin: 0.25em;
+}
+
+/* Bavugatuib ('Navigation')
+-------------------------------------------------- */
+
+.navigation {
+    color: white;
+}
+
+.navigationActive {
+    border-bottom: 1px solid red;
+}
+
+
+/* Splash
+-------------------------------------------------- */
+.splash-jumbotron {
+    background: url('../images/bg.png');
+    color: white;
+}
+
+.splash-content {
+    font-size: 1.2em;
+}
+
+.splash-column-header {
 }
 
 /* Blog Styles

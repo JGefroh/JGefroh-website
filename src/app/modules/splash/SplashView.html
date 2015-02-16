@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron splash-jumbotron">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-4">
@@ -20,67 +20,52 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-8 splash-content">
-            <h3>About Me</h3>
-            <p>
-                I've been working at eWorld Enterprise Solutions since 2013 developing enterprise-scale solutions for a variety of clients.
-            </p>
-
-            <p>
-                I've used <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, <span class="keyword">Javascript</span>, and frameworks like <span class="keyword">AngularJS</span> and <span class="keyword">Google Web Toolkit (GWT)</span>, to develop front-end interfaces with a focus on
-                <span class="keyword">UI/UX</span> to provide a great user experience through intuitive designs.
-            </p>
-
-            <p>
-                I've used the <span class="keyword">Java EE</span> stack with <span class="keyword">Hibernate ORM</span>, and <span class="keyword">REST/SOAP web services</span> to develop modular, maintainable, secure,
-                database-driven back-ends to support the myriad of business rules that govern enterprise operations. I've worked with various application servers including <span class="keyword">JBoss</span>, <span class="keyword">Websphere</span>, and <span class="keyword">Tomcat</span>, and database servers including <span class="keyword">DB2</span>, <span class="keyword">Oracle</span>, and <span class="keyword">MySQL</span>.
-            </p>
-
-            <p>
-                I've mentored teammates in agile, gave presentations on programming and best practices, and championed initiatives that led to lasting organization-wide changes.
-            </p>
-
-            <p>
-                Some of the hats I've worn include <span class="keyword">full stack programmer</span>, systems analyst, consultant, <span class="keyword">team lead</span>, <span class="keyword">UI/UX analyst</span>, security analyst, and IT technician.
-            </p>
-        </div>
-        <div class="col-xs-12 col-md-4 text-center">
+        <div class="col-xs-12 splash-content">
             <div class="row">
-                <div class="col-xs-6 col-md-12">
-                    <h3>Featured Project</h3>
-                    <img data-ng-click="showProject(project)"
-                         class="thumbnail img-responsive img-rounded center-block"
-                         data-ng-src="{{ baseImagePath + (project.images | filter:{isThumbnail: true})[0].url }}"
-                         data-popover="{{ project.blurb }}"
-                         data-popover-trigger="mouseenter"
-                         style="cursor: pointer;">
-                    <span data-ng-bind="project.name" style="font-weight: bold;"></span>
+                <div class="col-xs-12 col-md-4">
+                    <h3 class="splash-column-header">What I Do</h3>
                     <p>
-                        <a data-ng-if="project.liveLink"
-                           data-ng-href="{{ project.liveLink }}"
-                           class="btn btn-default"
-                           title="View a demo of this project.">
-                            <span class="fa fa-lg fa-desktop"></span>
-                        </a>
-                        <a data-ng-if="project.downloadLink"
-                           data-ng-href="{{ project.downloadLink }}"
-                           class="btn btn-default"
-                           title="Download an executable of this project.">
-                            <span class="fa fa-lg fa-download"></span>
-                        </a>
-                        <a data-ng-if="project.sourceLink"
-                           data-ng-href="{{ project.sourceLink }}"
-                           class="btn btn-default"
-                           title="View this project's source code on GitHub.">
-                            <span class="fa fa-lg fa-github"></span>
-                        </a>
+                        I work at <a href="http://eworldes.com/">eWorld Enterprise Solutions</a> as a full stack developer, creating enterprise-scale solutions for a variety of clients.
                     </p>
                 </div>
-                <div class="col-xs-6 col-md-12">
-                    <h3>Latest Blog Post</h3>
-                    <button class="btn btn-link" data-ng-click="showPost(post)"><span data-ng-bind="post.name" style="font-weight: bold;"></span></button><br/>
-                    <span data-ng-bind="post.date"></span><br/>
-                    <span data-ng-bind="post.blurb"></span>
+                <div class="col-xs-12 col-md-4">
+                    <h3 class="splash-column-header">What I've Created</h3>
+                    <p>
+                        I've developed several enterprise systems for the State of Hawaii, including their federal award management system and their time and leave system.
+                    </p>
+                    <p>I also have a portfolio of <a href="#/projects">personal projects</a>.</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <h3 class="splash-column-header">Roles I've Played</h3>
+                    <p>
+                        Some of the hats I've worn include <span class="keyword">full stack programmer</span>, systems analyst, consultant, <span class="keyword">team lead</span>, <span class="keyword">UI/UX analyst</span>, security analyst, and IT technician.
+                    </p>
+                    <p>Check out my <a href="#/resume">resume</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 splash-content">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <br/>
+                    <h3 class="splash-column-header">What I Use</h3>
+                    <p>
+                        I've used <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, <span class="keyword">Javascript</span>, and frameworks like <span class="keyword">AngularJS</span> and <span class="keyword">Google Web Toolkit (GWT)</span>, to develop front-end interfaces with a focus on
+                        <span class="keyword">UI/UX</span> to provide a great user experience through intuitive designs.
+                    </p>
+                    <p>
+                        I've used the <span class="keyword">Java EE</span> stack with <span class="keyword">Hibernate ORM</span>, and <span class="keyword">REST/SOAP web services</span> to develop modular, maintainable, secure,
+                        database-driven back-ends to support the myriad of business rules that govern enterprise operations. I've worked with various application servers including <span class="keyword">JBoss</span>, <span class="keyword">Websphere</span>, and <span class="keyword">Tomcat</span>, and database servers including <span class="keyword">DB2</span>, <span class="keyword">Oracle</span>, and <span class="keyword">MySQL</span>.
+                    </p>
+                </div>
+                <div class="col-md-4 text-center hidden-xs">
+                    <br/>
+                    <br/>
+                    <span class="fa fa-code fa-4x" style="font-size: 12em;"></span>
                 </div>
             </div>
         </div>
