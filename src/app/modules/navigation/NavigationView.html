@@ -1,7 +1,7 @@
 <!--
 author: Joseph Gefroh
 -->
-<nav data-ng-controller="NavigationController as navCtrl" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav data-ng-controller="NavigationController as navCtrl" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -15,9 +15,8 @@ author: Joseph Gefroh
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li data-ng-class="{navigationActive:isActive('/splash')}"><a href="#/splash"><span class="fa fa-home"></span> Home</a></li>
                 <li data-ng-class="{navigationActive:isActive('/projects')}"><a href="#/projects"><span class="fa fa-folder-open"></span> Projects</a></li>
                 <li data-ng-class="{navigationActive:isActive('/resume')}"><a href="#/resume"><span class="fa fa-briefcase"></span> Resume</a></li>
                 <li data-ng-class="{navigationActive:isActive('/contact')}"><a href="#/contact"><span class="fa fa-envelope"></span> Contact</a></li>
