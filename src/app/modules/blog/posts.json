@@ -1,5 +1,11 @@
 [
   {
+    "name": "Adventures Deploying a Java EE Web Application Onto the Internet",
+    "blurb": "It was pretty involved.",
+    "url": "2015-22-02-setting-up-tomee-mysql",
+    "date": "2015/02/22"
+  },
+  {
     "name": "Passion Changes Everything",
     "blurb": "What the Best Software Developers Have in Common",
     "url": "2015-05-02-passion-changes-everything",

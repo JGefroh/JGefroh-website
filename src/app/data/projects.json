@@ -62,7 +62,12 @@
         ],
         "technologies": [
             {"name":"AngularJS", "type":"framework"},
+            {"name":"Java EE", "type":"framework"},
+            {"name":"REST Web Services", "type":"framework"},
+            {"name":"MySQL Database", "type":"framework"},
+            {"name":"TomEE", "type":"framework"},
             {"name":"Javascript", "type":"language"},
+            {"name":"Java", "type":"language"},
             {"name":"CSS", "type":"language"},
             {"name":"HTML", "type":"language"},
             {"name":"JSON", "type":"language"}
