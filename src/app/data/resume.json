@@ -39,11 +39,11 @@
             },
             {
                 "name": "AngularJS",
-                "blurb": "6 months of experience",
+                "blurb": "8 months of experience",
                 "imagePath": "resume/logo-angularjs.png",
                 "description": [
                     "Architected, designed, and developed several small-scale web applications using AngularJS.",
-                    "Currently developing several enterprise-scale web applications using an AngularJS front-end and REST back-end.",
+                    "Developed several enterprise-scale web applications using an AngularJS front-end and REST back-end.",
                     "Trained and mentored 6 other developers in learning the AngularJS framework and associated best practices"
                 ]
             },

@@ -32,9 +32,9 @@
     },
     {
         "name": "ToDoList",
-        "order": 1,
+        "order": -1,
         "dateStarted": "08/16/2014",
-        "dateCompleted": "09/07/2014",
+        "dateCompleted": "05/01/2015",
         "sourceLink": "http://www.github.com/jgefroh/todolist",
         "liveLink": "http://www.todolist.jgefroh.com",
         "blurb": "A personal time management/task tracking tool.",
@@ -48,11 +48,19 @@
         ],
         "description": {
             "sections": [
-                "ToDoList is a personal time tracking/task tracking application that made it easier to track what projects and time codes I billed to while at work.",
-                "AngularJS had just been proposed as a potential technology to use for a future project, so I built ToDoList as a way to learn how to use the framework. AngularJS has a really funky learning curve, but I managed to sift through vast amounts of information and learn what some of the best practices were and how the front-ends were architected.",
-                "My efforts paid off because the application was used to train the other developers in using the framework and jumpstart the development of other applications."
+                "ToDoList is a personal time and task management web application. Not only does it feature simple to-do-list functionality, it also provides task scheduling, planning, and time tracking capabilities. Because of the organizational power of its tag system, ToDoList is flexible enough to support users who need to do anything from tracking their grocery list to creating software feature release plans."
             ]
         },
+        "testimonials": [
+            {
+                "author": {
+                    "name": "Casey Cho",
+                    "org": "eWorld Enterprise Solutions",
+                    "title": "Business Analyst"
+                },
+                "text": "ToDoList is amazing! I've tried more than my share of productivity apps, nothing comes close to this one. While still maintaining a very clean interface, it is packed with just the features I would ever use and need when needing to get things done. Tagging todo items, grouping them by priority, subtasks, due dates, all implemented with the utmost of pragmatism and simplicity. Why I recommend this? I use (and have come to rely on this app) every day!"
+            }
+        ],
         "images": [
             {"url": "todolist/thumb.png", "isThumbnail": "true"},
             {"url": "todolist/1.png"},
@@ -75,7 +83,7 @@
     },
     {
         "name": "UIUX",
-        "order": 0,
+        "order": 1,
         "dateStarted": "01/11/2015",
         "liveLink": "http://www.uiux.jgefroh.com",
         "blurb": "A User Interface/User Experience guide and widget library using AngularJS.",
@@ -108,7 +116,7 @@
     {
         "name": "HOG - Highly Opinionated Generator",
         "isFeatured": true,
-        "order": -1,
+        "order": 0,
         "dateStarted": "01/18/2015",
         "sourceLink": "http://www.github.com/jgefroh/hog",
         "downloadLink": "https://github.com/JGefroh/hog/blob/master/hog-v0.0.4.jar?raw=true",

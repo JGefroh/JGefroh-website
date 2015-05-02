@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['src/app/**/*.js', 'src/app/**/*.html', 'src/app/**/*.css', '!**/*.min.js'],
+                files: ['src/app/**/*.json', 'src/app/**/*.js', 'src/app/**/*.html', 'src/app/**/*.css', '!**/*.min.js'],
                 tasks: ['dev']
             }
         }
