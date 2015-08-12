@@ -32,7 +32,7 @@
     },
     {
         "name": "ToDoList",
-        "order": -1,
+        "order": -2,
         "dateStarted": "08/16/2014",
         "dateCompleted": "05/01/2015",
         "sourceLink": "http://www.github.com/jgefroh/todolist",

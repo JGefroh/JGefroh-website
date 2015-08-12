@@ -49,6 +49,9 @@ body {
     border-bottom: 1px solid red;
 }
 
+.hamburger-text {
+  color: white;
+}
 
 /* Splash
 -------------------------------------------------- */

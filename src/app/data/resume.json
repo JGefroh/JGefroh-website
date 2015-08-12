@@ -39,7 +39,7 @@
             },
             {
                 "name": "AngularJS",
-                "blurb": "6 months of experience",
+                "blurb": "1 year of experience",
                 "imagePath": "resume/logo-angularjs.png",
                 "description": [
                     "Architected, designed, and developed several small-scale web applications using AngularJS.",
@@ -110,15 +110,23 @@
         "order": 1,
         "entries": [
             {
-                "name": "Full Stack Developer / Team Lead / Systems Analyst / Consultant",
-                "blurb": "eWorld Enterprise Solutions, Inc. | August 2013 - Present",
+                "name": "Full Stack Developer (Contractor)",
+                "blurb": "Various | August 2015 - Present",
+                "description": [
+                    "Develop web applications using the Ruby on Rails technology stack."
+                ]
+            },
+            {
+                "name": "Full Stack Developer / Team Lead (Systems Analyst / Consultant)",
+                "blurb": "eWorld Enterprise Solutions, Inc. | August 2013 - August 2015",
                 "imagePath": "resume/logo-eworldes.png",
                 "description": [
                     "Led a 4-member development team in creating enterprise web applications and middleware.",
                     "Architected, designed, and programmed several enterprise systems that are now in production.",
-                    "Experienced developing web applications, REST/SOAP web services, and mainframe modernization middleware.",
                     "Mentored junior developers, teaching them coding, best practices, technologies, and designs.",
-                    "Championed technologies and practices which were adopted as organizational standards."
+                    "Championed technologies and practices which were adopted as organizational standards.",
+                    "Developed two enterprise systems that were chosen by the State of Hawaii as best-of-breed solutions.",
+                    "Technologies included AngularJS, Google Web Toolkit, Java EE (JPA+CDI+EJB+JAXRS), WebSphere, JBoss, DB2, Oracle."
                 ]
             },
             {
@@ -135,7 +143,6 @@
             {
                 "name": "Computer Services Consultant",
                 "blurb": "Freelance | January 2006 - Present",
-                "imagePath": "resume/logo-freelance.png",
                 "description": [
                     "Provided independent computer services to dozens of long-term clients.",
                     "Consulted with clients and grave professional recommendations for technology purchases and decisions.",
