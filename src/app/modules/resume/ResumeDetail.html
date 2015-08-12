@@ -1,6 +1,7 @@
 <div class="row">
-    <div data-ng-if="detail.imagePath" class="col-xs-12 col-sm-3">
-        <img class="img-responsive img-rounded center-block"
+    <div class="col-xs-12 col-sm-3">
+        <img data-ng-if="detail.imagePath"
+             class="img-responsive img-rounded center-block"
              data-ng-src="{{ baseImagePath + detail.imagePath }}"
              style="margin-top: 24px;">
     </div>
