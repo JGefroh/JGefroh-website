@@ -35,7 +35,17 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-xs-12">
+            <div data-ng-repeat="testimonial in project.testimonials">
+                <div class="col-xs-8">
+                    <blockquote>
+                        <p data-ng-bind="testimonial.text"></p>
+                        <footer><span data-ng-bind="testimonial.author.name"></span>, <span data-ng-bind="testimonial.author.title"></span> at <span data-ng-bind="testimonial.author.org"></span></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
                 <div data-ng-repeat="section in project.description.sections">
                     <ul data-ng-if="section.isList">
                         <li data-ng-repeat="item in section.items"> {{ item }} </li>
