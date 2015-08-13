@@ -1,5 +1,11 @@
 [
   {
+    "name": "Leadership - Decisiveness",
+    "blurb": "The worst decision you can make is indecision.",
+    "url": "2015-12-08-leadership-decisiveness",
+    "date": "2015/08/12"
+  },
+  {
     "name": "Adventures Deploying a Java EE Web Application Onto the Internet",
     "blurb": "It was pretty involved.",
     "url": "2015-22-02-setting-up-tomee-mysql",
