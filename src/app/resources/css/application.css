@@ -49,12 +49,15 @@ body {
     border-bottom: 1px solid red;
 }
 
+.hamburger-text {
+  color: white;
+}
 
 /* Splash
 -------------------------------------------------- */
 .splash-jumbotron {
     background: url('../images/bg.png');
-    background-color: #0C1021;
+    background-color: rgb(8, 9, 38);
     color: white;
 }
 
