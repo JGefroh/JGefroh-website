@@ -1,5 +1,43 @@
 [
     {
+        "name": "Serenity",
+        "order": 0,
+        "dateStarted": "05/2015",
+        "sourceLink": "http://www.github.com/jgefroh/serenity",
+        "liveLink": "http://www.serenity.jgefroh.com",
+        "blurb": "A personal time management/task tracking tool for reactors.",
+        "statuses": [
+          {"name": "Personal"}
+        ],
+        "tags": [
+          "web"
+        ],
+        "description": {
+          "sections": [
+            "If ToDoList is a task/time management application for planners, Serenity is a task/time management application for reactors.",
+            "Serenity's idea is simple: put down what you're doing in the present moment, and let the application keep track of time you spent on it.",
+            "This way, you don't have to plan ahead, you just DO and look back on it later.",
+            "The backend was made in Ruby on Rails."
+          ]
+        },
+        "images": [
+            {"url": "serenity/thumb.png", "isThumbnail": "true"},
+            {"url": "serenity/1.png"},
+            {"url": "serenity/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Ruby on Rails", "type":"framework"},
+            {"name":"REST Web Services", "type":"framework"},
+            {"name":"MySQL Database", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"Ruby", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
         "name": "Core",
         "order": 3,
         "dateStarted": "05/2014",
@@ -37,7 +75,7 @@
         "dateCompleted": "05/01/2015",
         "sourceLink": "http://www.github.com/jgefroh/todolist",
         "liveLink": "http://www.todolist.jgefroh.com",
-        "blurb": "A personal time management/task tracking tool.",
+        "blurb": "A personal time management/task tracking tool for planners.",
         "statuses": [
             {"name": "Personal"},
             {"name": "Completed"},

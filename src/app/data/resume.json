@@ -6,18 +6,19 @@
         "entries": [
             {
                 "name": "Software Development (General)",
+                "blurb": "3 years of professional experience",
                 "imagePath": "resume/logo-software.png",
                 "description": [
-                    "Experienced developing software both as a full stack developer and as a team lead.",
-                    "Developed SPA web applications, REST/SOAP web services, and modular utilities using various technologies including Java EE, AngularJS, and Google Web Toolkit.",
+                    "Experienced as a technical lead, full stack software engineer, and UX analyst.",
+                    "Developed highly regarded enterprise software systems and a slew of personal projects including web applications, code generators, and simulation frameworks.",
+                    "Delivered production systems using technologies including Ruby on Rails, Java EE, AngularJS, and Google Web Toolkit.",
                     "Experienced leading and mentoring teams of programmers on various projects.",
-                    "Knowledge of development best practices, methodologies, tools, and techniques.",
-                    "Multi-disciplined in areas including programming, databases, IT, security, and UI/UX."
+                    "Knowledge of development best practices, methodologies, tools, and techniques."
                 ]
             },
             {
                 "name": "Java / Java EE",
-                "blurb": "5 years of experience",
+                "blurb": "3 years of professional experience",
                 "imagePath": "resume/logo-java.png",
                 "description": [
                     "Developed enterprise web applications, middleware/legacy system adapters, and a simulation/game framework.",
@@ -27,8 +28,27 @@
                 ]
             },
             {
+                "name": "AngularJS",
+                "blurb": "2 years of professional experience",
+                "imagePath": "resume/logo-angularjs.png",
+                "description": [
+                    "Developed and delivered an enterprise-scale web application using an AngularJS front-end and REST back-end that was regarded by the State of Hawaii as a best-of-breed ERP replacement solution.",
+                    "Architected, designed, and developed several personal web applications using AngularJS as the front-end.",
+                    "Trained and mentored 6 other developers in learning the AngularJS framework and associated best practices."
+                ]
+            },
+            {
+                "name": "Ruby on Rails",
+                "blurb": "3 months of professional experience",
+                "imagePath": "resume/logo-rails.png",
+                "description": [
+                    "Currently developing an event platform with features including ticket sales, social media, collaborative tools, interactive dashboards, and location geocoding.",
+                    "Developed personal web application using Rails as a REST backend."
+                ]
+            },
+            {
                 "name": "SQL",
-                "blurb": "3 years of experience",
+                "blurb": "3 years of professional experience",
                 "imagePath": "resume/logo-sql.png",
                 "description": [
                     "Designed and implemented normalized, relational database architectures for multiple applications.",
@@ -38,38 +58,29 @@
                 ]
             },
             {
-                "name": "AngularJS",
-                "blurb": "1 year of experience",
-                "imagePath": "resume/logo-angularjs.png",
-                "description": [
-                    "Architected, designed, and developed several small-scale web applications using AngularJS.",
-                    "Currently developing several enterprise-scale web applications using an AngularJS front-end and REST back-end.",
-                    "Trained and mentored 6 other developers in learning the AngularJS framework and associated best practices"
-                ]
-            },
-            {
                 "name": "Google Web Toolkit (GWT)",
-                "blurb": "1 year of experience",
+                "blurb": "1 year of professional experience",
                 "imagePath": "resume/logo-gwt.png",
                 "description": [
-                    "Architected, designed, and developed an enterprise record management system with a GWT front-end.",
+                    "Architected, designed, and developed an enterprise record management system with a GWT front-end that was regarded by the State of Hawaii as a best-of-breed ERP replacement solution.",
                     "Created reusable widget libraries used to provide standardized functionality and look-and-feel across multiple web applications.",
                     "Trained and mentored other developers in understanding the GWT framework and associated best practices."
                 ]
             },
             {
                 "name": "Web Technologies",
-                "blurb": "5 Years of experience",
+                "blurb": "3 years of professional experience",
                 "imagePath": "resume/logo-html.png",
                 "description": [
-                    "Designed and implemented multiple web static web sites using HTML and CSS.",
+                    "Designed and implemented multiple web static web sites using HTML and CSS (SASS/SCSS).",
                     "Developed several dynamic enterprise web applications using HTML/CSS/JS front-ends and Java backends.",
-                    "Experienced with full stack development involving Javascript front-ends and REST/SOAP web service backends."
+                    "Experienced with full stack development involving Javascript front-ends and REST/SOAP web service backends.",
+                    "Implemented build scripts and integrated tools including Gulp, Grunt, SASS preprocessors, etc. into daily workflow."
                 ]
             },
             {
                 "name": "Python",
-                "blurb": "1 year of experience",
+                "blurb": "6 months of professional experience",
                 "imagePath": "resume/logo-python.png",
                 "description": [
                     "Programmed software including client-server applications and a web service",
@@ -110,27 +121,29 @@
         "order": 1,
         "entries": [
             {
-                "name": "Full Stack Developer (Contractor)",
-                "blurb": "Various | August 2015 - Present",
+                "name": "Implementation Lead (title: Software Engineer)",
+                "blurb": "HNL.IO | August 2015 - Present",
+                "imagePath": "resume/logo-hnlio.png",
                 "description": [
-                    "Develop web applications using the Ruby on Rails technology stack."
+                    "Lead the implementation of an event/collaboration platform using Ruby on Rails that will bring together event planners, service providers, venue owners, and attendees from multiple industries.",
+                    "Promote and expand the technology industry in Hawaii by creating and acting on opportunities for collaboration with other industries."
                 ]
             },
             {
-                "name": "Full Stack Developer / Team Lead (Systems Analyst / Consultant)",
+                "name": "Technical Lead / Software Engineer (title: Systems Analyst)",
                 "blurb": "eWorld Enterprise Solutions, Inc. | August 2013 - August 2015",
                 "imagePath": "resume/logo-eworldes.png",
                 "description": [
-                    "Led a 4-member development team in creating enterprise web applications and middleware.",
-                    "Architected, designed, and programmed several enterprise systems that are now in production.",
+                    "Led a 4-member development team in creating enterprise-scale web applications using a variety of technologies.",
+                    "Delivered 2 major applications that were recognized as best-of-breed solutions by the State of Hawaii.",
+                    "Consulted as a subject-matter expert by other project teams in the organization for UX, architecture, and design.",
                     "Mentored junior developers, teaching them coding, best practices, technologies, and designs.",
-                    "Championed technologies and practices which were adopted as organizational standards.",
-                    "Developed two enterprise systems that were chosen by the State of Hawaii as best-of-breed solutions.",
+                    "Championed technologies and practices which were adopted as organizational standards, including agile, automation, and professional development.",
                     "Technologies included AngularJS, Google Web Toolkit, Java EE (JPA+CDI+EJB+JAXRS), WebSphere, JBoss, DB2, Oracle."
                 ]
             },
             {
-                "name": "Technical Analyst Assistant",
+                "name": "IT Technician (title: Technical Analyst Assistant)",
                 "blurb": "Hawaii Pacific University | January 2011 - February 2013",
                 "imagePath": "resume/logo-hawaiipacificuniversity.png",
                 "description": [

@@ -57,6 +57,7 @@ body {
 -------------------------------------------------- */
 .splash-jumbotron {
     background: url('../images/bg.png');
+    background-color: rgb(8, 9, 38);
     color: white;
 }
 
