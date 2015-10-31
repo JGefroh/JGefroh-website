@@ -54,7 +54,7 @@
                     "Designed and implemented normalized, relational database architectures for multiple applications.",
                     "Developed database-driven applications.",
                     "Wrote and tested injection-safe queries and prepared statements for multiple applications. ",
-                    "Familiar with server technologies including Oracle PL/SQL, IBM DB2, MySQL, and Apache Derby."
+                    "Familiar with server technologies including PostgreSQL, Oracle PL/SQL, IBM DB2, MySQL, and Apache Derby."
                 ]
             },
             {
@@ -72,10 +72,10 @@
                 "blurb": "3 years of professional experience",
                 "imagePath": "resume/logo-html.png",
                 "description": [
-                    "Designed and implemented multiple web static web sites using HTML and CSS (SASS/SCSS).",
+                    "Designed and implemented multiple web static web sites using HTML and CSS (Sass/SCSS).",
                     "Developed several dynamic enterprise web applications using HTML/CSS/JS front-ends and Java backends.",
                     "Experienced with full stack development involving Javascript front-ends and REST/SOAP web service backends.",
-                    "Implemented build scripts and integrated tools including Gulp, Grunt, SASS preprocessors, etc. into daily workflow."
+                    "Implemented build scripts and integrated tools including Gulp, Grunt, Broccoli, SASS preprocessors, etc. into daily workflow."
                 ]
             },
             {
@@ -121,12 +121,14 @@
         "order": 1,
         "entries": [
             {
-                "name": "Implementation Lead (title: Software Engineer)",
-                "blurb": "HNL.IO | August 2015 - Present",
+                "name": "Co-Owner / Software Engineer",
+                "blurb": "hnl.io | August 2015 - Present",
                 "imagePath": "resume/logo-hnlio.png",
                 "description": [
-                    "Lead the implementation of an event/collaboration platform using Ruby on Rails that will bring together event planners, service providers, venue owners, and attendees from multiple industries.",
-                    "Promote and expand the technology industry in Hawaii by creating and acting on opportunities for collaboration with other industries."
+                    "Lead the implementation of an event hosting and community network platform using Ruby on Rails and AngularJS.",
+                    "Direct growth of the organization by balancing stakeholder needs with capabilities and resources.",
+                    "Ensure ROI by defining, managing, and prioritzing feature sets and monetization efforts.",
+                    "Generate opportunities to obtain funding for future endeavors and development efforts."
                 ]
             },
             {
