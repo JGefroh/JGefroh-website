@@ -21,7 +21,7 @@ angular
     .constant('baseImagePath', 'resources/images/');
 
 (function () {
-    function AppController ($rootScope, $state, $scope, baseImagePath) {
+    function AppController ($window, $rootScope, $state, $scope, baseImagePath) {
         $rootScope.baseImagePath = baseImagePath;
 
         $scope.getPageTitle = function() {
@@ -31,9 +31,13 @@ angular
             var pageSection = $state.current.data.pageSection ? ' - ' + $state.current.data.pageSection : '';
             return $state.current.data.pageTitle + pageSection;
         };
+
+        $rootScope.$on('$stateChangeSuccess', function() {
+          $window.scrollTo(0,0);
+        });
     }
 
     angular
         .module('com.jgefroh.website.2015')
-        .controller('AppController', ['$rootScope', '$state', '$scope', 'baseImagePath', AppController]);
+        .controller('AppController', ['$window', '$rootScope', '$state', '$scope', 'baseImagePath', AppController]);
 })();
