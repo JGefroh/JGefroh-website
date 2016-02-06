@@ -33,13 +33,14 @@
                 "imagePath": "resume/logo-angularjs.png",
                 "description": [
                     "Developed and delivered an enterprise-scale web application using an AngularJS front-end and REST back-end that was regarded by the State of Hawaii as a best-of-breed ERP replacement solution.",
+                    "Develope event platform and social network platform SaaS product.",
                     "Architected, designed, and developed several personal web applications using AngularJS as the front-end.",
                     "Trained and mentored 6 other developers in learning the AngularJS framework and associated best practices."
                 ]
             },
             {
                 "name": "Ruby on Rails",
-                "blurb": "3 months of professional experience",
+                "blurb": "7 months of professional experience",
                 "imagePath": "resume/logo-rails.png",
                 "description": [
                     "Currently developing an event platform with features including ticket sales, social media, collaborative tools, interactive dashboards, and location geocoding.",
@@ -127,8 +128,9 @@
                 "description": [
                     "Lead the implementation of an event hosting and community network platform using Ruby on Rails and AngularJS.",
                     "Direct growth of the organization by balancing stakeholder needs with capabilities and resources.",
-                    "Ensure ROI by defining, managing, and prioritzing feature sets and monetization efforts.",
-                    "Generate opportunities to obtain funding for future endeavors and development efforts."
+                    "Manage product direction by defining and prioritizing feature sets and monetization efforts.",
+                    "Generate opportunities to obtain funding for future endeavors and development efforts.",
+                    "Meet with users and community leaders to obtain and analyze their requirements for the product."
                 ]
             },
             {

@@ -42,6 +42,14 @@ module.exports = function(grunt) {
                 dest: 'src/app/jgefroh_website_2015.min.js'
             }
         },
+        clean: {
+            options: {
+              'no-write': false,
+              force: true
+
+            },
+            prod: ['prod_dist/**/*', 'grunt_temp/**/*', 'prod_dist/app']
+        },
         copy: {
             prod: {
                 files: [
@@ -55,8 +63,34 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['src/app/**/*.json', 'src/app/**/*.js', 'src/app/**/*.html', 'src/app/**/*.css', '!**/*.min.js'],
-                tasks: ['dev']
+                tasks: ['dev'],
+                options: {
+                    livereload: true
+                }
             }
+        },
+        connect: {
+         server: {
+             options: {
+                 port: 9999,
+                 hostname: 'localhost',
+                 base: 'src/app/',
+                 keepalive: false,
+                 open: true,
+                 livereload: true,
+                 middleware: function (connect, options) {
+                     var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;
+                     return [
+                         // Include the proxy first
+                         proxy,
+                         // Serve static files.
+                         connect.static('src/app'),
+                         // Make empty directories browsable.
+                         connect.directory('src/app')
+                     ];
+                 }
+             },
+          }
         }
     });
 
@@ -67,7 +101,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-connect'); //test
+    grunt.loadNpmTasks('grunt-connect-proxy');
     grunt.registerTask('default', 'dev');
     grunt.registerTask('prod', ['concat', 'uglify:prod', 'copy:prod']);
     grunt.registerTask('dev', ['concat', 'uglify:dev']);
+    grunt.registerTask('server', ['clean', 'configureProxies:server', 'connect:server', 'watch']);
 };
