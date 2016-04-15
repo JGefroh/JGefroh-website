@@ -1,4 +1,5 @@
 .idea
+public
 /src/app/jgefroh_website_2015.min.js
 prod_dist
 src/app/modules/**/*.min.js
@@ -6,3 +7,4 @@ src/app/*.min.js
 node_modules
 grunt_temp
 .DS_Store
+bower_components

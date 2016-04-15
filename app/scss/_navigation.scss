@@ -1,0 +1,36 @@
+.main-content {
+  padding-top: 150px;
+}
+
+.navigation {
+  position: fixed;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid $color-light-grey;
+
+  .name {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  a {
+    color: black;
+    margin: 0 1rem;
+    display: inline-block;
+    text-align: center;
+      .fa-stack-2x {
+        color: $color-blue-flat-white;
+      }
+  }
+  a:hover {
+    text-decoration: none;
+    .fa-stack-2x {
+      color: $color-yellow-flat-light;
+      transition: 0.2s all;
+    }
+  }
+  .active .fa-stack-2x {
+    color: $color-orange-flat-light;
+  }
+}

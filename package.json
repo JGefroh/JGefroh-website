@@ -1,16 +1,24 @@
 {
-  "name": "jgefroh_website_2015",
-  "version": "0.0.0",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-concat": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "~0.5.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-connect-proxy": "^0.2.0",
-    "grunt-contrib-connect": "^0.10.1"
+  "name": "jgefroh-website",
+  "scripts": {
+    "IMPORTANT_DO_NOT_IGNORE": "If you remove --production, the source code will not be minified.",
+    "start": "./node_modules/.bin/bower install && ./node_modules/.bin/brunch build --production"
+  },
+  "engines": {
+    "node": "5.2.0"
+  },
+  "dependencies": {
+    "angular-hint": "0.3.4",
+    "assetsmanager-brunch": "^1.8.1",
+    "auto-reload-brunch": ">= 1.0 < 1.9",
+    "bower": "^1.4.1",
+    "brunch": "^2.1.1",
+    "clean-css-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9",
+    "express": "^4.13.3",
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "replace-brunch": "^1.0.0",
+    "sass-brunch": "^1.9.2",
+    "uglify-js-brunch": ">= 1.0 < 1.9"
   }
 }

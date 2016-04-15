@@ -1,0 +1,12 @@
+
+.contact-section {
+  background-color: $color-contact-background;
+  color: white;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: $subtle;
+    transition: all 0.2s;
+  }
+}

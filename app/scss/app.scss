@@ -1,0 +1,154 @@
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'base/breakpoints';
+@import 'base/variables';
+@import 'base/base';
+
+
+@import 'base/buttons';
+@import 'base/collapsible';
+@import 'base/devices';
+
+@import 'navigation';
+@import 'about';
+@import 'blog';
+@import 'contact';
+@import 'experience';
+@import 'education';
+@import 'projects';
+@import 'skills';
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.byline {
+  margin: 0;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.jumbotron-content {
+  text-align: center;
+}
+
+.blurb {
+  @include span-columns(3);
+  @include media($mobile) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  @include media($tiny) {
+    @include span-columns(12);
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+    color: $subtle;
+  }
+}
+
+
+.avatar {
+  border-radius: 50%;
+  border: 3px white solid;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.progress-bar {
+  margin-bottom: 0.75rem;
+  background-color: $color-white-flat-light;
+  width: 100%;
+  .progress {
+    background-color: $color-red-flat-light;
+  }
+
+  @for $i from 1 through 100 {
+    @if $i%5 == 0 {
+      .progress-#{$i} {
+        transition: all 5s;
+        width: #{$i}% !important;
+      }
+    }
+  }
+}
+
+.image-with-text {
+  margin: 2rem 0;
+  @include row();
+  .image {
+    @include span-columns(4);
+    padding-right: 1rem;
+  }
+  .text {
+    @include span-columns(8);
+    @include omega();
+  }
+}
+
+
+
+.main-jumbotron {
+  color: $color-white-flat-light;
+  background-color: $color-name-background;
+  box-shadow: 0px 1px 2px $color-name-background;
+  h1 {
+    padding: 1rem;
+    margin: 5rem 0;
+  }
+}
+
+
+.testimonials-section {
+  background-color: $color-testimonials-background;
+  .image-with-text {
+    .image {
+      @include span-columns(2);
+      @include media($mobile) {
+        @include shift(3);
+        @include span-columns(6);
+        margin-bottom: 1rem;
+      }
+    }
+    .text {
+      @include span-columns(10);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+    }
+    .name {
+      font-weight: bold;
+      @include media($mobile) {
+        text-align: center;
+      }
+    }
+    .position {
+      color: $color-grey;
+      font-weight: normal;
+
+      @include media($mobile) {
+        text-align: center;
+      }
+    }
+  }
+}
