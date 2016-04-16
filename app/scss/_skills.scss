@@ -1,0 +1,28 @@
+.skills-section {
+  background-color: $color-skills-background;
+  .tech-skills {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+    .subtext {
+      color: $subtle;
+      float: right;
+    }
+  }
+  .soft-skills {
+    @include span-columns(6);
+
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+    .subtext {
+      color: $subtle;
+      float: right;
+    }
+    @include omega;
+  }
+}

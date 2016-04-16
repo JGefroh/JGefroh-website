@@ -1,0 +1,39 @@
+<div>
+    <p>It's important that everyone involved in a software project understands how it is structured.</p>
+
+    <br/>
+
+    <h4>Why?</h4>
+    <p>
+        Junior developers should understand what piece they are working on and how their module fits into the rest of the application.
+        With this knowledge, they can report interface/implementation problems early on as well as make better decisions regarding the
+        implementation so that their decisions are aligned with the spirit of the rest of the application.
+    </p>
+
+    <p>Project managers and business analysts should also understand the architecture.
+       They can use it to identify what might get in the way of the solution being built and
+       work on removing those obstacles early on so that success is more likely. They can also manage the expectations
+       of the client so that they understand what is and isn't possible. By doing this, they can see how the project fits
+       into the overall strategy of the organization and provide thought leadership on what next steps to take.
+    </p>
+
+    <br/>
+
+    <h4>The Stack</h4>
+    <p>
+        Today's modern web applications are generally structured as follows:
+    </p>
+    <div class="row">
+        <div class="col-xs-12">
+            <div data-ng-include data-src="'/posts/2015-31-01-ten-thousand-feet-the-web-application-stack/the-stack.html'"></div>
+        </div>
+    </div>
+
+
+    <p>
+        One key thing to note is that knowledge of other layers is unidirectional. The layers below should not know about the layers above. This allows layers
+        to be changed and even swapped out entirely without affecting the other parts of the stack. For example, the front-end can be completely rewritten from
+        a JQuery front-end to an AngularJS front-end without affecting any other part of the application. Data Storage can change from a file system
+        to a database and only the data access layer would need to change.
+    </p>
+</div>

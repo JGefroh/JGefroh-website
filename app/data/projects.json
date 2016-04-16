@@ -1,0 +1,747 @@
+[
+    {
+        "id": 21,
+        "name": "hnl.io",
+        "order": -10,
+        "dateStarted": "08/2015",
+        "liveLink": "https://hnl.io",
+        "blurb": "An event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
+        "description": {
+            "sections": [
+                "hnl.io is an event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
+                "Its curated event listing ensures you never miss another tech event again, and the unified calendar allows organizers to find the perfect time slots for their events. hnl.io's extensive community features lets industry veterans and up-and-coming talent network and build professional relationships centered around a shared passion for tech. Students get a leg up in the professional world through valuable connections and real-world exposure, and established professionals can keep their skills and networks up-to-date.",
+                "As the co-owner of the startup, I led the team in developing the platform, managed the direction of the product and the growth of the company, and pursued business development and outreach opportunities."
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Ruby on Rails", "type":"framework"},
+          {"name":"REST Web Services", "type":"framework"},
+          {"name":"PostgreSQL Database", "type":"framework"},
+          {"name":"Redis", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"Ruby", "type":"language"},
+          {"name":"CSS / Sass", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
+        "images": [
+            {"url": "hnlio/thumb.jpg", "isThumbnail": "true"}
+        ]
+    },
+    {
+        "id": 20,
+        "name": "TLS",
+        "order": -1,
+        "dateStarted": "11/2013",
+        "dateCompleted": "11/2014",
+        "blurb": "TLS saves thousands of man-hours annualy by simplying and automating timesheet and leave tracking. It won recognition as a best-of-breed ERP replacement solution.",
+        "description": {
+            "sections": [
+                "I was the principal programmer of the Time and Leave System, an HR/Payroll/Project Management system that replaced and modernized an aging IBM Lotus Domino system.",
+                "TLS saves thousands of man-hours annually by simplying and automating timesheet and leave tracking. It won recognition as a best-of-breed ERP replacement solution.",
+                "TLS's project management feature allowed managers to create time codes and track employee time expenditures on projects and subprojects. Hours expended on a project could be captured and compared against estimates from a top-down or bottom-up perspective.",
+                "Many of its major components were configurable by administrators, allowing the application to respond to quickly changing business rules surrounding employee leave time. It had a fully configurable user administration and role-based permission system that could be specified at custom organizational levels to emulate the State's departmental hierarchies."
+
+
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Java EE", "type":"framework"},
+          {"name":"REST Web Services", "type":"framework"},
+          {"name":"DB2 Database", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
+        "images": [
+            {"url": "tls/thumb.jpg", "isThumbnail": "true"}
+        ]
+    },
+    {
+        "id": 19,
+        "name": "FAMS",
+        "order": 0,
+        "dateStarted": "11/2013",
+        "dateCompleted": "11/2014",
+        "blurb": "I was the tech lead of FAMS, an enterprise web application that helps the State of Hawaii track billions of dollars in incoming federal awards, allowing them to accurately audit expenditures. It won recognition as a best-of-breed ERP replacement solution.",
+        "description": {
+            "sections": [
+                "I was the tech lead of a team of 4 for the Federal Award Management System, an enterprise web application that helps the State of Hawaii track billions of dollars in incoming federal awards, allowing them to accurately audit expenditures. It won recognition as a best-of-breed ERP replacement solution.",
+                "FAMS allowed the State to track incoming federal grants throughout their legislative and expenditure lifecycle. It offered the ability to track monetary awards down to the subrecipient or account level, and provided documentation and an audit trail of any changes to the award, including monetary amount changes or recipient modifications.",
+                "Its centralized award repository allowed department heads and other users to immediately see the status of an award or search on key terms. It was built on top of a financial datamart, which allowed it to poll important data and gave it the capability to compare encumbered amounts to actual expenditures from accounts."
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"Google Web Toolkit", "type":"framework"},
+          {"name":"Java EE", "type":"framework"},
+          {"name":"DB2 Database", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
+        "images": [
+            {"url": "fams/thumb.jpg", "isThumbnail": "true"}
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Serenity",
+        "order": 5,
+        "dateStarted": "05/2015",
+        "sourceLink": "http://www.github.com/jgefroh/serenity",
+        "liveLink": "http://www.serenity.jgefroh.com",
+        "blurb": "A personal time management/task tracking tool for reactors.",
+        "statuses": [
+          {"name": "Personal"}
+        ],
+        "tags": [
+          "web"
+        ],
+        "description": {
+          "sections": [
+            "If ToDoList is a task/time management application for planners, Serenity is a task/time management application for reactors.",
+            "Serenity's idea is simple: put down what you're doing in the present moment, and let the application keep track of time you spent on it.",
+            "This way, you don't have to plan ahead, you just DO and look back on it later.",
+            "The backend was made in Ruby on Rails."
+          ]
+        },
+        "images": [
+            {"url": "serenity/thumb.png", "isThumbnail": "true"},
+            {"url": "serenity/1.png"},
+            {"url": "serenity/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Ruby on Rails", "type":"framework"},
+            {"name":"REST Web Services", "type":"framework"},
+            {"name":"MySQL Database", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"Ruby", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Core",
+        "order": 3,
+        "dateStarted": "05/2014",
+        "sourceLink": "http://www.github.com/jgefroh/core",
+        "blurb": "A component/entity simulation/game framework.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "java",
+            "api"
+        ],
+        "description": {
+            "sections": [
+                "Core is a simulation/game framework I developed to assist me in making games. It is a component based entity system, which scraps traditional object oreinted hierarchies in favor of a composition-based approach that defines entities through their component makeup.",
+                "These components are accessed and their data manipulated by a sequence of systems during the game loop. Core is at the center of this and acts as the mediator and controller powering these systems and exchanges.",
+                "Working on this framework has been a fun and engaging learning experience."
+            ]
+        },
+        "images": [
+            {"url": "core/thumb.png", "isThumbnail": "true"},
+            {"url": "core/1.png"},
+            {"url": "core/2.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 16,
+        "name": "ToDoList",
+        "order": -2,
+        "dateStarted": "08/16/2014",
+        "dateCompleted": "05/01/2015",
+        "sourceLink": "http://www.github.com/jgefroh/todolist",
+        "liveLink": "http://www.todolist.jgefroh.com",
+        "blurb": "A personal time management/task tracking tool for planners.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"},
+            {"name": "In Production"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "ToDoList is a personal time and task management web application. Not only does it feature simple to-do-list functionality, it also provides task scheduling, planning, and time tracking capabilities. Because of the organizational power of its tag system, ToDoList is flexible enough to support users who need to do anything from tracking their grocery list to creating software feature release plans."
+            ]
+        },
+        "testimonials": [
+            {
+                "author": {
+                    "name": "Casey Cho",
+                    "org": "eWorld Enterprise Solutions",
+                    "title": "Business Analyst"
+                },
+                "text": "ToDoList is amazing! I've tried more than my share of productivity apps, nothing comes close to this one. While still maintaining a very clean interface, it is packed with just the features I would ever use and need when needing to get things done. Tagging todo items, grouping them by priority, subtasks, due dates, all implemented with the utmost of pragmatism and simplicity. Why I recommend this? I use (and have come to rely on this app) every day!"
+            }
+        ],
+        "images": [
+            {"url": "todolist/thumb.png", "isThumbnail": "true"},
+            {"url": "todolist/1.png"},
+            {"url": "todolist/2.png"},
+            {"url": "todolist/3.png"},
+            {"url": "todolist/4.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Java EE", "type":"framework"},
+            {"name":"REST Web Services", "type":"framework"},
+            {"name":"MySQL Database", "type":"framework"},
+            {"name":"TomEE", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"Java", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 15,
+        "name": "UIUX",
+        "order": 1,
+        "dateStarted": "01/11/2015",
+        "liveLink": "http://www.uiux.jgefroh.com",
+        "blurb": "A User Interface/User Experience guide and widget library using AngularJS.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "In Production"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "UI/UX is a project I've had in my mind for a long time. I'm greatly interested in the subject of User Interface/User Experience and I love learning ways to make programs easier to use. I've always wanted to create a site demoing some of the knowledge and theories out there.",
+                "It also gave me the opportunity to work on a reusable widget library that I can use in my other AngularJS projects."
+            ]
+        },
+        "images": [
+            {"url": "uiux/thumb.png", "isThumbnail": "true"},
+            {"url": "uiux/1.png"},
+            {"url": "uiux/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 14,
+        "name": "HOG - Highly Opinionated Generator",
+        "isFeatured": true,
+        "order": 0,
+        "dateStarted": "01/18/2015",
+        "sourceLink": "http://www.github.com/jgefroh/hog",
+        "downloadLink": "https://github.com/JGefroh/hog/blob/master/hog-v0.0.4.jar?raw=true",
+        "blurb": "A code generator that generates a Java EE backend (REST Endpoint, Manager, DAO Layer, Entity) and AngularJS CRUD front-end for a given domain model.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "In Production"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "HOG, the Highly Opinionated Generator, is a code generator that automatically stubs out the backend for a domain object. This lets me quickly develop prototypes and get started on implementing business logic instead of boilerplate code.",
+                "HOG is currently able to generate a full REST endpoint, a manager layer with CRUD operations, a DAO layer, and a properly annotated JPA Entity, albeit geared towards use in non-ideal conditions.",
+                "Included with HOG is PIG, the Practical Interface Generator. PIG is currently able to generate a barebones AngularJS 1.2 interface that allows for CRUD operations and is compatible with code generated by HOG.",
+                "I initially used HOG to practice a different coding style where everything was strongly typed and no primitives were passed. I refactored to a simpler style because there was a lot of overhead without much benefit in the original style."
+            ]
+        },
+        "images": [
+            {"url": "hog/thumb.png", "isThumbnail": "true"},
+            {"url": "hog/1.png"},
+            {"url": "hog/2.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Swing", "type":"framework"}
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Last Stand",
+        "order": 3,
+        "dateStarted": "06/2014",
+        "sourceLink": "http://www.github.com/jgefroh/core-last-stand",
+        "downloadLink": "http://github.com/JGefroh/Core-Last-Stand/blob/master/core-last-stand-0.0.16-win.jar?raw=true",
+        "blurb": "A 2D side-scrolling arcade shooter.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "Last Stand is a 2D side scrolling shooter that I made using my Core framework.",
+                "The purpose of the project was to further test the capabilities of Core by creating a more complex game experience. It really helped me improve the framework by showing me several areas where I was able to improve Core's base functionality."
+            ]
+        },
+        "images": [
+            {"url": "last-stand/thumb.png", "isThumbnail": "true"},
+            {"url": "last-stand/1.png"},
+            {"url": "last-stand/2.png"}
+        ],
+        "technologies": [
+            {"name":"Core", "type":"framework"},
+            {"name":"LWJGL", "type":"framework"},
+            {"name":"jackson", "type":"framework"},
+            {"name":"Java", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Physician License Status Service",
+        "order": 4,
+        "dateStarted": "2012",
+        "blurb": "A license data retrieval API.",
+        "statuses": [
+            {"name": "School"},
+            {"name": "Cancelled"}
+        ],
+        "tags": [
+            "python",
+            "api"
+        ],
+        "description": {
+            "sections": [
+                "The Physician License Status Service (PLSS) is a team project I worked on as primary programmer/secondary project manager for a project management course. It was a part of the State of Hawaii's health transformation initiative, and intention was to create an API to facilitate the rapid transfer of information amongst physicians, insurers, and other interested third parties. It is effectively an API adapter that third parties can use to access a state database of license holders and do batch checks to see if licenses are in good standing or not.",
+                "The PLSS API was intended to improve information exchange amongst care providers by decreasing the amount of time required before the status of a licensee could be verified. When a doctor requests patient information to provide care for a patient, he or she would not need to wait as long to receive this information because their license status could be verified by the holder of the information, and not through a chain of third parties and state agencies. ",
+                "We developed the proof-of-concept and a fully functional prototype in Python 3, along with proper documentation and test cases. The API allowed for single and batch license searches using license IDs, names, and license ranges, and returned results in proper XML format. It worked fairly well but, due to a lack of database access, relied on the web interface of an existing website that actively prevented frequent requests using captchas.",
+                "Additionally, we developed a huge amount of documentation in the course of project management, including charters, evaluation and status reports, plans, work breakdown structures, schedules, responsibility matrices, stakeholder and risk analysis, etc. ",
+                " Unfortunately, the project was terminated due to several factors, including time and direction (Database/Web API). Besides that, the project went well. We met all of our milestones up until it was cancelled and had a final result that was functional and worked correctly. Further development could easily lead to it becoming a long-term solution for the State and stakeholders."
+            ]
+        },
+        "images": [
+            {"url": "plss/thumb.png", "isThumbnail": "true"},
+            {"url": "plss/1.png"},
+            {"url": "plss/2.png"}
+        ],
+        "technologies": [
+            {"name":"Python", "type":"language"},
+            {"name":"XML", "type":"language"}
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Record Management System",
+        "order": 2,
+        "dateStarted": "2014",
+        "liveLink": "http://www.rms.jgefroh.com",
+        "sourceLink": "http://www.github.com/jgefroh/rms",
+        "blurb": "A prototype/guide for web applications using Google Web Toolkit.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Cancelled"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "RMS was a quick prototype that tested several approaches to the development of a record management system. It used Bootstrap and GWT to create a sleek (but rather plain) interface so that various approaches in architecting validation and UI/UX could be tried. I really like the way it turned out, and the prototype gave me good ideas on how to approach development of other modules. ",
+                "I used the lessons I learned in the prototype for an unrelated record management system I was developing at my job that also used GWT."
+            ]
+        },
+        "images": [
+            {"url": "rms/thumb.png", "isThumbnail": "true"},
+            {"url": "rms/1.png"},
+            {"url": "rms/2.png"},
+            {"url": "rms/3.png"},
+            {"url": "rms/4.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"Google Web Toolkit", "type":"framework"},
+            {"name":"Bootstrap", "type":"framework"}
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Void Attackers",
+        "order": 6,
+        "dateStarted": "05/2014",
+        "sourceLink": "http://www.github.com/jgefroh/core-void-attackers",
+        "downloadLink": "http://github.com/JGefroh/Core-Void-Attackers/blob/master/core-void-attackers-0.1.0-win.jar?raw=true",
+        "blurb": "A space invaders clone.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "I made this version of the arcade game Space Invaders in parallel with my other project, Core. ",
+                "This game was initially intended to demonstrate rendering code and collision checking, but eventually turned into a full blown implementation of Space Invaders.",
+                "It showed me exactly how a game would be implemented using my framework, which was a great learning experience. The program itself is not very polished, but at least I don't have to spend quarters to play Space Invaders anymore! "
+            ]
+        },
+        "images": [
+            {"url": "void-attackers/thumb.png", "isThumbnail": "true"},
+            {"url": "void-attackers/1.png"},
+            {"url": "void-attackers/2.png"}
+        ],
+        "technologies": [
+            {"name":"Core", "type":"framework"},
+            {"name":"LWJGL", "type":"framework"},
+            {"name":"jackson", "type":"framework"},
+            {"name":"Java", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Instant Messaging Client and Server",
+        "order": 7,
+        "dateStarted": "2012",
+        "sourceLink": "http://www.github.com/jgefroh/imcs",
+        "blurb": "An IRC-like chat application.",
+        "statuses": [
+            {"name": "School"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "python",
+            "desktop",
+            "api"
+        ],
+        "description": {
+            "sections": [
+                "IMCS was an instant messaging client and server that I wrote as a class project for three separate classes: Data Communications, Python, and Modern Programming Practices. Don't worry, I had permission!",
+                "It uses Python's socket interface to send packets via TCP. The information was pure text with a specific command or tag at the beginning. The tag determined how the message would be processed by the server. For example, if I typed in \"/MSG Hello everyone\", the server would process the message as something to be displayed to other users. If I typed in \"/NICK Hello everyone\", the server would change my displayed nickname to \"Hello\" and use the password \"everyone\" as verification.",
+                " Developing this application was a great learning experience. Each challenge that was overcome posed even more challenges. Development showed that Python's TCP sockets were unable to determine when a new message had arrived and what was part of the old message, thanks to TCP's non-guaranteed arrival order for packets. To resolve this, message sizes were added to the protocol. Other issues appeared, such as blocking sockets preventing new connections (resolved with threading and welcome sockets), console output overlapping input lines (resolved with back/forward ASCII codes), memory leaks (resolved with disconnect handlers), and concurrent modification of shared memory (resolved via synchronization, locks, and copies). ",
+                "The end result was a cool program and a lot of knowledge gained!"
+            ]
+        },
+        "images": [
+            {"url": "imcs/thumb.png", "isThumbnail": "true"},
+            {"url": "imcs/1.png"},
+            {"url": "imcs/2.png"},
+            {"url": "imcs/3.png"}
+        ],
+        "technologies": [
+            {"name":"Python", "type":"language"},
+            {"name":"XML", "type":"language"}
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Lamepad",
+        "order": 8,
+        "dateStarted": "02/12/2013",
+        "sourceLink": "http://www.github.com/jgefroh/lamepad",
+        "downloadLink": "http://github.com/JGefroh/lamepad/blob/master/Lamepad.jar?raw=true",
+        "blurb": "Notepad's red-headed stepchild.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "Lamepad was initially a weekend project that ended up taking only a couple of hours to do. I used Java and Swing to create this clone of Microsoft's Notepad application. It has font selection, styling, word-wrap, and even save and load functionality. ",
+                "The one disappointing thing that I didn't resolve was the fact that the font-selection performance was abysmal. There was a one second delay between picking a font and having it selected, causing the program to hang. This has something to do with how the fonts were formatted (using HTML). I would resolve this if I wanted to continue working on it, but I don't."
+            ]
+        },
+        "images": [
+            {"url": "lamepad/thumb.png", "isThumbnail": "true"},
+            {"url": "lamepad/1.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"}
+        ]
+    },
+    {
+        "id": 7,
+        "name": "NoID",
+        "order": 9,
+        "dateStarted": "2012",
+        "sourceLink": "http://www.github.com/jgefroh/no-id",
+        "downloadLink": "http://github.com/JGefroh/no-id/blob/master/NoID_v1_RC.jar?raw=true",
+        "blurb": "A student access tracker.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "java",
+            "desktop"
+        ],
+        "description": {
+            "sections": [
+                "NoID is a program that was born out of a business need at the university where I used to work. Students were coming into the computer center without their IDs and we had to limit their access when they reached a certain number of \"no ID\" entries. Our old method was to confirm they were a student, write their information down, and check a spreadsheet file and see how many times they entered. We then had to log their information in the spreadsheet, which included their name, id number, the date and time of day, and the number of entries. This was terribly inefficient and would prevent us from helping others or answering helpdesk calls during busy times.",
+                "NoID allowed us to rapidly see if the student had previously entered the computer center without their ID. It automatically tracked the date and time so that all we had to do was press a button to increment the number of times they entered. The program also allowed us to search by name, id number, and number of entries. NoID significantly decreased the amount of time we wasted tracking the information. What used to take a couple of minutes now took less than half a minute!",
+                "Unfortunately, department policies and other decisions prevented NoID's deployment. It eventually became obsolete when we stopped bothering to track the students due to the significant amount of time it took, despite university policies. Oh, well!",
+                {"isHeader": true, "text": "Note: NoID contains some of the worst code I've ever written. View the source with great caution."}
+            ]
+        },
+        "images": [
+            {"url": "noid/thumb.png", "isThumbnail": "true"},
+            {"url": "noid/1.png"},
+            {"url": "noid/2.png"}
+        ],
+        "technologies": [
+            {"name":"Java", "type":"language"}
+        ]
+    },
+    {
+        "id": 6,
+        "name": "3D Models",
+        "order": 10,
+        "dateStarted": "2012",
+        "blurb": "A foray into art.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "other"
+        ],
+        "description": {
+            "sections": [
+                "One of my interests is 3D modeling. I never really put in the time and effort to get good at it, but I did play around with Blender at one point to see what it was like. Although my models are very basic and amateurish, I still had a lot of fun and will likely try again."
+            ]
+        },
+        "images": [
+            {"url": "3dmodels/thumb.png", "isThumbnail": "true"},
+            {"url": "3dmodels/6.png"},
+            {"url": "3dmodels/1.png"},
+            {"url": "3dmodels/2.png"},
+            {"url": "3dmodels/3.png"},
+            {"url": "3dmodels/5.png"},
+            {"url": "3dmodels/8.png"}
+        ],
+        "technologies": [
+            {"name":"Blender", "type":"framework"}
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Are You A Potato?",
+        "order": 5,
+        "dateStarted": "2014",
+        "liveLink": "http://www.areyouapotato.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/are-you-a-potato",
+        "blurb": "An application that makes you reflect on yourself.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "Are You A Potato? helps users answer the most important question of their lives.",
+                "This application was a quick experiment in using JSON data to drive the flow of interaction instead of pre-programmed responses. It also provided an opportunity to laugh. Win-win."
+            ]
+        },
+        "images": [
+            {"url": "areyouapotato/thumb.png", "isThumbnail": "true"},
+            {"url": "areyouapotato/1.png"},
+            {"url": "areyouapotato/2.png"},
+            {"url": "areyouapotato/3.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "JGefroh.com (2015)",
+        "order": 5,
+        "dateStarted": "2014",
+        "liveLink": "http://www.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website",
+        "blurb": "This website.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                {"isHeader": true, "text":"I thought my 2014 website overhaul using Jekyll was the bee's knees. That is, until I had to maintain it."},
+                {"isHeader": true, "text":"The Issues"},
+                "One major problem was the amount of effort it took to do anything. In order to fix a typo, I had to start Jekyll, make the fix, rebuild the application, and then redeploy it. Adding new pages took even longer. Because it wasn't effortless to update the website, I didn't update as frequently.",
+                {"isHeader": true, "text":"The Fix"},
+                "Using my new-found AngularJS skills, I took a day and rewrote my website. Once again, I had several criteria in mind:",
+                {"isList": true, "items": ["Simple", "Easy to maintain", "A gallery for my projects", "A place to put my resume and skills", "Compatible with many browsers and window sizes", "Fun to work on", "SEO not required"]},
+                "This new website is much easier to maintain. The content that changes frequently is stored as JSON, which makes editing and redeploying incredibly easy. AngularJS has really allowed me to develop more rapidly than before."
+            ]
+        },
+        "images": [
+            {"url": "2015/thumb.png", "isThumbnail": "true"},
+            {"url": "2015/1.png"},
+            {"url": "2015/2.png"}
+        ],
+        "technologies": [
+            {"name":"AngularJS", "type":"framework"},
+            {"name":"Javascript", "type":"language"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"},
+            {"name":"JSON", "type":"language"}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "JGefroh.com (2014)",
+        "order": 5,
+        "dateStarted": "2014",
+        "liveLink": "http://www.2014.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2014",
+        "blurb": "What this website looked like in 2014.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                {"isHeader": true, "text":"I showed my original website to one of my friends, proud of the work I had done. After a mere glance he told me that it \"looked old.\" What? That can't be! It must be a mistake! I quickly showed it to another friend, and she confirmed the bad news: my website was \"Windows XP old.\" It was time to bring my website to the modern age."},
+                {"isHeader": true, "text":"The Overhaul"},
+                "I sat down and thought to myself what requirements I had for the website overhaul. While some of the requirements were the same from my previous website, others had changed. The \"No Javascript\" philosophy was out - most people had Javascript enabled, and I figured it was time to join the club. I wanted to add a place for my resume and wanted a site that was easily updated. ",
+                "In the end I came up with the following list of requirements:",
+                {"isList": true, "items": ["A gallery for my projects", "A modern appearance", "A place to put my resume and skills", "Easily updated with content", "Simple and minimal", "Rapid page loading times", "Compatible with many browsers and window sizes."]},
+                "A modern appearance was easy enough. Everyone was using Bootstrap, so I figured I should learn how to use it as well.",
+                "The difficult part would have been the \"easily updated\" requirement. Footers and navigation bars appear on every page, and would have had to be changed manually. At the time, I decided to use a templating system called Jekyll, which allowed me to split my website into multiple parts and combine them in layouts with a compiler.",
+                "Unfortunately, my attempts to make things easier to maintain failed because I focused on the wrong thing. I tried making layouts, footers, and headers easy to change, but the most frequent changes involved actual content. The process of maintaining the website using Jekyll felt heavyweight, and, as a result, I didn't update it frequently."
+            ]
+        },
+        "images": [
+            {"url": "2014/thumb.png", "isThumbnail": "true"},
+            {"url": "2014/1.png"},
+            {"url": "2014/2.png"}
+        ],
+        "technologies": [
+            {"name":"Bootstrap", "type":"framework"},
+            {"name":"Jekyll", "type":"framework"},
+            {"name":"CSS", "type":"language"},
+            {"name":"HTML", "type":"language"}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "JGefroh.com (2013)",
+        "order": 5,
+        "dateStarted": "2013",
+        "liveLink": "http://www.2013.jgefroh.com",
+        "sourceLink": "http://github.com/JGefroh/JGefroh-website/tree/v2013",
+        "blurb": "The very first version of this website.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "web"
+        ],
+        "description": {
+            "sections": [
+                "This was the very first version of my website. I had just gotten out of school and decided I needed an online presence to assist in finding a job.",
+                "Some design criteria I had in mind for the initial website included the following:",
+                {"isList": true, "items": ["A gallery for my projects", "Simple and minimal", "Rapid page loading times", "Compatible with many browsers and window sizes.", "Minimal scrolling to view main content", "No Javascript"]},
+                "Looking back, I should have added \"easy to maintain\" as a criteria. I ran into severe maintenance problems since I had repeated markup everywhere. Lesson(s) learned."
+            ]
+        },
+        "images": [
+            {"url": "2013/thumb.png", "isThumbnail": "true"},
+            {"url": "2013/1.png"},
+            {"url": "2013/2.png"}
+        ],
+        "technologies": [
+            {"name":"X/HTML", "type":"language"},
+            {"name":"CSS", "type":"language"}
+        ]
+    },
+    {
+        "id": 1,
+        "name": "My Computer (2014)",
+        "order": 18,
+        "dateStarted": "2014",
+        "blurb": "Computers are cool.",
+        "statuses": [
+            {"name": "Personal"},
+            {"name": "Completed"}
+        ],
+        "tags": [
+            "other"
+        ],
+        "description": {
+            "sections": [
+                "I built my computer with the sole intention of playing demanding PC games. It's getting old, but it has served me well over the years. ",
+                "Specs:",
+                {"isList": true, "items": ["CPU: Intel i7-860", "GPU: Radeon HD 7970", "Motherboard: ASUS P7P55D EVO", "RAM: 8GB @ 1333mhz", "SSD: Samsung 840 Pro (256GB)",
+                    "HDD: 1x1TB, 1x500GB, 2TB NAS", "PSU: Corsair CMPSU-750TX", "Sound Card: Asus Xonar Essence STX", "CPU Cooler: Noctua NH-U9B", "Tower: Cooler Master HAF 932",
+                    "Monitor 1: Dell U2711 (2560x1440, IPS, 27\", 60hz)", "Monitor 2: LG W2286 (1680x1050, LCD, 22\", 60hz)", "Keyboard: Razer Black Widow (2013)", "Mouse: SteelSeries Sensei"
+                ]}
+            ]
+        },
+        "images": [
+            {"url": "pc-2014/thumb.png", "isThumbnail": "true"},
+            {"url": "pc-2014/1.png"},
+            {"url": "pc-2014/2.png"},
+            {"url": "pc-2014/3.png"},
+            {"url": "pc-2014/4.png"}
+        ],
+        "technologies": [
+            {"name":"Electricity", "type":"framework"},
+            {"name":"Computer Science", "type":"framework"}
+        ]
+    }
+]

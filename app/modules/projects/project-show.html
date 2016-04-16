@@ -1,0 +1,74 @@
+<div class="content">
+    <div class="project-show">
+        <div class="row" style="margin-top: 1em;">
+            <div class="row">
+              <div class="row" style="text-align: center;">
+                <h1>{{ vm.project.name }}
+                    <br/>
+                </h1>
+                <span>{{ vm.project.dateStarted }}</span> <span data-ng-if="vm.project.dateStarted && vm.project.dateCompleted"> - </span><span data-ng-if="vm.project.dateCompleted">{{ vm.project.dateCompleted }}</span>
+                <div class="row" style="margin: 1rem 0;">
+                  <a data-ng-if="vm.project.liveLink" data-ng-href="{{ vm.project.liveLink }}"><button class="green small"><span class="fa fa-lg fa-desktop"></span> View Site</button></a>
+                  <a data-ng-if="vm.project.downloadLink" data-ng-href="{{ vm.project.downloadLink }}"><button class="green small"><span class="fa fa-lg fa-download"></span> Download</button></a>
+                  <a data-ng-if="vm.project.sourceLink" data-ng-href="{{ vm.project.sourceLink }}"><button class="white small"><span class="fa fa-lg fa-github"></span> View Source Code</button></a>
+                </div>
+              </div>
+              <hr>
+              <div data-ng-if="vm.project.statuses.length || vm.project.technologies.length" class="row" style="text-align: center;">
+                <div class="row">
+                  <span class="badge" data-ng-repeat="status in vm.project.statuses"
+                        data-ng-class="{'badge-production': status.name === 'In Production',
+                                          'badge-personal': status.name === 'Personal',
+                                          'badge-work': status.name === 'Work',
+                                          'badge-school': status.name === 'School',
+                                          'badge-completed': status.name === 'Completed',
+                                          'badge-developing': status.name === 'Actively Developed',
+                                          'badge-cancelled': status.name === 'Cancelled'
+                                          }">
+                      {{ status.name }}
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="badge" data-ng-repeat="technology in vm.project.technologies"
+                        data-ng-class="{'badge-language': technology.type === 'language',
+                                                  'badge-framework': technology.type === 'framework'
+                                                  }">
+                      {{ technology.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div data-ng-repeat="testimonial in vm.project.testimonials">
+                <div>
+                    <blockquote>
+                        <p data-ng-bind="testimonial.text"></p>
+                        <footer><span data-ng-bind="testimonial.author.name"></span>, <span data-ng-bind="testimonial.author.title"></span> at <span data-ng-bind="testimonial.author.org"></span></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <div data-ng-repeat="section in vm.project.description.sections">
+                    <ul data-ng-if="section.isList">
+                        <li data-ng-repeat="item in section.items"> {{ item }} </li>
+                    </ul>
+                    <p data-ng-if="section.isHeader" class="lead">{{ section.text }}</p>
+                    <p data-ng-if="vm.isString(section)">{{ section }}</p>
+                </div>
+            </div>
+        </div>
+        <div data-ng-if="vm.project.images.length" class="row">
+          <hr>
+          <div>
+              <div data-ng-repeat="image in vm.project.images"
+                   data-ng-if="!image.isThumbnail">
+                  <img data-ng-src="{{ vm.baseImagePath + image.url }}" style="width: 100%; margin-bottom: 1rem;">
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
