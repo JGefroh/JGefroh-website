@@ -17,7 +17,7 @@
       $urlRouterProvider.otherwise('/');
     }])
     .config(['AngularyticsProvider', function(AngularyticsProvider) {
-       AngularyticsProvider.setEventHandlers([analyticsProvider]);
+       AngularyticsProvider.setEventHandlers(['GoogleUniversal']);
      }]).run(['Angularytics', function(Angularytics) {
        Angularytics.init();
      }])
