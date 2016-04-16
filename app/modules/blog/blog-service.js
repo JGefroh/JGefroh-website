@@ -11,6 +11,7 @@
           return $q.when(posts);
         }
         return $http.get('posts.json?' + Math.floor((Math.random()*5000)+1)).then(function(response) {
+          posts = response.data;
           return response.data;
         });
       };
