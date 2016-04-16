@@ -10,12 +10,18 @@
         url: '/blog',
         templateUrl: 'blog.html',
         controller: 'BlogController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        data: {
+          title: 'Blog'
+        }
     }).state('post', {
         url: '/blog/{id: int}?section',
         templateUrl: 'post.html',
         controller: 'PostController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        data: {
+          title: 'Blog'
+        }
     });
   }
 })();

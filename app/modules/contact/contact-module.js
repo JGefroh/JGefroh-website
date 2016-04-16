@@ -7,7 +7,10 @@
   function Routes($stateProvider) {
     $stateProvider.state('contact', {
         url: '/contact',
-        templateUrl: 'contact.html'
+        templateUrl: 'contact.html',
+        data: {
+          title: 'Contact'
+        }
     });
   }
 })();

@@ -10,12 +10,18 @@
         url: '/projects',
         templateUrl: 'projects.html',
         controller: 'ProjectsController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        data: {
+          title: 'Projects'
+        }
     }).state('project', {
         url: '/projects/{id: int}',
         templateUrl: 'project-show.html',
         controller: 'ProjectShowController',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        data: {
+          title: 'Project'
+        }
     });
   }
 })();

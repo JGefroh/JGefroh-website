@@ -9,6 +9,9 @@
         vm.baseImagePath = baseImagePath;
         ProjectsService.get($state.params.id).then(function(project) {
           vm.project = project;
+          if ($state.current.data) {
+            $state.current.data.title = vm.project.name;
+          }
         });
       }
 
