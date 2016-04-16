@@ -4,7 +4,31 @@
         "name": "hnl.io",
         "order": -10,
         "dateStarted": "08/2015",
-        "blurb": "I'm the co-owner and team lead of hnl.io, an event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate. It's curated event listing ensures you never miss another tech event again, and the unified calendar allows organizers to find the perfect time slots for their events. hnl.io's extensive community features lets industry veterans and up-and-coming talent network and build professional relationships centered around a shared passion for tech.",
+        "liveLink": "https://hnl.io",
+        "blurb": "An event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
+        "description": {
+            "sections": [
+                "hnl.io is an event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
+                "Its curated event listing ensures you never miss another tech event again, and the unified calendar allows organizers to find the perfect time slots for their events. hnl.io's extensive community features lets industry veterans and up-and-coming talent network and build professional relationships centered around a shared passion for tech. Students get a leg up in the professional world through valuable connections and real-world exposure, and established professionals can keep their skills and networks up-to-date.",
+                "As the co-owner of the startup, I led the team in developing the platform, managed the direction of the product and the growth of the company, and pursued business development and outreach opportunities."
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Ruby on Rails", "type":"framework"},
+          {"name":"REST Web Services", "type":"framework"},
+          {"name":"PostgreSQL Database", "type":"framework"},
+          {"name":"Redis", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"Ruby", "type":"language"},
+          {"name":"CSS / Sass", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
         "images": [
             {"url": "hnlio/thumb.jpg", "isThumbnail": "true"}
         ]
@@ -15,7 +39,31 @@
         "order": -1,
         "dateStarted": "11/2013",
         "dateCompleted": "11/2014",
-        "blurb": "I was the principal programmer of the Time and Leave System, an HR/Payroll/Project Management system that replaced and modernized an aging IBM Lotus Domino system. TLS saves thousands of man-hours annualy by simplying and automating timesheet and leave tracking. It won recognition as a best-of-breed ERP replacement solution.",
+        "blurb": "TLS saves thousands of man-hours annualy by simplying and automating timesheet and leave tracking. It won recognition as a best-of-breed ERP replacement solution.",
+        "description": {
+            "sections": [
+                "I was the principal programmer of the Time and Leave System, an HR/Payroll/Project Management system that replaced and modernized an aging IBM Lotus Domino system.",
+                "TLS saves thousands of man-hours annually by simplying and automating timesheet and leave tracking. It won recognition as a best-of-breed ERP replacement solution.",
+                "TLS's project management feature allowed managers to create time codes and track employee time expenditures on projects and subprojects. Hours expended on a project could be captured and compared against estimates from a top-down or bottom-up perspective.",
+                "Many of its major components were configurable by administrators, allowing the application to respond to quickly changing business rules surrounding employee leave time. It had a fully configurable user administration and role-based permission system that could be specified at custom organizational levels to emulate the State's departmental hierarchies."
+
+
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Java EE", "type":"framework"},
+          {"name":"REST Web Services", "type":"framework"},
+          {"name":"DB2 Database", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
         "images": [
             {"url": "tls/thumb.jpg", "isThumbnail": "true"}
         ]
@@ -27,6 +75,26 @@
         "dateStarted": "11/2013",
         "dateCompleted": "11/2014",
         "blurb": "I was the tech lead of FAMS, an enterprise web application that helps the State of Hawaii track billions of dollars in incoming federal awards, allowing them to accurately audit expenditures. It won recognition as a best-of-breed ERP replacement solution.",
+        "description": {
+            "sections": [
+                "I was the tech lead of a team of 4 for the Federal Award Management System, an enterprise web application that helps the State of Hawaii track billions of dollars in incoming federal awards, allowing them to accurately audit expenditures. It won recognition as a best-of-breed ERP replacement solution.",
+                "FAMS allowed the State to track incoming federal grants throughout their legislative and expenditure lifecycle. It offered the ability to track monetary awards down to the subrecipient or account level, and provided documentation and an audit trail of any changes to the award, including monetary amount changes or recipient modifications.",
+                "Its centralized award repository allowed department heads and other users to immediately see the status of an award or search on key terms. It was built on top of a financial datamart, which allowed it to poll important data and gave it the capability to compare encumbered amounts to actual expenditures from accounts."
+            ]
+        },
+        "statuses": [
+          {"name": "Professional"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"Google Web Toolkit", "type":"framework"},
+          {"name":"Java EE", "type":"framework"},
+          {"name":"DB2 Database", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
         "images": [
             {"url": "fams/thumb.jpg", "isThumbnail": "true"}
         ]
