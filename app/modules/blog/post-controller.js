@@ -13,6 +13,9 @@
           if ($state.params.section) {
             vm.sectionUrl = '/posts/' + vm.post.url + '/' + $state.params.section;
           }
+          if ($state.current.data) {
+            $state.current.data.title = vm.post.name;
+          }
         });
       }
 
