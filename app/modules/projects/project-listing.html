@@ -1,6 +1,6 @@
 <div class="project-listing">
   <div class="image">
-      <img data-ng-src="{{ vm.baseImagePath + (vm.project.images | filter:{isThumbnail: true})[0].url }}">
+      <a data-ui-sref="project({id: vm.project.id})"><img data-ng-src="{{ vm.baseImagePath + (vm.project.images | filter:{isThumbnail: true})[0].url }}" /></a>
   </div>
   <div class="text">
       <h3 style="margin-bottom: 0rem;">
