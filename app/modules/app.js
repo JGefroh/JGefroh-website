@@ -13,10 +13,14 @@
     .config(['$urlRouterProvider', '$locationProvider', function($urlRouterProvider, $locationProvider) {
       $urlRouterProvider.otherwise('/');
     }])
-    .controller('ApplicationController', ['$state', ApplicationController]);
+    .controller('ApplicationController', ['$rootScope', '$state', '$anchorScroll', ApplicationController]);
 
-    function ApplicationController($state) {
+    function ApplicationController($rootScope, $state, $anchorScroll) {
       var vm = this;
+
+      $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+        $anchorScroll(0, 0);
+      });
 
       vm.getPageTitle = function() {
         if (!$state.current.data) {
