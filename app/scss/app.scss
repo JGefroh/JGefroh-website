@@ -75,23 +75,6 @@ label {
   margin: 0 auto;
   display: block;
 }
-.progress-bar {
-  margin-bottom: 0.75rem;
-  background-color: $color-white-flat-light;
-  width: 100%;
-  .progress {
-    background-color: $color-red-flat-light;
-  }
-
-  @for $i from 1 through 100 {
-    @if $i%5 == 0 {
-      .progress-#{$i} {
-        transition: all 5s;
-        width: #{$i}% !important;
-      }
-    }
-  }
-}
 
 .image-with-text {
   margin: 2rem 0;
