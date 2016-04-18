@@ -1,0 +1,10 @@
+<div class="skill" data-ng-click="vm.isShowing = !vm.isShowing">
+  <div>
+    <span class="title">{{::vm.skill}}</span>
+    <span class="subtext">{{::vm.getSubtitle(vm.value)}}</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress progress-{{vm.value}}">&nbsp;</div>
+  </div>
+  <div class="description" data-ng-show="vm.isShowing" data-ng-class="{'open': vm.isShowing, 'closed': !vm.isShowing}" data-ng-transclude></div>
+</div>
