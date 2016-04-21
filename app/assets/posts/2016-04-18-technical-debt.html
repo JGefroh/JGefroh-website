@@ -1,0 +1,63 @@
+<h5>What is Technical Debt?</h5>
+<p>Technical debt is the cumulative effect of all of the tradeoffs, shortcuts, and designs made during the development of software that emphasize short-term gains over long-term maintainability.</p>
+<p>As technical debt accrues, it becomes harder and harder to change the software. It takes longer and longer to build features and the number of bugs increases.</p>
+<p>Technical debt isn't just an engineering problem: it can drastically affect the organization, too. Developers working on a software project laden with technical debt may become demotivated more easily. Your company's talent may leave for greener, more manicured pastures.
+The competitive edge of your organization's engineering capabilities can dull beneath mounting technical debt, leading to missed opportunities.</p>
+
+<p>Given the laundry list of bad effects, it's no surprise that many software engineers do everything in their power to avoid technical debt at all costs.
+However, technical debt is not bad in and of itself. If used effectively, it can be a massive boon to an organization.
+</p>
+
+<h5>It's Not All Bad</h5>
+<p>
+  Software engineering is a constant juggling act. It's all about balancing tradeoffs while keeping in mind the business objectives.
+  Avoiding technical debt 100% of the time sounds good in theory, but in practice can be less effective and even harmful.
+</p>
+<p>
+  Suppose you're in charge of maintaining a legacy module and see a monstrous function with 10000 lines in it. It's been used every hour of every day for the past 15 years and hasn't changed
+  at all since it was written. You look at it in horror and your first reaction is to refactor and rewrite it. Don't! That would be a very bad move.
+
+  Technical debt like that is only dangerous under one condition: change. If, in the example above, the code hasn't ever needed to be changed
+  and it has been producing correct results, there's absolutely no business advantage to improve or touch it. In fact,
+  changing it could produce more bugs and cause much more damage. It is better to wait for a business need - the code will still be there.
+</p>
+<p>
+  Let's say you were working on a project that had to be completed by an upcoming deadline, or else the client would cancel the contract.
+  Your project works and produces correct results, but the code is messy. Missing the deadline to pursue to purist view of clean code when your dirty code is already working and correct is highly irresponsible and a poor business decision.
+  There's no point in doing something that makes long-term maintenance easier if there won't be a long-term to maintain.
+</p>
+<p>
+  Suppose you're at a startup and you don't know if a MVP will be successful. Accruing technical debt would be an ideal solution
+  - there's no point is spending more time and money than necessary on software that provides no value.
+</p>
+<p>
+  There are valid counters to these scenarios, but the main point remains: technical debt is a tool, and making the tradeoff to accrue
+  technical debt is sometimes the right decision. It requires experience, intuition, good judgement, and some luck to decide correctly, and
+  it can go horribly wrong if left unchecked. Good software engineers should use technical debt judiciously and responsibly, and ensure that they pay it down when
+  the bill comes.
+</p>
+
+<h5>Takeaways</h5>
+<p>
+  <ul>
+    <li>
+      Be aware of the negative sides of technical debt is, how to avoid it, and how to reduce it.
+    </li>
+    <li>
+      Be aware of the positive sides of technical debt, how to recognize tradeoffs, and in what situations you should choose to accrue it.
+    </li>
+    <li>Remember that code is just a tool to accomplish tasks.</li>
+    <li>Never place clean code above the business objective or goal. There is a cost associated with clean code, and clean code merely for clean code's sake is useless.
+        Always keep in mind the business benefits of clean code and pursue it only if those benefits can be realized.
+    </li>
+    <li>
+      If the business benefit for accruing technical debt is unclear, don't accrue it. Pursue clean code instead.
+    </li>
+  </ul>
+</p>
+
+<h5>A final note</h5>
+<p>
+  These arguments about technical debt only apply to software products that are not safety-critical.
+  Developers working on systems that are critical to peoples' safety and well-being have a moral responsibility to ensure that these systems produce correct results, even at the cost of missing a deadline.
+</p>

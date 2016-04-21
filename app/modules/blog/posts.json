@@ -1,5 +1,12 @@
 [
   {
+    "id": 8,
+    "name": "Technical Debt",
+    "blurb": "",
+    "url": "2016-04-18-technical-debt",
+    "date": "2016/04/18"
+  },
+  {
     "id": 7,
     "name": "I don't know what I'm doing...",
     "blurb": "Being out of my element is kind of scary.",
