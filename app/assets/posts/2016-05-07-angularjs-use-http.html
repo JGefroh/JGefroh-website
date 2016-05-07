@@ -1,0 +1,182 @@
+
+AngularJS has several options to choose from when making web service calls. It's hard to know for sure which one to pick, so here's my recommendation: use <code>$http</code>.
+<hr>
+<h2>What is $http?</h2>
+<p>
+  <code>$http</code> (<a href="https://docs.angularjs.org/api/ng/service/$http">API here</a>) is the provided low-level AngularJS service that offers AJAX calls. The functions return a promise that resolves when the call completes.
+</p>
+<p>
+  As a quick refresher, promises define an API that allows you to chain methods that are called in succession when a
+  non-blocking (asynchronous) function completes. <code>$http</code> functions are asynchronous, which means code following them are executed immediately after without waiting for the function to return a value.
+</p>
+<p>
+  You pass in a configuration object to <code>$http()</code> to make a call where you can specify the REST method type (eg. GET, PUT, POST, etc.) as well as headers and fields.
+</p>
+  <p>It also offers several convenience functions for common HTTP verbs:</p>
+  <ul>
+    <li><code>$http.get()</code></li>
+    <li><code>$http.post()</code></li>
+    <li><code>$http.put()</code></li>
+    <li><code>$http.delete()</code></li>
+    <li>...and so on.</li>
+  </ul>
+
+  <p>Among other things, it provides options to cache results, a way to configure things like headers globally, and intercept requests at various stages (great for Authentication or global error handling)
+     Because it's the lowest-level service, you have full control over your calls, what they look like, and how they respond.</p>
+
+  A typical call looks like below:
+  <pre>
+$http.get('http://127.0.0.1/server/hello_endpoint', {params: {queryParam: 'hello world'});
+      .then(function(response) {
+        //Run if call is successful
+        return response.data; //[JG]: This is the actual body of the response
+      })
+      .catch(function(error) {
+        //Do stuff if the call returned an error
+      })
+      .finally(function() {
+        //Do stuff regardless of call's success or failure
+      });
+  </pre>
+  <hr>
+
+  <h2>What is ngResource and Restangular?</h2>
+  <p>
+    <code>ngResource</code> and <code>Restangular</code> are both wrapper libraries around <code>$http</code> that attempt to standardize how the calls are made.
+  </p>
+  <p>There are some benefits to using them, but if you follow the tips below, you can achieve the same effects using <code>$http</code> without the drawbacks of the libraries.</p>
+
+  <hr>
+  <h4>Tip #1: Don't litter $http calls all over the place.</h4>
+  <p>
+    It can get messy if you inject <code>$http</code> randomly into controllers. You'd have duplicate <code>$http</code> calls that do the same thing, route definitions would be littered
+    all over the place, making it hard to change them, etc. Keep your <code>$http</code> calls in proper <code>Services</code>, and inject the <code>Services</code> into your
+    <code>Controllers</code> instead.
+    <br/><br/>
+    If you're injecting <code>$http</code> into a <code>Controller</code>, stop and re-evaluate what you're doing. Add it to a <code>Service</code> instead.
+  </p>
+  <hr>
+
+  <h4>Tip #2: Centralize Service calls that are common to all of your objects.</h4>
+  <p>
+    There's certain operations that are fairly common to all of your models:
+    <ul>
+      <li>Show - get a specific instance, usually by id</li>
+      <li>Index - get a collection of instances, possibly filtered by certain criteria</li>
+      <li>Create - create an instance that did not previously exist</li>
+      <li>Update - update an instance, usually by id</li>
+      <li>Delete - delete an instance</li>
+    </ul>
+    Don't repeat that logic for every one of your <code>Services</code>. Exercise consistency by using standard naming/verb conventions on the backend (REST) for these calls and move the client operations into a single parent <code>Service</code> which your other <code>Services</code> can then extend:
+    <pre>
+(function() {
+  angular
+    .module('jgefrohModule')
+    .factory('BaseServiceFactory', ['$http', Factory]);
+
+  function Factory($http, config) {
+    function createBaseService(resourceName) {
+      var vm = {};
+
+      //functions to build standard urls based on resource name...
+      //functions to create custom collection and member routes
+
+      vm.show = function(id) {
+        return $http.get('http://127.0.0.1/server/' + resourceName + '/' + id);
+                    .then(function(response) {
+                      return response.data;
+                    })
+      };
+      vm.index = function(params) {
+        return $http.get('http://127.0.0.1/server/' + resourceName + '/', {params: params});
+                    .then(function(response) {
+                      return response.data;
+                    })
+      };
+
+      //...and so on...
+
+      return vm;
+    }
+    return createBaseService;
+  }
+})();
+    </pre>
+  </p>
+  If you need extra routes, add them to the proper service:
+    <pre>
+(function() {
+  angular
+    .module('jgefrohModule')
+    .service('PotatoService', ['BaseServiceFactory', Service]);
+
+  function Service(BaseServiceFactory) {
+    var service = BaseServiceFactory('potato');
+    service.bakePotato = service.createMemberRoute('bakePotato', 'PUT');
+    return service;
+  }
+})();
+    </pre>
+    <p>This saves you significant effort as you only have to write calls that are unique to each model object. The end result is a consistent, centralized, and flexible architecture to make web service calls.
+  </p>
+
+  <hr>
+
+  <h4>Tip #3: Interceptors are your friends.</h4>
+  <p>
+    Want to show a toast message whenever the server returns a 404? Want to retry web service calls that failed, perhaps with an exponential backoff? Make use of <code>interceptors</code>!
+    <code>Interceptors</code> let you hook into the request and response lifecycle, allowing you to perform functions based on whether a request or response succeeds or fails.
+  </p>
+  <pre>
+(function() {
+  angular
+    .module('jgefrohModule')
+    .factory('PopupOnErrorInterceptor', [$q', '$injector', Interceptor])
+    .config(['$httpProvider', Configuration]);
+
+  function Interceptor($rootScope, $q, $injector) {
+    var UNPROCESSABLE = 422;
+    var SERVER_ERROR = 500;
+    return {
+      responseError: function(response) {
+        var popup = $injector.get('popup'); //[JG]: Use injector to get services you typically don't have access to due to circular references!
+        if (response.status === UNPROCESSABLE) {
+          popup.error('Please fix the issues and try again!', 'There\'s issues with the form.');
+        }
+        else if (response.status === SERVER_ERROR) {
+          popup.error('Sorry, something went wrong with the server. Please contact joseph.gefroh@gmail.com if it continues.');
+        }
+        return $q.reject(response);
+      }
+    };
+  }
+
+  function Configuration($httpProvider) {
+    $httpProvider.interceptors.push('PopupOnErrorInterceptor');
+  }
+})();
+  </pre>
+  <p>
+    The one thing to note is that it may be more appropriate to keep page-specific error handling (like field-level error messages) in the appropriate <code>controllers</code>/<code>directives</code> instead of using <code>interceptors</code>.
+  </p>
+
+<hr>
+<p>Following these tips will leave you with a standard, centralized API to make web service calls.</p>
+<p>At this point you may be saying
+  <i>"Wait a second, Joseph! If we're going through all of this trouble to create a standard API for <code>$http</code>, why not use <code>ngResource</code> or <code>Restangular</code>, which does exactly that?"</i>
+</p>
+<p>
+  I'll tell you why!
+  <code>ngResource</code> or <code>Restangular</code> may provide standard APIs, but the architecture patterns they encourage results in code that is all over the place or in the wrong place, hard to reason about, and hard to maintain.
+  It also makes it challenging to deviate from the standards without resulting in significantly different code. Theoretically and ideally you would never deviate from the standard REST API, but in practice it happens very frequently. When that time comes, you'll pull your hair out
+  wondering how to bend ngResource or Restangular to your will.
+</p>
+<p>
+  <code>$http</code> gives you the flexibility and freedom to deviate from the established standards <i>in a consistent way</i>. If you followed the tips above, an <code>$http</code> call that differs from the standard REST API
+  is used in the same exact way and looks exactly the same as every other call. The developer never knows the difference.
+</p>
+<p>
+  Finally, <code>ngResource</code> and <code>Restangular</code> have their own share of bugs and issues (interceptor behavior, buggy url building, etc.). They're also additional dependencies, their behavior is not guranteed to play nicely with other 3rd-party libraries,
+  and it's yet another extensive API for your team's developers to learn.
+  In my opinion, the benefits they provide don't outweigh their negative impact on the architecture and team, and you can write a much more flexible <code>$http</code> implementation with very little effort that provides the same benefits without the drawbacks.
+</p>

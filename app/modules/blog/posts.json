@@ -1,5 +1,12 @@
 [
   {
+    "id": 9,
+    "name": "AngularJS - Use $http",
+    "blurb": "",
+    "url": "2016-05-07-angularjs-use-http",
+    "date": "2016/05/07"
+  },
+  {
     "id": 8,
     "name": "Technical Debt",
     "blurb": "",
