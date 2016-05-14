@@ -13,11 +13,16 @@
 
   <section class="posts-section">
     <div class="content">
-      <div data-ng-repeat="post in vm.posts" class="row">
-        <span class="subtle">{{post.date}} </span>&#8226;
+      <div data-ng-repeat="post in vm.posts" class="row" style="margin-bottom: 2rem;">
+        <span class="subtle" class="post-date">{{post.date}} </span>
         <a data-ui-sref="post({id: post.id})" class="post-title">
           {{post.name}}
         </a>
+        <p data-ng-bind="post.blurb" class="post-blurb"></p>
+        <span data-ng-repeat="tag in post.tags"
+              class="badge badge-white">
+              {{::tag}}
+        </span>
       </div>
     </div>
   </section>

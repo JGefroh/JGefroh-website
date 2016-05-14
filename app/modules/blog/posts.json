@@ -2,58 +2,66 @@
   {
     "id": 9,
     "name": "AngularJS - Use $http",
-    "blurb": "",
+    "blurb": "A quick intro into Angular's $http service.",
     "url": "2016-05-07-angularjs-use-http",
-    "date": "2016/05/07"
+    "date": "2016/05/07",
+    "tags": ["AngularJS", "Code", "Software Engineering"]
   },
   {
     "id": 8,
     "name": "Technical Debt",
-    "blurb": "",
+    "blurb": "Technical debt isn't necessarily a bad thing...",
     "url": "2016-04-18-technical-debt",
-    "date": "2016/04/18"
+    "date": "2016/04/18",
+    "tags": ["Software Engineering"]
   },
   {
     "id": 7,
     "name": "I don't know what I'm doing...",
     "blurb": "Being out of my element is kind of scary.",
     "url": "2016-04-16-i-dont-know-what-im-doing",
-    "date": "2016/04/16"
+    "date": "2016/04/16",
+    "tags": ["Software Engineering"]
   },
   {
     "id": 6,
     "name": "Leadership - Decisiveness",
     "blurb": "The worst decision you can make is indecision.",
     "url": "2015-12-08-leadership-decisiveness",
-    "date": "2015/08/12"
+    "date": "2015/08/12",
+    "tags": ["Leadership"]
   },
   {
     "id": 5,
     "name": "Adventures Deploying a Java EE Web Application Onto the Internet",
     "blurb": "It was pretty involved.",
     "url": "2015-22-02-setting-up-tomee-mysql",
-    "date": "2015/02/22"
+    "date": "2015/02/22",
+    "tags": ["Code", "DevOps", "Java", "Tomcat"]
   },
   {
     "id": 4,
     "name": "Passion Changes Everything",
     "blurb": "What the Best Software Developers Have in Common",
     "url": "2015-05-02-passion-changes-everything",
-    "date": "2015/02/05"
+    "date": "2015/02/05",
+    "tags": ["Professionalism"]
   },
   {
     "id": 3,
     "name": "Ten Thousand Feet - The Web Application Stack",
     "blurb": "A high level overview of what a typical web application architecture looks like.",
     "url": "2015-31-01-ten-thousand-feet-the-web-application-stack",
-    "date": "2015/01/31"
+    "date": "2015/01/31",
+    "tags": ["Architecture", "Software Engineering"]
   },
   {
     "id": 2,
     "name": "A Commentary on Comments",
     "blurb": "This is a comment.",
     "url": "2015-25-01-a-commentary-on-comments",
-    "date": "2015/01/25"
+    "date": "2015/01/25",
+    "tags": ["Code", "Software Engineering"]
   },
   {
     "id": 1,

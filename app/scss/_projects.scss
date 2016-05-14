@@ -31,6 +31,8 @@
 }
 
 .project-show {
+}
+
   .badge {
     border: 1px solid $color-light-grey;
     font-size: 0.8rem;
@@ -70,4 +72,7 @@
     background-color: $color-vibrant-red;
   }
 
-}
+  .badge-white {
+    background-color: white;
+    color: $color-medium-grey;
+  }
