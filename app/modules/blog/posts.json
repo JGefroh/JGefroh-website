@@ -1,5 +1,29 @@
 [
   {
+    "id": 12,
+    "name": "HNL.IO - Our Development Processes",
+    "blurb": "An examination of HNL.IO's development processes.",
+    "url": "2016-05-14-hnlio-development-processes",
+    "date": "2016/05/14",
+    "tags": ["Leadership", "Software Engineering"]
+  },
+  {
+    "id": 11,
+    "name": "Flexible Schedules",
+    "blurb": "An autonomous developer is a happy developer, and a happy developer is a productive developer.",
+    "url": "2016-05-13-flexible-schedules",
+    "date": "2016/05/13",
+    "tags": ["Leadership", "Software Engineering"]
+  },
+  {
+    "id": 10,
+    "name": "Leadership - Initiative",
+    "blurb": "It's easier to ask for forgiveness than for permission.",
+    "url": "2016-05-10-leadership-initiative",
+    "date": "2016/05/10",
+    "tags": ["Leadership"]
+  },
+  {
     "id": 9,
     "name": "AngularJS - Use $http",
     "blurb": "A quick intro into Angular's $http service.",
