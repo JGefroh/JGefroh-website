@@ -1,11 +1,73 @@
 [
     {
+        "id": 2300,
+        "name": "Aural",
+        "order": -11,
+        "dateStarted": "06/2015",
+        "liveLink": "http://www.aural.jgefroh.com",
+        "sourceLink": "https://github.com/jgefroh/aural",
+        "blurb": "Take a journey with your ears.",
+        "description": {
+            "sections": [
+              "Aural is an ambient noise generator inspired by A Soft Murmur. It allows you to play sounds and adjust the volumes of various background noises to mimic the environment they want to be in.",
+              "A study from the University of Chicago discovered that appropriate ambient noise improved productivity and concentration. This has led to the increased popularity of generators like Aural, Coffitivity, and Noisli. Aural does have some soothing sounds, but it also has harsher noises, making it more appropriate as an experience simulator rather than as a relaxation or productivity aide."
+            ]
+        },
+        "statuses": [
+          {"name": "Personal"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS / Sass", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
+        "images": [
+            {"url": "aural/thumb.png", "isThumbnail": "true"},
+            {"url": "aural/1.jpg"}
+        ]
+    },
+    {
+        "id": 2200,
+        "name": "Palette",
+        "order": -10,
+        "dateStarted": "06/2015",
+        "liveLink": "http://www.palette.jgefroh.com",
+        "sourceLink": "https://github.com/jgefroh/palette",
+        "blurb": "A simple-to-use drawing / marker app!",
+        "description": {
+            "sections": [
+              "Palette is a simple-to-use drawing tool aimed at being quick and easy.",
+              "I've been using the Mac as my primary machine for about a year now, and the one thing I missed the most from Windows was the Paint tool. It was super simple to use, and the Mac unfortunately doesn't really have any lightweight alternatives to it.",
+              "Initially, Palette was supposed to be a paint replacement - I had stamp tools, rectangles, selection / moving, and I was planning on making it fully-featured.",
+              "As I built it, I realized the usability just wasn't there, and I was over-complicating things. I pivoted and decided on just a simple drawing tool."
+            ]
+        },
+        "statuses": [
+          {"name": "Personal"},
+          {"name": "In Production"}
+        ],
+        "technologies": [
+          {"name":"AngularJS", "type":"framework"},
+          {"name":"Javascript", "type":"language"},
+          {"name":"CSS / Sass", "type":"language"},
+          {"name":"HTML", "type":"language"},
+          {"name":"JSON", "type":"language"}
+        ],
+        "images": [
+            {"url": "palette/thumb.png", "isThumbnail": "true"},
+            {"url": "palette/1.jpg"}
+        ]
+    },
+    {
         "id": 2100,
         "name": "hnl.io",
-        "order": -10,
+        "order": -20,
         "dateStarted": "08/2015",
         "liveLink": "https://hnl.io",
-        "blurb": "An event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
+        "blurb": "An event platform and social network used by over 220 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
         "description": {
             "sections": [
                 "hnl.io is an event platform and social network used by over 175 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.",
