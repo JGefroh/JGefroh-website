@@ -1,5 +1,13 @@
 [
   {
+    "id": 13,
+    "name": "Lessons Learned",
+    "blurb": "A collection of lessons I've learned.",
+    "url": "2016-07-16-lessons-learned",
+    "date": "2016/07/16",
+    "tags": ["Leadership", "Software Engineering"]
+  },
+  {
     "id": 12,
     "name": "HNL.IO - Our Development Processes",
     "blurb": "An examination of HNL.IO's development processes.",
