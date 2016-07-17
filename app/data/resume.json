@@ -40,7 +40,7 @@
             },
             {
                 "name": "Ruby on Rails",
-                "blurb": "7 months of professional experience",
+                "blurb": "1 year of professional experience",
                 "imagePath": "resume/logo-rails.png",
                 "description": [
                     "Currently developing an event platform with features including ticket sales, social media, collaborative tools, interactive dashboards, and location geocoding.",
@@ -122,7 +122,7 @@
         "order": 1,
         "entries": [
             {
-                "name": "Co-Owner / Software Engineer",
+                "name": "Co-founder / CTO",
                 "blurb": "hnl.io | August 2015 - Present",
                 "imagePath": "resume/logo-hnlio.png",
                 "description": [
@@ -134,7 +134,7 @@
                 ]
             },
             {
-                "name": "Technical Lead / Software Engineer (title: Systems Analyst)",
+                "name": "Technical Lead / Staff Software Engineer (title: Systems Analyst)",
                 "blurb": "eWorld Enterprise Solutions, Inc. | August 2013 - August 2015",
                 "imagePath": "resume/logo-eworldes.png",
                 "description": [
