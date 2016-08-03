@@ -48,7 +48,9 @@ body {
 .highlight {
   color: $color-text-highlight;
 }
-
+.unhighlight {
+  color: $color-text;
+}
 .spacer {
   padding-top: 30%;
 }

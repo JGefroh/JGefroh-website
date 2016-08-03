@@ -23,7 +23,7 @@ layout: default
           <a id="on" onclick="on()" style="display: none; position: fixed; z-index:999; left: 5rem;"><span><img src="{{ site.baseurl }}/images/photo-self-min.jpg" style="margin-bottom: 1rem; border-radius: 50%; height: 4rem;  margin-right: 1rem; vertical-align: middle;" class="fa fa-spin"></img></span></a>
           <span class="header">Hi, I'm</span>
           <span class="name highlight">Joseph Gefroh</span>.
-          <span class="blurb">I <span class="highlight">lead teams</span> and <span class="highlight">develop software</span>.</span>
+          <span class="blurb">I <span class="highlight">lead teams</span> and <span class="highlight" style="display: inline-block; vertical-align: top;">develop software<span class="unhighlight">.</span><br/><span class="unhighlight normal" style="text-align: center;display: block;">(full-stack + architecture + ux)</span></span></span>
         </div>
         <div class="message"></div>
         <div class="message right">
@@ -80,10 +80,13 @@ layout: default
     </div>
     <div class="container">
       <div class="row">
-        <span class="header" style="margin-top: 3rem; margin-bottom: 1rem;">
-          Featured Projects
-          <a href="{{site.baseurl}}/projects.html" style="font-size: 0.8rem;">See all...</a>
-        </span>
+        <div class="message-wrapper">
+          <div class="message">
+            <span class="header" style="margin-top: 3rem; margin-bottom: 1rem;">
+              Featured Projects
+              <a href="{{site.baseurl}}/projects.html" style="font-size: 0.8rem;">See all...</a>
+            </span>
+          </div>
       </div>
     </div>
   </section>
