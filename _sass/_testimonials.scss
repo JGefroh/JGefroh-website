@@ -4,10 +4,11 @@
   .thumbnail {
     border-radius: 50%;
     @include span-columns(3);
+  	@include filter(grayscale(100%));
   }
   .quote-wrapper {
-    @include span-columns(9);
-    padding-left: 1rem;
+    @include span-columns(8);
+    @include shift(2);
     margin-top: 0;
   }
 

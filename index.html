@@ -81,11 +81,14 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="message-wrapper">
-          <div class="message">
+          <div class="message right">
             <span class="header" style="margin-top: 3rem; margin-bottom: 1rem;">
-              Featured Projects
+              Projects
               <a href="{{site.baseurl}}/projects.html" style="font-size: 0.8rem;">See all...</a>
             </span>
+            <span class="normal">Focused primarily on <span class="highlight">greenfield web applications</span> (enterprise and SaaS),
+                                <span class="highlight">developer tools</span> (frameworks and libraries),
+                                and <span class="highlight">legacy system</span> maintenance and modernization.</span>
           </div>
       </div>
     </div>
@@ -94,65 +97,13 @@ layout: default
 
   {% assign projects = site.projects | sort: 'order' | reverse %}
   {% for project in projects limit: 3 %}
-  <section class="section {% cycle 'secondary', 'primary' %}">
-    <div class="container">
-      <div style="padding-bottom: 2rem;">
-        <div class="message-wrapper">
-          <div class="message left">
-            <span>
-              {% if project.liveLink %}
-              <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
-              {% else %}
-              <span>{{project.title}}</span>
-              {% endif %}
-
-              {% if project.sourceLink %}
-              <a href="{{project.sourceLink}}" style="float: right;"><span class="fa fa-fw fa-2x fa-github"></span></a>
-              {% endif %}
-            </span>
-            <div class="normal">
-              {% for technology in project.technologies %}
-                <span class="badge white">
-                      {{technology}}{% unless forloop.last %},{% endunless %}
-                </span>
-              {% endfor %}
-              <p>{{project.blurb}}</p>
-              <p>{{project.content}}</p>
-            </div>
-            <div class="normal">
-              <div class="testimonial">
-                {% if project.testimonial %}
-                  <img src="{{project.testimonialAuthorThumbnail}}" class="thumbnail"></img>
-                  <p class="quote-wrapper">
-                    <span class="quote">
-                      <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
-                      {{project.testimonial}}
-                    </span><br/>
-                    <span class="author-name">{{project.testimonialAuthorName}}</span>
-                    <span class="author-work">{{project.testimonialAuthorWork}}</span>
-                  </p>
-                {% endif %}
-              </div>
-            </div>
-          </div>
-          <div class="message right">
-            <div class="browser">
-              <div class="frame">
-                <span class="close"></span>
-                <span class="minimize"></span>
-                <span class="maximize"></span>
-              </div>
-              <img src="{{project.thumbnail}}" style="width: 100%;"></img>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    {% include project-listing.html %}
   {% endfor %}
+
   <section class="section primary">
     <div class="container">
       <div class="message-wrapper">
+      <div class="message right">
         <div class="message">
           <span class="header">Blog <a href="{{site.baseurl}}/blog.html" style="font-size: 0.8rem;">See all...</a></span>
           <span class="normal">
