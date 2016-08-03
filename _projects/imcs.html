@@ -1,0 +1,17 @@
+---
+layout: project
+title: Instant Messaging Client and Server
+technologies: [Python]
+thumbnail: images/imcs/thumb-lg-min.jpg
+order: 120
+sourceLink: https://github.com/jgefroh/imcs
+---
+<p>
+  A prototype, multithreaded, IRC-like chat client and server.
+</p>
+<p>
+  Developing this application was a great learning experience. Each challenge that was overcome posed even more challenges. Development showed that Python's TCP sockets were unable to determine when a new message had arrived and what was part of the old message, thanks to TCP's non-guaranteed arrival order for packets. To resolve this, message sizes were added to the protocol. Other issues appeared, such as blocking sockets preventing new connections (resolved with threading and welcome sockets), console output overlapping input lines (resolved with back/forward ASCII codes), memory leaks (resolved with disconnect handlers), and concurrent modification of shared memory (resolved via synchronization, locks, and copies).
+</p>
+<p>
+  The end result was a cool program and a lot of knowledge gained!
+</p>

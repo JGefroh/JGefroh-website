@@ -1,0 +1,40 @@
+<section class="section {% cycle 'secondary', 'primary' %}">
+  <div class="container">
+    <div style="padding-bottom: 2rem;">
+      <div class="message-wrapper">
+        <div class="message left">
+          <span>
+            {% if project.liveLink %}
+            <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
+            {% else %}
+            <span>{{project.title}}</span>
+            {% endif %}
+
+            {% if project.sourceLink %}
+            <a href="{{project.sourceLink}}" style="float: right;"><span class="fa fa-fw fa-2x fa-github"></span></a>
+            {% endif %}
+          </span>
+          <div class="normal">
+            {% for technology in project.technologies %}
+              <span class="badge white">
+                    {{technology}}{% unless forloop.last %},{% endunless %}
+              </span>
+            {% endfor %}
+            <p>{{project.content}}</p>
+          </div>
+          {% include testimonial.html %}
+        </div>
+        <div class="message right">
+          <div class="browser">
+            <div class="frame">
+              <span class="close"></span>
+              <span class="minimize"></span>
+              <span class="maximize"></span>
+            </div>
+            <img src="{{project.thumbnail}}" style="width: 100%;"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

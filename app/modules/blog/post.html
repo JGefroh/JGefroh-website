@@ -1,9 +1,0 @@
-<section class="content">
-  <div class="post">
-    <h2 style="text-align: center;">{{::vm.post.name}}</h2>
-    <h5 style="text-align: center;" class="subtle">{{::vm.post.date}}</h5>
-    <label style="text-align: center; opacity: 0; margin: 0; padding: 0; height: 0;">by Joseph Gefroh</label>
-    <div data-ng-if="!vm.showingSection && vm.post.url" data-ng-include="'/posts/' + vm.post.url + '.html'"></div>
-    <div data-ng-if="vm.showingSection && vm.sectionUrl && vm.post.url" data-ng-include data-src="vm.sectionUrl + '.html'"></div>
-  </div>
-</section>

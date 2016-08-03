@@ -1,0 +1,41 @@
+.post {
+  @include span-columns(8);
+  color: $color-light-grey;
+  label {
+    display: block;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .header {
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.post-listing {
+  .post-title {
+    font-size: 1.5rem;
+  }
+}
+pre {
+  padding: 0.5rem;
+  border: 1px $color-light-grey solid;
+  border-radius: 5px;
+  background-color: $color-ultra-light-grey;
+  overflow: auto;
+  font-family: 'Courier';
+  font-size: 0.8rem;
+  color: $color-dark-bg;
+}
+
+code {
+  background-color: #F9F2F4;
+  color: #C7385D;
+  padding: 0 0.25rem;
+  font-family: 'Courier';
+}

@@ -1,0 +1,39 @@
+.testimonial {
+  margin-top: 2rem;
+  position: relative;
+  .thumbnail {
+    border-radius: 50%;
+    @include span-columns(3);
+  }
+  .quote-wrapper {
+    @include span-columns(9);
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+
+  .quote {
+    display: block;
+  }
+
+  .author-name {
+    font-weight: bold;
+    display: block;
+  }
+
+  .author-work {
+  }
+
+  .quote-mark {
+    color: $color-grey;
+    font-size: 2rem;
+    position: absolute;
+    opacity: 0.3;
+  }
+  .quote-mark-left {
+    margin-left: -1rem;
+    margin-top: -1rem;
+  }
+  .quote-mark-right {
+    right: 0;
+  }
+}

@@ -1,0 +1,97 @@
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'base/breakpoints';
+@import 'base/variables';
+@import 'base/base';
+
+
+@import 'base/collapsible';
+@import 'base/devices';
+
+@import 'blog';
+@import 'devices';
+@import 'project';
+@import 'navigation';
+@import 'testimonials';
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: $color-dark-bg;
+}
+
+.section {
+  background-color: $color-dark-bg;
+  color: $color-text;
+  padding: 2rem;
+  a {
+    color: $color-link;
+  }
+
+  &.first {
+    padding-top: 15%;
+  }
+
+  &.primary {
+    background-color: $color-light-bg;
+  }
+
+  &.secondary {
+    background-color: $color-dark-bg;
+  }
+}
+
+.highlight {
+  color: $color-text-highlight;
+}
+
+.spacer {
+  padding-top: 30%;
+}
+
+.header {
+  font-size: 1.5rem;
+  display: block;
+}
+
+.message-wrapper {
+  position: relative;
+  .message {
+    @include span-columns(6);
+    @include media($tiny) {
+      @include span-columns(12);
+    }
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+    .normal {
+      font-size: 1rem;
+      display: block;
+    }
+    .name {
+      font-size: 3rem;
+    }
+    .blurb {
+      font-size: 2rem;
+      display: block;
+    }
+
+    &.right {
+      float: right;
+    }
+  }
+}
+
+.lights-out {
+  .section {
+    .message {
+      color: transparent;
+      transition: all 1s;
+    }
+  }
+}
