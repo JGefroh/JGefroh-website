@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="first section">
+  <div class="container">
+    <h1>My Projects</h1>
+  </div>
+</section>
+{% assign projects = site.projects | sort: 'order' | reverse %}
+{% for project in projects %}
+  {% include project-listing.html %}
+{% endfor %}

@@ -1,0 +1,52 @@
+.project-listing {
+  background-color: $color-ultra-light-grey;
+  padding: 1rem;
+  @include row();
+  .project-thumbnail {
+    display: inline;
+    @include span-columns(4);
+  }
+
+  .project-content {
+    display: inline-block;
+    @include span-columns(8);
+  }
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  &:hover {
+  }
+}
+
+.project {
+  @include span-columns(8);
+
+  label {
+    font-weight: bold;
+  }
+
+  .header {
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+pre {
+  padding: 0.5rem;
+  border: 1px $color-light-grey solid;
+  border-radius: 5px;
+  background-color: $color-ultra-light-grey;
+  overflow: auto;
+  font-family: 'Courier';
+  font-size: 0.8rem;
+}
+
+code {
+  background-color: #F9F2F4;
+  color: #C7385D;
+  padding: 0 0.25rem;
+  font-family: 'Courier';
+}

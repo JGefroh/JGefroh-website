@@ -1,0 +1,173 @@
+---
+layout: default
+---
+<script>
+  var off = function() {
+    document.body.classList = ['lights-out'];
+    document.getElementById('on').style.display = 'inline-block';
+    document.getElementById('off').style.display = 'none';
+  }
+
+  var on = function() {
+    document.body.classList = [];
+    document.getElementById('on').style.display = 'none';
+    document.getElementById('off').style.display = 'inline-block';
+  }
+</script>
+<div class="wrapper">
+  <section class="section first">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message">
+          <a id="off" onclick="off()"><span><img src="{{ site.baseurl }}/images/photo-self-min.jpg" style="margin-bottom: 1rem; border-radius: 50%; height: 4rem;  margin-right: 1rem; vertical-align: middle;"></img></span></a>
+          <a id="on" onclick="on()" style="display: none; position: fixed; z-index:999; left: 5rem;"><span><img src="{{ site.baseurl }}/images/photo-self-min.jpg" style="margin-bottom: 1rem; border-radius: 50%; height: 4rem;  margin-right: 1rem; vertical-align: middle;" class="fa fa-spin"></img></span></a>
+          <span class="header">Hi, I'm</span>
+          <span class="name highlight">Joseph Gefroh</span>.
+          <span class="blurb">I <span class="highlight">lead teams</span> and <span class="highlight">develop software</span>.</span>
+        </div>
+        <div class="message"></div>
+        <div class="message right">
+          <span class="header">Contact me</span>
+          <span class="highlight">
+            <a href="mailto:joseph.gefroh@gmail.com"><span class="fa fa-fw fa-envelope"></span></a>
+            <a href="https://linkedin.com/in/jgefroh"><span class="fa fa-fw fa-linkedin"></span></a>
+            <a href="https://github.com/jgefroh"><span class="fa fa-fw fa-github"></span></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section primary">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message">
+          <span class="header">I'm the</span>
+          <span class="name highlight">Co-founder / CTO</span>
+          <span class="blurb">
+            of <span class="highlight">HNL.IO</span>, a startup building a tech event social network in <span class="highlight">Honolulu, Hawaii</span>.
+            <br/><br/>
+            I am <span class="highlight">available to hire</span>.
+        </span>
+        </div>
+        <div class="message"></div>
+
+        <div class="message right">
+          <span class="header">In the past...</span>
+          <div class="normal">
+            <span class="highlight">Tech Lead</span> eWorld Enterprise Solutions (08/2013 - 08/2015)<br/>
+            <span class="highlight">Team Adviser</span> Hike Aloha (2015 - Present)<br/>
+            <span class="highlight">IT Technician</span> Hawaii Pacific University (01/2011 - 02/2013)<br/>
+            <hr>
+            <span class="highlight">B.S. in Computer Science</span> Hawaii Pacific University (2009 - 2012)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section secondary">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message">
+          <span class="header">Technologies I've Used</span>
+          <span class="normal"><span class="highlight">AngularJS</span>, Bootstrap, Bourbon, bower, Broccoli, <span class="highlight">CSS</span>, Databases,
+            DB2, dokku, Git, <span class="highlight">Google Web Toolkit (GWT)</span>, Gradle, Grunt, Gulp, HTML, <span class="highlight">Java EE</span>, <span class="highlight">JavaScript</span>, JBoss, JUnit,
+            Maven, npm, Oracle, ORMs, Postgres, Redis, REST Web Services, Ruby, <span class="highlight">Ruby on Rails</span>, Sass, SCSS, <span class="highlight">SQL</span>,
+            TomEE, WebSphere, and Wildfly.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <span class="header" style="margin-top: 3rem; margin-bottom: 1rem;">
+          Featured Projects
+          <a href="{{site.baseurl}}/projects.html" style="font-size: 0.8rem;">See all...</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+
+  {% assign projects = site.projects | sort: 'order' | reverse %}
+  {% for project in projects limit: 3 %}
+  <section class="section {% cycle 'secondary', 'primary' %}">
+    <div class="container">
+      <div style="padding-bottom: 2rem;">
+        <div class="message-wrapper">
+          <div class="message left">
+            <span>
+              {% if project.liveLink %}
+              <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
+              {% else %}
+              <span>{{project.title}}</span>
+              {% endif %}
+
+              {% if project.sourceLink %}
+              <a href="{{project.sourceLink}}" style="float: right;"><span class="fa fa-fw fa-2x fa-github"></span></a>
+              {% endif %}
+            </span>
+            <div class="normal">
+              {% for technology in project.technologies %}
+                <span class="badge white">
+                      {{technology}}{% unless forloop.last %},{% endunless %}
+                </span>
+              {% endfor %}
+              <p>{{project.blurb}}</p>
+              <p>{{project.content}}</p>
+            </div>
+            <div class="normal">
+              <div class="testimonial">
+                {% if project.testimonial %}
+                  <img src="{{project.testimonialAuthorThumbnail}}" class="thumbnail"></img>
+                  <p class="quote-wrapper">
+                    <span class="quote">
+                      <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
+                      {{project.testimonial}}
+                    </span><br/>
+                    <span class="author-name">{{project.testimonialAuthorName}}</span>
+                    <span class="author-work">{{project.testimonialAuthorWork}}</span>
+                  </p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="message right">
+            <div class="browser">
+              <div class="frame">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="maximize"></span>
+              </div>
+              <img src="{{project.thumbnail}}" style="width: 100%;"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  <section class="section primary">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message">
+          <span class="header">Blog <a href="{{site.baseurl}}/blog.html" style="font-size: 0.8rem;">See all...</a></span>
+          <span class="normal">
+            {% assign posts = site.posts %}
+            {% for post in site.posts limit: 5 %}
+              <div>
+                <span style="float: right;">
+                  {{post.date | date:"%B %-d %Y"}}
+                </span>
+                <a href="{{post.url}}">
+                  {{post.title}}
+                </a>
+              </div>
+            {% endfor %}
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>

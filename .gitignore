@@ -8,3 +8,6 @@ node_modules
 grunt_temp
 .DS_Store
 bower_components
+_site
+.sass-cache
+.jekyll-metadata

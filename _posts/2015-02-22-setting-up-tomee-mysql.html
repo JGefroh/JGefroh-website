@@ -1,0 +1,93 @@
+---
+layout: post
+title: Adventures Deploying a Java EE Web Application Onto the Internet
+blurb: It was pretty involved.
+tags: [Code, DevOps, Java, Tomcat]
+---
+<div>
+    <p>Dev Ops and system administration is one of my weak areas, so I knew I was getting into some pretty involving stuff when I decided to try and set up Tomcat and Google Cloud SQL to run my application, which was going to use Java EE with REST/EJB/JPA/CDI.</p>
+
+    <h3>Tomcat and Java EE</h3>
+    <p>I was initially going to use JBoss, as I was familiar with it, but was convinced to use Tomcat after a coworker told me about how awesome it was.</p>
+    <p>I ran into issue after issue when attempting to create my application backend. </p>
+    <p>For starters, Tomcat didn't support CDI, EJB, or JPA out of the box. I used Maven to download Weld (CDI), Hibernate (JPA), and Jersey (REST). This worked well until I needed a container-managed EntityManager - it didn't inject properly.</p>
+    <p>After trying for several hours researching what I needed in order to get it working,
+        I learned that there was a version of Tomcat called TomEE that was specifically built to support the Java EE stack.
+        I downloaded that and lo and behold, everything worked...up to a point.</p>
+    <p>TomEE came with CXF to handle the JAX-RS side. Unfortunately, it didn't know how to convert objects like ArrayLists. I had to switch to using Jersey by adding it as a Maven dependency and changing <code>tomee/conf/system.properties</code> to include
+    the following lines:</p>
+    <pre>
+        openejb.jaxrs.providers.auto = org.codehaus.jackson.jaxrs.JacksonJsonProvider,org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider
+    </pre>
+
+    <h3>Defining a Datasource in TomEE</h3>
+    <p>I wanted to avoid including database connection information in the persistence.xml because I would be sharing the code and didn't want to leak credentials. I defined a resource in <code>tomee/config/tomee.xml</code>...</p>
+    <pre>
+        &lt;Resource id="DatasourceName" type="DataSource"&gt;
+            #  MySQL
+            # - Download the mysql-connector-java-5.1.34.zip driver
+            # .....http://dev.mysql.com/downloads/file.php?id=454397
+            # - Move the driver .jar file into the tomee/lib folder.
+            JdbcDriver  com.mysql.jdbc.Driver
+            JdbcUrl     jdbc:mysql://INSERT_IPV4_ADDRESS_HERE:3306/
+            UserName INSERT_USERNAME_HERE
+            Password INSERT_PASSWORD_HERE
+            JtaManaged true
+        &lt;/Resource&gt;
+    </pre>
+    <p>...and moved the database driver .jar into the tomee/lib folder.</p>
+    <p>After this, I discovered it was using a magical, in-memory database instead of my datasource. I had to do some black magic by following the advanced installation portion of this guide: (http://tomee.apache.org/tomee-and-eclipse.html).</p>
+
+
+
+    <h3>Deployment</h3>
+    <p>Once I was done coding, I needed an actual server so I could put the application on the internet. At first I tried out PAAS services like Amazon ElasticBeanstalk and Google App Engine. Unfortunately, there were limitations with
+    both of them, including configurability and pricing.</p>
+    <p>Instead, I decided to get a VM and install an application server on it. </p>
+    <p>I shopped around for a VM host and decided on DigitalOcean after hearing good things about it from other developers in the local tech community. With my incredibly limited Linux knowledge, I managed to Google my way into installing the Java JDK and TomEE on it.</p>
+
+    <h3>Hooking up the VM and Google Cloud SQL</h3>
+    <p>Initially, I enabled IPV4, but realized the cost would be a lot more than I wanted to pay. I switched to the free IPV6, and changed my <code>tomee.xml</code> to connect using IPV6:</p>
+    <pre>
+        &lt;Resource id="DatasourceName" type="DataSource"&gt;
+            #  MySQL
+            # - Download the mysql-connector-java-5.1.34.zip driver
+            # .....http://dev.mysql.com/downloads/file.php?id=454397
+            # - Move the driver .jar file into the tomee/lib folder.
+            JdbcDriver  com.mysql.jdbc.Driver
+            jdbcUrl     jdbc:mysql://address=(protocol=tcp)(host=INSERT_IPV6_ADDRESS_HERE)(port=3306)
+            UserName INSERT_USERNAME_HERE
+            Password INSERT_PASSWORD_HERE
+            JtaManaged true
+        &lt;/Resource&gt;
+    </pre>
+    <p>I also had to explicitly allow my VM's IPV6 address to use the database.</p>
+    <p>Deploying was fairly simple - I simply dragged my .war into the <code>tomee/webapps</code> folder and it autodeployed.</p>
+
+    <h3>Random Disconnects (Broken Pipes)</h3>
+    <p>After a couple days, I realized that my JPA would fail with a cryptic error message that said "check query syntax for correctness" after being idle for a period of time. It was apparently losing connection to the database, and was not
+    reconnecting. To fix this, I had to tell TomEE to recreate a connection if it failed in my <code>tomee.xml</code>:</p>
+    <pre>
+            &lt;Resource id="DatasourceName" type="DataSource"&gt;
+                #  MySQL
+                # - Download the mysql-connector-java-5.1.34.zip driver
+                # .....http://dev.mysql.com/downloads/file.php?id=454397
+                # - Move the driver .jar file into the tomee/lib folder.
+                JdbcDriver  com.mysql.jdbc.Driver
+                jdbcUrl     jdbc:mysql://address=(protocol=tcp)(host=INSERT_IPV6_ADDRESS_HERE)(port=3306)
+                UserName INSERT_USERNAME_HERE
+                Password INSERT_PASSWORD_HERE
+                JtaManaged true
+                testOnBorrow = true
+                testOnReturn = false
+                testWhileIdle = false
+                timeBetweenEvictionRuns = -1 millisecond
+                validationQuery = select 1;
+            &lt;/Resource&gt;
+    </pre>
+
+    <h3>Really Long Startup Times</h3>
+    <p>One final problem I had was that TomEE's startup times were incredibly slow - sometimes 30 minutes to start up. At first I increased resources, but this did nothing. I scanned the logs and found out it was using a SecureRandom implementation that
+    scanned for entropy. Unfortunately, if the VM wasn't doing anything, it took a really long time to get the entropy needed to continue with the startup. I discovered I had to add <code>-Djava.security.egd=file:/dev/./urandom</code> to the properties file.</p>
+    <p>Since then, everything has been great!</p>
+</div>
