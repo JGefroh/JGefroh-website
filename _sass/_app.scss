@@ -85,6 +85,13 @@ body {
     &.right {
       float: right;
     }
+
+    &.left-pad {
+      @include omega();
+    }
+    &.right-pad {
+      @include omega();
+    }
   }
 }
 

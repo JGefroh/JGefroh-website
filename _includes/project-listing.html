@@ -2,7 +2,7 @@
   <div class="container">
     <div style="padding-bottom: 2rem;">
       <div class="message-wrapper">
-        <div class="message {% cycle 'left', 'right' %}" style="padding: 0 2rem;">
+        <div class="message {% cycle 'left', 'right left-pad' %}">
           <span>
             {% if project.liveLink %}
             <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
@@ -24,7 +24,7 @@
           </div>
           {% include testimonial.html %}
         </div>
-        <div class="message {% cycle 'right, 'left'%}">
+        <div class="message {% cycle 'right left-pad, 'left right-pad'%}">
           <div class="browser">
             <div class="frame">
               <span class="close"></span>
