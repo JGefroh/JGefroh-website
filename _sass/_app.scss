@@ -37,13 +37,25 @@ body {
 
   &.primary {
     background-color: $color-light-bg;
+    .background-text {
+      color: $color-text-background-light;
+    }
   }
 
   &.secondary {
     background-color: $color-dark-bg;
+    .background-text {
+      color: $color-text-background-dark;
+    }
   }
 }
 
+.background-text {
+  position: absolute;
+  padding-top: 15%;
+  @include user-select(none);
+  cursor: default;
+}
 .highlight {
   color: $color-text-highlight;
 }

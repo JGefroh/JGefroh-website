@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<section class="first section">
+  <div class="container">
+    <h1><span class="highlight">{{page.title}}</span> recommends me!</h1>
+    <div class="testimonial">
+      <img src="{{site.baseurl}}/{{page.thumbnail}}" class="thumbnail"></img>
+
+      <span class="header">
+        {{page.title}}
+        {% if page.linkedinLink %}
+        <a href="{{page.linkedinLink}}"><span class="fa fa-fw fa-linkedin"></span></a>
+        {% endif %}
+        {% if page.websiteLink %}
+        <a href="{{page.websiteLink}}"><span class="fa fa-fw fa-link"></span></a>
+        {% endif page.websiteLink %}
+      </span>
+      <span style="display: block;">
+        <span class="author-work">{{page.authorWork}}</span>
+      </span>
+      <p class="quote-wrapper-with-thumbnail">
+        <span class="quote" style="margin-top: 2rem;">
+          <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
+          <span>
+            {{ page.content }}
+          </span>
+        </span><br/>
+      </p>
+    </div>
+  </div>
+</section>

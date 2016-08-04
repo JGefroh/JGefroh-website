@@ -88,7 +88,10 @@ layout: default
             </span>
             <span class="normal">My work has focused primarily on <span class="highlight">greenfield web applications</span> (enterprise and SaaS),
                                 <span class="highlight">developer tools</span> (frameworks and libraries),
-                                and <span class="highlight">legacy system</span> maintenance and modernization.</span>
+                                and <span class="highlight">legacy system</span> maintenance and modernization.
+
+                                <br/><br/>Here's a few of them...
+                              </span>
           </div>
       </div>
     </div>
@@ -98,6 +101,33 @@ layout: default
   {% assign projects = site.projects | sort: 'order' | reverse %}
   {% for project in projects limit: 3 %}
     {% include project-listing.html %}
+  {% endfor %}
+
+  <section class="section" style="margin-bottom: 0; padding-bottom: 0;">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message right" style="margin-bottom: 0; padding-bottom: 0;">
+          <span class="header">Here's what teammates say about me...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% assign testimonial = site.testimonials %}
+  {% for testimonial in site.testimonials limit: 5 %}
+  <section class="section {% cycle 'primary', 'secondary' %}">
+    <div class="container">
+      <div class="message-wrapper">
+        <div class="message {% cycle 'left', 'right' %}">
+          <span class="background-text">{{ testimonial.keyPhrase }}</span>
+        </div>
+        <div class="message {% cycle 'right','left' %}">
+          <div class="normal">
+            {% include testimonial-listing.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   {% endfor %}
 
   <section class="section secondary">
@@ -120,7 +150,6 @@ layout: default
             {% endfor %}
           </span>
         </div>
-
       </div>
     </div>
   </section>
