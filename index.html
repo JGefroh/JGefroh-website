@@ -112,8 +112,8 @@ layout: default
       </div>
     </div>
   </section>
-  {% assign testimonial = site.testimonials %}
-  {% for testimonial in site.testimonials limit: 5 %}
+  {% assign testimonials = site.testimonials | sort: 'order' | reverse %}
+  {% for testimonial in testimonials limit: 5 %}
   <section class="section {% cycle 'primary', 'secondary' %}">
     <div class="container">
       <div class="message-wrapper">
