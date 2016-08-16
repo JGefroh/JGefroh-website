@@ -1,0 +1,57 @@
+---
+layout: post
+title: Relearning the Wheel
+blurb: Software engineers waste a lot of time and effort.
+tags: [Software Engineering]
+---
+<p>
+  The web development ecosystem has seen an explosion of new frameworks, libraries,
+  and toolsets in the past few years. It seems like every few months, a brand new technology
+  comes out that promises to change the way you develop software forever. Developers flock to it,
+  and put in time and effort into developing the ecosystem around the new technology,
+  building libraries and tools to support it and discovering and writing about best practices to use it.
+  Unfortunately, this new technology is soon supplanted a few months later when another technology is released that promises to do the same thing.
+  The cycle begins again.
+</p>
+<p>
+  Take a look at a single example - the humble build tool. Web applications have a lot of
+  things that need to be done to make them ready to deploy. CSS and JavaScript needs to be minified
+  and concatenated to improve page load times. Templates and styles may need to be inlined.
+  Mappings need to be created and linked. In the past two years, multiple tools to automate this
+  lengthy process have come and gone as crowd favorites.
+</p>
+<p>
+  In the past two years I've gone through four different build tools and task runners.
+  First there was Grunt, a configuration-based task runner. A short time later it was dethroned by Gulp,
+  which flipped the paradigm and leaned towards using streams and code to replace configuration. Another contender, Broccoli,
+  combined aspects of both Grunt and Gulp, providing the best of both worlds.
+  Then came Brunch, a configuration-based task runner which was very fast. That's not even counting Webpack
+  and other big-league tools with their own massive followings.
+</p>
+<p>
+  Each time, I had to learn how to use the build tools and integrate them into development workflows. Looking back on it, what advantage has it had?
+  I can do the same exact thing with Grunt that I can do with Gulp, Broccoli and Brunch. Sure, some tools are more performant than others, but it hardly seems
+  a benefit given the time spent into learning each one.
+</p>
+<p>
+  That's just an example with tools - there's many other libraries and frameworks that all, in the end, have the same result.
+  Look at the plethora of front-end frameworks available that all do the same thing - Vue, Angular, React. There's nothing particularly
+  different about the end result of these technologies. Does it really matter whether you built your backend with
+  Ruby on Rails, Java EE, Phoenix, Node, or Django? Ultimately they all boil down to creating endpoints and processing data. <a href="#1" class="reference-link"><sup>[1]</sup></a>
+</p>
+<p>
+  Instead of putting time into learning new concepts or building products, the current web development environment has forced me to put time into learning new frameworks that do exactly the same thing to maintain relevancy
+  and job security.
+  Every time I have to learn a new framework, I stifle my productivity until I get to the point where I can do the same thing
+  I was able to do with other technologies. Then, 6 months to a year later, I have to repeat the process with the new latest shiny tech.
+  The end result never changes. <a href="#2" class="reference-link"><sup>[2]</sup></a>
+</p>
+<p>
+  One of the main principles of software engineering is to not reinvent the wheel -
+  how come that doesn't apply to relearning the wheel? <a href="#3" class="reference-link"><sup>[3]</sup></a>
+</p>
+<p class="post-footer">
+  <span id="1" class="reference"><span class="reference-id">[1]</span> I'm disregarding big differences including development speed, ecosystems, and performance to make a point.</span>
+  <span id="2" class="reference"><span class="reference-id">[2]</span> Neither will the process - incremental innovation will continue regardless of how anyone feels about it.</span>
+  <span id="3" class="reference"><span class="reference-id">[3]</span> I'm not against learning new things, but I will optimize to learn things that have a bigger impact on the end result.</span>
+</p>
