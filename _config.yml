@@ -29,4 +29,4 @@ collections:
   testimonials:
     output: true
     permalink: /testimonials/:path/
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
