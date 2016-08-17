@@ -28,5 +28,5 @@ collections:
     permalink: /projects/:path/
   testimonials:
     output: true
-    permalink: /testimonials/:path.html
-permalink: /blog/:year/:month/:day/:title.html
+    permalink: /testimonials/:path/
+permalink: /blog/:year/:month/:day/:title/
