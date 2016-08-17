@@ -1,0 +1,58 @@
+---
+layout: default
+title: 404
+---
+<section class="first section">
+  <div class="container">
+    <h1>I'm sorry, I couldn't find the page you were looking for (404).</h1>
+    <p>
+      The page URL may have changed, or I might have deleted it.
+      <br/>
+      You can use the links below to see what's available on my site.
+    </p>
+
+
+    <label class="header">Blog</label>
+    {% for post in site.posts %}
+      <div>
+        <span style="float: right;">
+          {{post.date | date:"%B %-d %Y"}}
+        </span>
+        <a href="{{post.url}}">
+          {{post.title}}
+        </a>
+      </div>
+    {% endfor %}
+    <br/>
+
+
+    <label class="header">Recommendations</label>
+    {% assign testimonials = site.testimonials | order: 'order' %}
+    {% for testimonial in testimonials %}
+      <div>
+        <a href="{{testimonial.url}}">
+          {{testimonial.title}}
+        </a> recommends me.
+      </div>
+    {% endfor %}
+    <br/>
+
+
+    <label class="header">Projects</label>
+    {% assign projects = site.projects | sort: 'order' | reverse %}
+    {% for project in projects %}
+      <div>
+        <span style="float: right">
+          {% for technology in project.technologies %}
+            <span class="badge white">
+                  {{technology}}{% unless forloop.last %},{% endunless %}
+            </span>
+          {% endfor %}
+        </span>
+        <a href="{{project.url}}">
+          {{project.title}}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
