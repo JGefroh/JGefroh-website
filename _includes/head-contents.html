@@ -2,9 +2,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<title>Joseph Gefroh</title>
-<meta property="description" content="Joseph Gefroh is a full-stack software engineer and team lead in Honolulu, Hawaii." />
+{% if page.title %}
+  <title>{{ page.title }} | Joseph Gefroh</title>
+{% else %}
+  <title>Joseph Gefroh | Software Engineering Leadership</title>
+{% endif %}
 
 <meta property="og:url"         content="http://jgefroh.com" />
 <meta property="og:site_name"   content="Joseph Gefroh" />
