@@ -1,0 +1,55 @@
+---
+layout: post
+title: The Joy and Pain of Dokku Deployments
+blurb: Doh!
+tags: [DevOps]
+---
+<p>
+  <a href="https://github.com/dokku/dokku">dokku</a> is an open-source Platform-as-a-Service that utilizes docker to help
+build and manage deployments. It is essentially a self-hosted, minature version of
+Heroku. It provides a nice API to create, link, and deploy various
+containers for your applications and databases, and also allows you to deploy via a
+Git push to the remote repository.
+</p>
+<span class="header">dokku is great!</span>
+<p>
+  I first learned about dokku at <a href="https://hnl.io">HNL.IO</a>, where James switched to it to manage
+  the deployment of our Rails / AngularJS application. It worked really well and it was a breeze to use,
+  so I set up an instance on a DigitalOcean droplet. I was initially concerned that it would run out of CPU and Memory,
+  but my concerns were alleviated by the relatively low resource usage. It's been chugging along and I've deployed
+  multiple versions of several applications to it. Easy as pie.
+</p>
+
+<span class="header">Fast forward to today...</span>
+<p>
+  I just got my Phoenix / Elixir app Chatterize ready for deployment. I deployed it using dokku
+  and was fairly proud of myself in managing to build and deploy an application with that tech stack. After watching some television,
+  I came back and tried using my application...and it didn't work! It kept giving me a 502 Bad Gateway error! Uh oh!
+</p>
+<span class="header">Troubleshooting the Problem</span>
+<p>
+  I tested my other applications that were on the same server, and they worked fine. I took a look at the droplet usage logs
+ on DigitalOcean to see if it was being overused - I had shared the link with a couple of Slack teams and they may have been overzealous in using it.
+ While there was a spike in the CPU, Memory, and Disk activity due to the deployment,
+ all the activity was within normal parameters.
+</p>
+<p>
+ I decided to see if the logs indicated anything - I ran the command to view the logs from dokku, but instead of seeing logs, I received this error:
+ <pre>
+ % ssh -t dokku@jgefroh-dokku logs chatterize
+ /home/dokku/.basher/bash: main: command not found
+ Access denied</pre>
+ Uh oh! <span class="highlight">I couldn't even access the dokku platform.</span> I googled the error, and helpfully there was a Github issue that referenced running out of hard drive space.
+ I immediately ssh'd into the droplet, only to fail a few times to do a lack of memory space. I did manage to get in, and saw this:
+ <pre>
+ System load:  0.07               Processes:              85
+ Usage of /:   99.9% of 19.56GB   Users logged in:        0
+ Memory usage: 16%                IP address for eth0:    REDACTED
+ Swap usage:   0%                 IP address for docker0: REDACTED</pre>
+ </p>
+<p>
+  <span class="highlight">99.9% of my hard disk was being used.</span> I immediately undeployed the application and am now sitting here at 11:30pm
+  wondering what I should do. I still need a robust, affordable deployment solution,
+  but I don't want to pay extra just to host my personal applications. I work with a variety of technologies,
+  so I can't go with a provider that only has a single stack. I'm going to sleep on it, but I need a solution.
+</p>
