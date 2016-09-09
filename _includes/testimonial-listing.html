@@ -3,12 +3,14 @@
   <p class="quote-wrapper-with-thumbnail">
     <span class="author-name">{{testimonial.authorName}}</span>
     <span class="author-work">{{testimonial.authorWork}}</span>
-    {% if testimonial.linkedinLink %}
-    <a href="{{testimonial.linkedinLink}}"><span class="fa fa-fw fa-linkedin"></span></a>
-    {% endif %}
-    {% if testimonial.websiteLink %}
-    <a href="{{testimonial.websiteLink}}"><span class="fa fa-fw fa-link"></span></a>
-    {% endif testimonial.websiteLink %}
+    <span class="links">
+      {% if testimonial.linkedinLink %}
+      <a href="{{testimonial.linkedinLink}}" class="link"><span class="fa fa-fw fa-linkedin"></span></a>
+      {% endif %}
+      {% if testimonial.websiteLink %}
+      <a href="{{testimonial.websiteLink}}" class="link"><span class="fa fa-fw fa-link"></span></a>
+      {% endif testimonial.websiteLink %}
+    </span>
     <span class="quote" style="margin-top: 2rem;">
       <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
       {% if testimonial.blurb %}

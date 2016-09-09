@@ -2,12 +2,33 @@
 layout: default
 title: Projects
 ---
-<section class="first section">
-  <div class="container">
-    <h1>My Projects</h1>
-  </div>
+<section class="section half first section-2">
+  <div class="header">Projects built using a wide range of technologies.</div>
+  <p class="description">
+    <span class="highlight">AngularJS</span>, Bootstrap, Bourbon, bower, Broccoli, <span class="highlight">CSS</span>, Databases,
+      DB2, dokku, Git, <span class="highlight">Google Web Toolkit (GWT)</span>, Gradle, Grunt, Gulp, HTML, <span class="highlight">Java EE</span>, <span class="highlight">JavaScript</span>, JBoss, JUnit,
+      Maven, npm, Oracle, ORMs, Postgres, Redis, REST Web Services, Ruby, <span class="highlight">Ruby on Rails</span>, Sass, SCSS, <span class="highlight">SQL</span>,
+      TomEE, WebSphere, and Wildfly.
+    </span>
+  </p>
 </section>
-{% assign projects = site.projects | sort: 'order' | reverse %}
-{% for project in projects %}
-  {% include project-listing.html %}
-{% endfor %}
+<section class="projects-teaser section section-2 tight sideless">
+  {% assign projects = site.projects | sort: 'order' | reverse %}
+  {% for project in projects %}
+  <div class="project-wrapper">
+    <a href="{{ project.url }}">
+      <div class="image-wrapper">
+        <img src="{{ site.baseurl }}/{{project.thumbnail}}"></img>
+      </div>
+      <div class="description">
+        <label class="title">{{project.title}}</label>
+        {% for technology in project.technologies %}
+          <span class="technology">
+            {{technology}}{% unless forloop.last %},{% endunless %}
+          </span>
+        {% endfor %}
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</section>

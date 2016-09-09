@@ -2,8 +2,13 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (1.1.0)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    eventmachine (1.2.0.1)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
+    http_parser.rb (0.6.0)
     jekyll (3.2.0)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -14,6 +19,9 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-livereload (0.2.2)
+      em-websocket (~> 0.5)
+      jekyll (~> 3.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -39,6 +47,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.2.0)
+  jekyll-livereload
   minima
 
 BUNDLED WITH

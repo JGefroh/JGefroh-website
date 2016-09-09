@@ -1,0 +1,75 @@
+.projects-teaser {
+  $animation-time: 0.5s;
+  overflow: hidden;
+
+  .project-wrapper {
+    position: relative;
+    @include media($desktop) {
+      width: 20%;
+      padding-bottom: 15%;
+    }
+    @include media($mobile) {
+      width: 33.33%;
+      padding-bottom: 25%;
+    }
+    float: left;
+    overflow: hidden;
+    .image-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      img {
+        height: auto;
+        overflow: hidden;
+        @include media($mobile) {
+          max-width: 200%;
+          min-height: 225px;
+        }
+        @include media($desktop) {
+          max-width: 100%;
+        }
+      }
+    }
+    .description {
+      position:absolute;
+      bottom: 0;
+      height: 0;
+      width: 100%;
+      opacity: 0;
+      padding: 1rem;
+      text-align: center;
+      background-color: rgba($color-body-text-inverse, 0.9);
+      color: $color-body-text;
+      transition: all $animation-time;
+
+      .title {
+        @include media($desktop) {
+          font-size: 1.2rem;
+        }
+        display: block;
+        text-decoration: none;
+      }
+      .technology {
+        @include media($mobile) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .project-wrapper:hover {
+    & .description {
+      opacity: 1;
+      transition: bottom $animation-time, height $animation-time;
+      height: 100%;
+    }
+  }
+  .project-wrapper.no-hover:hover {
+  }
+}
+
+.projects-show {
+  .projects-show-content {
+    @include outer-container();
+  }
+}

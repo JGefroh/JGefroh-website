@@ -1,0 +1,99 @@
+
+.testimonials-teaser {
+  .testimonials-content {
+    @include outer-container();
+  }
+
+
+}
+
+  .testimonial-listing {
+    @include row();
+    .thumbnail {
+      @include media($mobile) {
+        @include shift(3);
+        @include span-columns(6);
+      }
+      @include media($desktop) {
+        @include shift(1);
+        @include span-columns(2);
+      }
+
+      border-radius: 50%;
+    }
+    .quote-wrapper-with-thumbnail {
+      @include media($mobile) {
+        @include span-columns(12);
+        margin-bottom: 2rem;
+      }
+      @include media($desktop) {
+        @include span-columns(6);
+      }
+    }
+
+    .author-name {
+      display: block;
+      font-size: 1.5rem;
+      @include media($mobile) {
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+    .author-work {
+      display: block;
+      @include media($mobile) {
+        text-align: center;
+      }
+    }
+    .links {
+      @include media($mobile) {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+    }
+    .quote {
+      display: block;
+    }
+  }
+
+.testimonial {
+  .thumbnail {
+    border-radius: 50%;
+    @include media($desktop) {
+      @include span-columns(3);
+    }
+    @include media($mobile) {
+      @include span-columns(4);
+      @include shift(4);
+    }
+  }
+
+  .detail {
+    @include media($mobile) {
+      @include span-columns(12);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    @include media($desktop) {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
+  .header {
+    font-size: 2rem;
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
+  .quote-wrapper-with-thumbnail {
+    @include media($desktop) {
+      @include span-columns(6);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+  }
+}

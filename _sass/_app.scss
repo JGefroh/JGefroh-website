@@ -7,111 +7,291 @@
 @import 'base/base';
 
 
-@import 'base/collapsible';
-@import 'base/devices';
-
 @import 'blog';
-@import 'devices';
-@import 'navigation';
 @import 'testimonials';
+@import 'projects';
 
-html, body {
-  height: 100%;
+.navigation {
+  position: fixed;
+  min-height: 2rem;
+  left: 0;
+  right: 0;
+  z-index:999;
+  background-color: $color-body-text;
+  color: $color-body-text-inverse;
+
+  @include media($mobile) {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+
+  @include media($desktop) {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .link {
+    float: right;
+    margin-left: 1rem;
+  }
 }
-body {
-  margin: 0;
-  background-color: $color-dark-bg;
-}
+
 
 .section {
-  background-color: $color-dark-bg;
-  color: $color-text;
-  padding: 2rem;
-  a {
-    color: $color-link;
+  padding: 1rem;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  .header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  .description {
+    @include outer-container();
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  &.half  {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 
   &.first {
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
   }
 
-  &.primary {
-    background-color: $color-light-bg;
-    .background-text {
-      color: $color-text-background-light;
-    }
+  &.tight {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
-  &.secondary {
-    background-color: $color-dark-bg;
-    .background-text {
-      color: $color-text-background-dark;
-    }
+  &.sideless {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }
 
-.background-text {
-  position: absolute;
-  padding-top: 15%;
-  @include user-select(none);
-  cursor: default;
-}
-.highlight {
-  color: $color-text-highlight;
-}
-.unhighlight {
-  color: $color-text;
-}
-.spacer {
-  padding-top: 30%;
+.section {
+  background-color: $color-background;
+  color: $color-body-text;
 }
 
-.header {
-  font-size: 1.5rem;
-  display: block;
+.section-2 {
+  background-color: $color-body-text;
+  color: $color-body-text-inverse;
+
+  .highlight {
+    color: $color-body-text-inverse-highlight;
+  }
 }
 
-.message-wrapper {
-  position: relative;
-  .message {
-    @include span-columns(6);
-    @include media($tiny) {
-      @include span-columns(12);
+.intro {
+
+  background-size: cover;
+  background-image: url('../images/photo-self-bg-min.jpg');
+  @include media($desktop) {
+    background-position: 0 0;
+  }
+
+  @include media($mobile) {
+    background-size: cover;
+    background-position: -225px 0;
+  }
+  .intro-content {
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.85);
+    color: $color-body-text-inverse;
+    .highlight {
+      color: $color-primary-white;
     }
-
-    margin-bottom: 2rem;
-
-    font-size: 2rem;
-    .normal {
-      font-size: 1rem;
-      display: block;
-    }
-    .name {
-      font-size: 3rem;
-    }
-    .blurb {
+    @include outer-container();
+    .grab {
       font-size: 2rem;
-      display: block;
-    }
+      .pre-name {
+        font-size: 1rem;
+        display:block;
+      }
+      .name {
+        font-size: 3rem;
+      }
+      .tagline {
+        font-size: 2rem;
+      }
 
-    &.right {
-      float: right;
-    }
 
-    &.left-pad {
-      @include omega();
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+
+      @include media($desktop) {
+        margin-top: 12%;
+        @include span-columns(8);
+      }
     }
-    &.right-pad {
-      @include omega();
+    .detail {
+      margin-top: 2rem;
+
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+
+      @include media($desktop) {
+        @include span-columns(4);
+      }
+      .links {
+        a {
+          margin-right: 0.5rem;
+          display: inline-block;
+        }
+      }
+    }
+    .signature {
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 1.5rem;
     }
   }
 }
 
-.lights-out {
-  .section {
-    .message {
-      color: transparent;
-      transition: all 1s;
+.stats-teaser {
+  position: relative;
+  .top-half {
+    background-color: $color-body-text;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+  }
+  .bottom-half {
+    background-color: $color-body-text;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .stats-wrapper {
+    @include outer-container();
+    position: relative;
+    .stats {
+      @include span-columns(12);
+      @include media($desktop) {
+        transform: translateY(-50%);
+      }
+
+      background-color: $color-body-text-inverse;
+      padding: 1rem;
+      border-radius:5px;
+      div {
+        @include media($mobile) {
+          @include span-columns(6);
+          @include omega(2n);
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        @include media($desktop) {
+          @include span-columns(3);
+        }
+      }
+      label {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+      }
+      span {
+        display: block;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.blog-teaser {
+  @include outer-container();
+  padding: 20% 1rem;
+}
+
+
+.work-teaser {
+  .work, .education {
+    margin-bottom: 3rem;
+    .title, .date, .employer, .blurb {
+      display: block;
+    }
+    .title {
+      color: $color-body-text-inverse-highlight;
+      font-size: 1.5rem;
+    }
+    .date {
+      @include media($desktop) {
+        float: right;
+      }
+    }
+    p {
+
+
+    }
+  }
+}
+
+
+
+
+.footer {
+  background-color: $color-body-text;
+  color: $color-body-text-inverse;
+  .footer-content {
+    @include outer-container();
+    padding: 2rem 1rem;
+
+    .summary {
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      @include media($desktop) {
+        @include span-columns(6);
+      }
+      .wrapper {
+        img {
+          @include span-columns(3);
+          border-radius: 50%;
+          padding-right: 1rem;
+        }
+        div {
+          @include span-columns(9);
+        }
+      }
+    }
+    .tidbit {
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+      @include media($desktop) {
+        @include span-columns(4);
+      }
+    }
+    .links {
+      @include media($mobile) {
+        @include span-columns(12);
+        text-align: center;
+      }
+      @include media($desktop) {
+        @include span-columns(2);
+      }
+      a {
+        display: block;
+      }
     }
   }
 }

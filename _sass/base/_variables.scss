@@ -1,68 +1,32 @@
-$color-blue-flat-dark: #34495E;
-$color-blue-flat-light: #3498DB;
-$color-blue-flat-dark: #2980B9;
-$color-blue-flat-white: #E0ECE8;
-$color-white-flat-light: #ECF0F1;
-$color-white-flat-dark: #BDC3C7;
-$color-green-flat-dark: #27AE60;
-$color-green-flat-light: #2ECC71;
-$color-yellow-flat-light: #F1C40F;
-$color-yellow-flat-dark: #F39C12;
-$color-orange-flat-light: #E67E22;
-$color-orange-flat-dark: #D35400;
-$color-red-flat-light: #E74C3C;
-$color-purple-flat-light: #8E44AD;
 
 
-$color-white: #FFFFFF;
-$color-black: #000000;
-
-$color-logo-light-blue: #7F9CBF;
-$color-logo-dark-blue: #4E6D93;
-$color-logo-dark-grey: #787878;
-$color-logo-light-grey: #C4C4C4;
 
 
-$color-dark-green: #1C2E12;
-$color-medium-green: #3B7C18;
-$color-light-green: #77A161;
-$color-vibrant-green: #009120;
 
-$color-dark-blue: #014081;
-$color-medium-blue: #477DCA;
-$color-light-blue: #70B7FF;
-$color-vibrant-blue: #007EFF;
-$color-really-light-blue: #DCEDFF;
+$color-1-primary: #EDEAE2;
+$color-1-accent: #493B24;
 
-$color-dark-purple: #21279c;
-$color-medium-purple: #5873c6;
-
-$color-dark-red: #790B02;
-$color-medium-red: #B31003;
-$color-light-red: #DF4C40;
-$color-vibrant-red: #EA1E0C;
-
-$color-dark-orange: #7D3E10;
-$color-medium-orange: #D56512;
-$color-light-orange: #CD7A3C;
-$color-vibrant-orange: #FC7C1D;
-$color-light-yellow: #f4eba9;
+$color-2-primary: #A0DDFF;
+$color-2-accent: #85C7F2;
+$color-2-opposite: #DB162F;
 
 
-$color-ultra-light-grey: #F5F5F5;
-$color-light-grey: #DDDDDD;
-$color-medium-grey: #777777;
-$color-dark-grey: #555555;
-$color-grey: $color-medium-grey;
+$color-primary-2: #82204A;
+$color-primary-3: #F85A3E;
+$color-primary-4: #3C787E;
+$color-primary-black: #1F1F1F;
+$color-primary-white: #FCFCFC;
+$color-primary-grey: #424B54;
 
-
-$color-link: #3C787E;
-$color-link-visited: $color-white;
-$color-text-highlight: #E0E0E2;
-$color-text: #706C61;
-$color-text-background-dark: #1F1F1F;
-$color-text-background-light: #232323;
-$color-dark-bg: #1B1B1B;
-$color-light-bg: #1F1F1F;
+$color-body-text: $color-primary-black;
+$color-background: $color-primary-white;
+$color-body-text-inverse: #B5B5B5;
+$color-subtle: #B0B0B0;
+$color-body-text-inverse-highlight: #E0E0E2;
+$color-link: $color-primary-4;
+$color-link-hover: $color-primary-2;
+$color-link-visited: $color-primary-2;
 
 $font: "Roboto", sans-serif;
+$font-base-size: 18px;
+$modular-scale-ratio: $golden;

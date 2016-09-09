@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<section class="first section">
+<section class="section section-2 tight">
   <div class="container">
-    <h1><span class="highlight">{{page.title}}</span> recommends me!</h1>
     <div class="testimonial">
+      <h1 class="header"><span class="highlight">{{page.title}}</span> recommends me!</h1>
       <img src="{{site.baseurl}}/{{page.thumbnail}}" class="thumbnail"></img>
 
       <span class="header">
@@ -16,7 +16,7 @@ layout: default
         <a href="{{page.websiteLink}}"><span class="fa fa-fw fa-link"></span></a>
         {% endif page.websiteLink %}
       </span>
-      <span style="display: block;">
+      <span class="detail">
         <span class="author-work">{{page.authorWork}}</span>
       </span>
       <p class="quote-wrapper-with-thumbnail">
