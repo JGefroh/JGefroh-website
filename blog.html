@@ -2,28 +2,30 @@
 layout: default
 title: Software Engineering Blog
 ---
-<section class="section first">
+<section class="section half first">
 
   <div class="header">Thoughts on Software Engineering</div>
   {% assign posts = site.posts %}
-  {% for post in site.posts %}
-    <div class="post-listing complete">
-      <div style="text-align: center;">
-        <a href="{{post.url}}" class="title">
-          {{post.title}}
-        </a>
-        <span class="date">
-          {{post.date | date:"%B %-d, %Y"}}
-        </span>
+  <div class="description">
+    {% for post in site.posts %}
+      <div class="post-listing complete">
+        <div style="text-align: center;">
+          <a href="{{post.url}}" class="title">
+            {{post.title}}
+          </a>
+          <span class="date">
+            {{post.date | date:"%B %-d, %Y"}}
+          </span>
+        </div>
+        <p class="blurb">
+          {% if post.blurb %}
+            {{post.blurb }}
+          {% else %}
+            {{post.excerpt | split:'<!--break-->' | first }}
+            <a class="more" href="{{post.url}}">Continue reading...</a>
+          {% endif %}
+        </p>
       </div>
-      <p class="blurb">
-        {% if post.blurb %}
-          {{post.blurb }}
-        {% else %}
-          {{post.excerpt | split:'<!--break-->' | first }}
-          <a class="more" href="{{post.url}}">Continue reading...</a>
-        {% endif %}
-      </p>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </section>

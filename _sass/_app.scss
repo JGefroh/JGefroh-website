@@ -224,6 +224,23 @@
 
 
 .work-teaser {
+  .work-basic {
+    display: block;
+    @include media($mobile) {
+      text-align: center;
+    }
+    img {
+      background-color: $color-body-text-inverse-highlight;
+      border-radius:50%;
+      padding: 1rem;
+      height: 100px;
+      width: 100px;
+      @include media($desktop) {
+        float: left;
+        margin-right: 1rem;
+      }
+    }
+  }
   .work, .education {
     margin-bottom: 3rem;
     .title, .date, .employer, .blurb {
@@ -237,10 +254,7 @@
       @include media($desktop) {
         float: right;
       }
-    }
-    p {
-
-
+      font-style: italic;
     }
   }
 }
