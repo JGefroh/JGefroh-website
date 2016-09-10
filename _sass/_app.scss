@@ -17,8 +17,25 @@
   left: 0;
   right: 0;
   z-index:999;
-  background-color: $color-body-text;
-  color: $color-body-text-inverse;
+  background-color: $color-primary-white;
+  a {
+    color: $color-primary-grey;
+  }
+  .brand {
+    a {
+      color: $color-primary-black;
+    }
+  }
+  a:hover {
+    transition: color 0.5s;
+    color: $color-primary-grey-dark;
+  }
+  .active {
+    a {
+      color: $color-primary-black;
+    }
+    border-bottom: 3px solid $color-primary-black;
+  }
 
   @include media($mobile) {
     font-size: 1.1rem;
@@ -32,6 +49,7 @@
   .link {
     float: right;
     margin-left: 1rem;
+    text-transform: uppercase;
   }
 }
 
@@ -92,7 +110,7 @@
 .intro {
 
   background-size: cover;
-  background-image: url('../images/photo-self-bg-min.jpg');
+  // background-image: url('../images/photo-self-bg-min.jpg'); Loaded from html for performance.
   @include media($desktop) {
     background-position: 0 0;
   }

@@ -1,31 +1,25 @@
-
-
-
-
-
-$color-1-primary: #EDEAE2;
-$color-1-accent: #493B24;
-
-$color-2-primary: #A0DDFF;
-$color-2-accent: #85C7F2;
-$color-2-opposite: #DB162F;
-
-
-$color-primary-2: #82204A;
 $color-primary-3: #F85A3E;
 $color-primary-4: #3C787E;
+
+
 $color-primary-black: #1F1F1F;
 $color-primary-white: #FCFCFC;
-$color-primary-grey: #424B54;
+$color-primary-grey: #B5B5B5;
+$color-primary-grey-dark: #727272;
+$color-primary-red: #AD343E;
+$color-primary-blue: #3C787E;
+$color-primary-blue-close: #85C7F2;
+$color-primary-blue-opposite: $color-primary-red;
+
 
 $color-body-text: $color-primary-black;
 $color-background: $color-primary-white;
-$color-body-text-inverse: #B5B5B5;
-$color-subtle: #B0B0B0;
+$color-body-text-inverse: $color-primary-grey;
+$color-subtle: $color-primary-grey;
 $color-body-text-inverse-highlight: #E0E0E2;
-$color-link: $color-primary-4;
-$color-link-hover: $color-primary-2;
-$color-link-visited: $color-primary-2;
+$color-link: $color-primary-blue;
+$color-link-hover: $color-primary-blue-close;
+$color-link-visited: $color-link;
 
 $font: "Roboto", sans-serif;
 $font-base-size: 18px;
