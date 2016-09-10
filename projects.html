@@ -15,20 +15,6 @@ title: Projects
 <section class="projects-teaser section section-2 tight sideless">
   {% assign projects = site.projects | sort: 'order' | reverse %}
   {% for project in projects %}
-  <div class="project-wrapper">
-    <a href="{{ project.url }}">
-      <div class="image-wrapper">
-        <img src="{{ site.baseurl }}/{{project.thumbnail}}"></img>
-      </div>
-      <div class="description">
-        <label class="title">{{project.title}}</label>
-        {% for technology in project.technologies %}
-          <span class="technology">
-            {{technology}}{% unless forloop.last %},{% endunless %}
-          </span>
-        {% endfor %}
-      </div>
-    </a>
-  </div>
+    {% include project-listing.html %}
   {% endfor %}
 </section>
