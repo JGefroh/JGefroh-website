@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign project = page %}
-<section class="section first projects-show section-2">
+<section class="section first projects-show section-2" style="padding-bottom: 0;">
   <div class="header">
     {% if project.liveLink %}
     <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
@@ -24,24 +24,16 @@ layout: default
     {% endfor %}
     </div>
   </div>
-  <div class="projects-show-content">
-
-    <p>{{project.content}}</p>
-    {% if project.testimonial %}
-      <div class="testimonial-listing">
-          <p class="quote-wrapper">
-            <span class="quote">
-              <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
-              {{project.testimonial}}
-            </span><br/>
-            <span class="author-name">{{project.testimonialAuthorName}}</span>
-            <span class="author-work">{{project.testimonialAuthorWork}}</span>
-          </p>
-      </div>
-    {% endif %}
-  </div>
 </section>
+
+{{project.content}}
+
+
 <section class="projects-teaser section section-2 tight sideless">
+  <div class="header">You've reached the end of this case study!</div>
+  <div class="description" style="text-align: center;">
+    Feel free to read about my other projects.
+  </div>
   {% assign projects = site.projects | sort: 'order' | reverse %}
   {% for project in projects %}
     {% include project-listing.html %}

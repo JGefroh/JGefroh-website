@@ -4,12 +4,12 @@
       <img src="{{ site.baseurl }}/{{project.thumbnail}}"></img>
     </div>
     <div class="description">
-      <label class="title">{{project.title}}</label>
       {% for technology in project.technologies %}
         <span class="technology">
           {{technology}}{% unless forloop.last %},{% endunless %}
         </span>
       {% endfor %}
+      <span class="bottom-cta">View Info</span>
     </div>
   </a>
 </div>

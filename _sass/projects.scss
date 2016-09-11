@@ -1,5 +1,5 @@
 .projects-teaser {
-  $animation-time: 0.5s;
+  $animation-time: 0.75s;
   overflow: hidden;
 
   .project-wrapper {
@@ -18,9 +18,14 @@
       width: 100%;
       overflow: hidden;
       position: absolute;
+      z-index: 1;
+
       img {
         height: auto;
         overflow: hidden;
+        padding-top: 0;
+        transition: padding $animation-time, background-color ($animation-time * 3);
+        background-color: $color-primary-3;
         @include media($mobile) {
           max-width: 200%;
           min-height: 225px;
@@ -32,15 +37,15 @@
     }
     .description {
       position:absolute;
-      bottom: 0;
-      height: 0;
       width: 100%;
-      opacity: 0;
+      height: 100%;
+      top: 0;
+      z-index: -0;
       padding: 1rem;
       text-align: center;
-      background-color: rgba($color-body-text-inverse, 0.9);
-      color: $color-body-text;
-      transition: all $animation-time;
+      background-color: $color-primary-3;
+      color: white;
+      text-transform: uppercase;
 
       .title {
         @include media($desktop) {
@@ -54,14 +59,24 @@
           font-size: 0.8rem;
         }
       }
+
+      .bottom-cta {
+        position: absolute;
+        bottom: 0.25rem;
+        left: 0;
+        right: 0;
+        color: $color-primary-3-close;
+      }
     }
   }
 
   .project-wrapper:hover {
+    & img {
+      transition: padding $animation-time;
+      padding-top: 100%;
+      background-color: transparent;
+    }
     & .description {
-      opacity: 1;
-      transition: bottom $animation-time, height $animation-time;
-      height: 100%;
     }
   }
   .project-wrapper.no-hover:hover {
@@ -71,5 +86,34 @@
 .projects-show {
   .projects-show-content {
     @include outer-container();
+  }
+}
+
+
+.case-study {
+  img {
+    width: 100%;
+  }
+  .about {
+    .header {
+      text-align: left;
+    }
+    @include media($desktop) {
+      @include span-columns(9);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
+  .role {
+    .header {
+      text-align: left;
+    }
+    @include media($desktop) {
+      @include span-columns(3);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+    }
   }
 }

@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-case-study
 title: hnl.io
 blurb:
 thumbnail: images/hnlio/thumb-lg-min.jpg
@@ -7,6 +7,163 @@ technologies: [Ruby on Rails, AngularJS, Redis, Postgres, dokku]
 order: 2300
 liveLink: https://hnl.io
 ---
-<p>An event platform and social network used by nearly 250 of Hawaii's tech and startup professionals to keep informed, collaborate, and communicate.</p>
-<p>I was the Co-founder / CTO of the startup creating this product. I led the development team in designing and building this system, including requirements solicitation, architecture, and programming.
-We <span class="highlight">received $100,000</span> in funding during a seed round, allowing us to complete the project.</p>
+<section class="section section-2 tight case-study">
+  <div class="container">
+    <div class="about">
+      <div class="header">About the Project</div>
+      <p>
+        hnl.io is a community platform built specifically for Hawaii's tech sector.
+        It provides ways for tech and startup professionals to keep informed, collaborate, and communicate.
+        Some of its most popular features include the unified event calendar, the group management features, and the projects showcase.
+      </p>
+    </div>
+    <div class="role">
+      <div class="header">My Role</div>
+      <p>As the Co-founder and CTO of the startup creating this product, I led the development team in designing and build the system, including requirements solicitation, architecture, and programming.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">The Business Need</div>
+      <p>
+        Hawaii's tech sector had a problem. There were all these amazing individuals and organizations working on great things, but nobody knew.
+        People outside of those groups didn't know what was going on. Great meetups and tech talks were happening, but people would only hear about them days after from word-of-mouth sources.
+        There was no way to get a full picture of what was happening in the community - you had to be actively looking through dozens of different sources.
+        <br/><br/>
+        In short, the tech community was very fragmented and siloed.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">A Company is Born</div>
+      <p>
+        James Wang, the co-founder of software consulting firm Slickage Studios and makerspace HICapacity, decided to change that.
+        He envisoned a platform that was the go-to place to find out anything and everything about what was happening in Hawaii's tech community. To further that vision,
+        he bought a domain name, hnl.io, and started a company, HNL.IO, to develop a solution. After obtaining matching funding from outside investors, James hired a team to build the platform.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">A Lack of Progress</div>
+      <p>
+        Months passed as development of the platform proceeded. Unfortunately, for numerous reasons, development was not making progress. Technologies were being changed,
+        there were several key miscommunications, and money was being spent with no tangible result. At this time, James hired me to lead the team
+        and get the platform built.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">Launching in 3, 2, 1...</div>
+      <p>
+        The initial version of the product launched several weeks later, built as a pure Ruby on Rails 4 solution after going back and forth between Rails and Ember. At the time, it allowed users to view a list of events, and add to it as necessary. It was not a pretty application,
+        and numerous bugs kept users from updating the list. Despite that, it was a launch, and a sign that the platform was on the right track.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/old-logo.jpg"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/old-list.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/old-edit-form.png"></img>
+    </div>
+  </div>
+</section>
+<section class="section case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">Rebuilding in AngularJS</div>
+      <p>
+        It was apparent to me that we couldn't achieve the development speed or interaction we desired from a pure Rails solution. After fixing the critical bugs,
+        I made the decision to rewrite the beta system as a Single Page Application in AngularJS 1.x. I spent two weeks converting the Rails system into a REST API and building the AngularJS
+        front-end to consume it. We deployed a version 2, with many of the bugs fixed and a more streamlined development approach.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/angular-home.png"></img>
+    </div>
+  </div>
+</section>
+<section class="section case-study section-2 tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">Development Progresses</div>
+      <p>
+        Around this time we parted ways with our contractor who was doing project management and outreach. We also hired another software engineer, Caroline, to assist with development, bringing the total team size to 3.
+      </p>
+      <p>
+        We branched out into other functional categories, building out a communities feature, projects showcase, a jobs board, and even experimented with an email blaster.
+        We approached every module as a MVP prototype, as we weren't sure which would be widely used, and we didn't have time to waste pursuing false leads.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/angular-event.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/angular-companies.png"></img>
+    </div>
+  </div>
+</section>
+<section class="section case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">People Start to Take Notice</div>
+      <p>
+        Caroline's front-end skills and design eye had a big effect on the quality of the user interface. We quickly improved the aesthetics and usability of it,
+        and started taking usage metrics to figure out which avenues to pursue and which to cut. We also started to ramp up our outreach efforts, led mostly by Caroline, by going to local tech events and conferences and regularly meeting with tech company leaders in the community.
+        New users started to flock to our site, effectively doubling our growth. We hired an intern around this time to assist with development and university outreach.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v2-home.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v2-profile.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v2-communities.png"></img>
+    </div>
+  </div>
+</section>
+<section class="section case-study section-2 tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">The Long Awaited Design Overhaul</div>
+      <p>
+        The site's appearance was good, but there were many inconsistencies due to an initially placeholder design being built upon over the months.
+        With metrics in place, we set about with a complete UI overhaul, led by Caroline. The underlying interface code was completely revamped, making it more modular, simpler, and consistent.
+        The resulting design was more usable, mobile-friendly, and looked great.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v3-event.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v3-home.png"></img>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/v3-events.png"></img>
+    </div>
+  </div>
+</section>
+<section class="section case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">Winding Down</div>
+      <p>
+        As we came to the end of our funding, we started winding down our development operations and started focusing on automating the content maintenance.
+        We wanted our product to be used even after development was done, and that meant not letting the content get out of date.
+        We improved the quality and accuracy of our automated event import and notification systems, and fixed any remaining issues regarding the usability of the site.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 case-study tight">
+  <div class="container">
+    <div class="readable">
+      <div class="header">Mission Accomplished</div>
+      <p>
+        We did it! We had built a platform that the community's users had found incredibly valuable. Hawaii's tech community was more active than ever,
+        and the amount of collaboration between groups has grown considerably.
+        As of this post, the platform has over 250 users, of which 34% log in regularly.
+        Analytics show that nearly 300 people regularly use our site to find out what's happening in Hawaii's tech sector.
+        We've heard success stories first hand of how we've helped connect people with great opportunities and how we've helped
+        people become active participants in Hawaii's tech culture.
+      </p>
+      <p>
+        While we weren't able to obtain a regular funding source to sustain active development, we're still proud of the product we built
+        and are excited to see how the community leverages it in the future.
+      </p>
+      <img src="{{site.baseurl}}/images/hnlio/case-study/cpjg_door22016.jpg"></img>
+    </div>
+  </div>
+</section>
