@@ -1,53 +1,15 @@
-<section class="section {% cycle 'primary', 'secondary' %}">
-  <div class="container">
-    <div style="padding-bottom: 2rem;">
-      <div class="message-wrapper">
-        <div class="message {% cycle 'left', 'right left-pad' %}">
-          <span>
-            {% if project.liveLink %}
-            <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
-            {% else %}
-            <span>{{project.title}}</span>
-            {% endif %}
-
-            {% if project.sourceLink %}
-            <a href="{{project.sourceLink}}" style="float: right;"><span class="fa fa-fw fa-2x fa-github"></span></a>
-            {% endif %}
-          </span>
-          <div class="normal">
-            {% for technology in project.technologies %}
-              <span class="badge white">
-                    {{technology}}{% unless forloop.last %},{% endunless %}
-              </span>
-            {% endfor %}
-            <p>{{project.content}}</p>
-          </div>
-          {% if project.testimonial %}
-            <div class="normal">
-              <div class="testimonial-listing">
-                  <p class="quote-wrapper">
-                    <span class="quote">
-                      <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
-                      {{project.testimonial}}
-                    </span><br/>
-                    <span class="author-name">{{project.testimonialAuthorName}}</span>
-                    <span class="author-work">{{project.testimonialAuthorWork}}</span>
-                  </p>
-              </div>
-            </div>
-          {% endif %}
-        </div>
-        <div class="message {% cycle 'right left-pad, 'left right-pad'%}">
-          <div class="browser">
-            <div class="frame">
-              <span class="close"></span>
-              <span class="minimize"></span>
-              <span class="maximize"></span>
-            </div>
-            <img src="{{ site.baseurl }}/{{project.thumbnail}}" style="width: 100%;"></img>
-          </div>
-        </div>
-      </div>
+<div class="project-wrapper">
+  <a href="{{ project.url }}">
+    <div class="image-wrapper">
+      <img src="{{ site.baseurl }}/{{project.thumbnail}}"></img>
     </div>
-  </div>
-</section>
+    <div class="description">
+      {% for technology in project.technologies %}
+        <span class="technology">
+          {{technology}}{% unless forloop.last %},{% endunless %}
+        </span>
+      {% endfor %}
+      <span class="bottom-cta">View Info</span>
+    </div>
+  </a>
+</div>

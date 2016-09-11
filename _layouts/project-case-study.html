@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% assign project = page %}
+<section class="section first projects-show section-2" style="padding-bottom: 0;">
+  <div class="header">
+    {% if project.liveLink %}
+    <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
+    {% else %}
+    <span>{{project.title}}</span>
+    {% endif %}
+  </div>
+  <div class="description">
+    <div style="text-align: center;">
+      {% if project.sourceLink %}
+      <a href="{{project.sourceLink}}"><span class="fa fa-fw fa-2x fa-github"></span></a>
+      {% endif %}
+    </div>
+    <div style="text-align: center; margin-top: 1rem;">
+    {% for technology in project.technologies %}
+      <span class="badge white">
+            {{technology}}{% unless forloop.last %},{% endunless %}
+      </span>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+{{project.content}}
+
+
+<section class="projects-teaser section section-2 tight sideless">
+  <div class="header">You've reached the end of this case study!</div>
+  <div class="description" style="text-align: center;">
+    Feel free to read about my other projects.
+  </div>
+  {% assign projects = site.projects | sort: 'order' | reverse %}
+  {% for project in projects %}
+    {% include project-listing.html %}
+  {% endfor %}
+</section>

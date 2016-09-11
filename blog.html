@@ -2,28 +2,30 @@
 layout: default
 title: Software Engineering Blog
 ---
-<section class="first section">
-  <div class="container">
-    <h1>Blog</h1>
-    <section class="row">
-    {% assign posts = site.posts %}
+<section class="section first">
 
+  <div class="header">Thoughts on Software Engineering</div>
+  {% assign posts = site.posts %}
+  <div class="description">
     {% for post in site.posts %}
-      <div class="post-listing" style="margin-bottom: 4rem;">
-        <span class="subtle" class="post-date" style="display: block;">{{post.date | date:"%b %-d %Y" }}</span>
-        <a href="{{post.url}}" class="post-title">
-          {{post.title}}
-        </a>
-        <div>
-          {% for tag in post.tags %}
-            <span class="badge white">
-              {{tag}}{% unless forloop.last %},{% endunless %}
-            </span>
-          {% endfor %}
+      <div class="post-listing complete">
+        <div style="text-align: center;">
+          <a href="{{post.url}}" class="title">
+            {{post.title}}
+          </a>
+          <span class="date">
+            {{post.date | date:"%B %-d, %Y"}}
+          </span>
         </div>
-        <p class="post-blurb">{{post.blurb}}</p>
+        <p class="blurb">
+          {% if post.blurb %}
+            {{post.blurb }}
+          {% else %}
+            {{post.excerpt | split:'<!--break-->' | first }}
+            <a class="more" href="{{post.url}}">Continue reading...</a>
+          {% endif %}
+        </p>
       </div>
     {% endfor %}
-    </section>
   </div>
 </section>

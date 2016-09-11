@@ -1,15 +1,17 @@
 <nav class="navigation">
   <div class="container">
     <div class="wrapper">
-      <span><a href="{{site.baseurl}}/">Joseph Gefroh
+      <span class="brand"><a href="{{site.baseurl}}/">Joseph Gefroh
 
         {% if jekyll.environment != "production" %}
-          (Dev)
+        <span class="fa fa-fw fa-code"></span>
+        {% else %}
+        <span class="fa fa-fw fa-code"></span>
         {% endif %}
 
       </a></span>
-      <span class="right link"><a href="{{site.baseurl}}/projects">Projects</a></span>
-      <span class="right link"><a href="{{site.baseurl}}/blog">Blog</a></span>
+      <span class="{% if page.url contains 'project' %}active{% endif %} right link"><a href="{{site.baseurl}}/projects">Projects</a></span>
+      <span class="{% if page.url contains 'blog' %}active{% endif %} right link"><a href="{{site.baseurl}}/blog">Blog</a></span>
     </div>
   </div>
 </nav>

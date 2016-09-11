@@ -1,7 +1,49 @@
 ---
 layout: default
 ---
-<div class="first" style="padding-top: 10rem;">
-  {% assign project = page %}
-  {% include project-listing.html %}
-</div>
+{% assign project = page %}
+<section class="section first projects-show section-2">
+  <div class="header">
+    {% if project.liveLink %}
+    <a href="{{project.liveLink}}" class="project-title">{{project.title}}</a>
+    {% else %}
+    <span>{{project.title}}</span>
+    {% endif %}
+  </div>
+  <div class="description">
+    <div style="text-align: center;">
+      {% if project.sourceLink %}
+      <a href="{{project.sourceLink}}"><span class="fa fa-fw fa-2x fa-github"></span></a>
+      {% endif %}
+    </div>
+    <div style="text-align: center; margin-top: 1rem;">
+    {% for technology in project.technologies %}
+      <span class="badge white">
+            {{technology}}{% unless forloop.last %},{% endunless %}
+      </span>
+    {% endfor %}
+    </div>
+  </div>
+  <div class="projects-show-content">
+
+    <p>{{project.content}}</p>
+    {% if project.testimonial %}
+      <div class="testimonial-listing">
+          <p class="quote-wrapper">
+            <span class="quote">
+              <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
+              {{project.testimonial}}
+            </span><br/>
+            <span class="author-name">{{project.testimonialAuthorName}}</span>
+            <span class="author-work">{{project.testimonialAuthorWork}}</span>
+          </p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+<section class="projects-teaser section section-2 tight sideless">
+  {% assign projects = site.projects | sort: 'order' | reverse %}
+  {% for project in projects %}
+    {% include project-listing.html %}
+  {% endfor %}
+</section>

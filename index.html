@@ -1,157 +1,203 @@
 ---
 layout: default
 ---
-<script>
-  var off = function() {
-    document.body.classList = ['lights-out'];
-    document.getElementById('on').style.display = 'inline-block';
-    document.getElementById('off').style.display = 'none';
-  }
-
-  var on = function() {
-    document.body.classList = [];
-    document.getElementById('on').style.display = 'none';
-    document.getElementById('off').style.display = 'inline-block';
-  }
-</script>
-<div class="wrapper">
-  <section class="section first">
-    <div class="container">
-      <div class="message-wrapper">
-        <div class="message">
-          <a id="off" onclick="off()"><span><img src="{{ site.baseurl }}/images/photo-self-min.jpg" style="margin-bottom: 1rem; border-radius: 50%; height: 4rem;  margin-right: 1rem; vertical-align: middle;"></img></span></a>
-          <a id="on" onclick="on()" style="display: none; position: fixed; z-index:999; left: 5rem;"><span><img src="{{ site.baseurl }}/images/photo-self-min.jpg" style="margin-bottom: 1rem; border-radius: 50%; height: 4rem;  margin-right: 1rem; vertical-align: middle;" class="fa fa-spin"></img></span></a>
-          <span class="header">Hi, I'm</span>
-          <span class="name highlight">Joseph Gefroh</span>.
-          <span class="blurb">I <span class="highlight">lead teams</span> and <span class="highlight" style="display: inline-block; vertical-align: top;">develop software<span class="unhighlight">.</span><br/><span class="unhighlight normal" style="text-align: center;display: block;">(full-stack + architecture + ux)</span></span></span>
-        </div>
-        <div class="message"></div>
-        <div class="message right">
-          <span class="header">Contact me</span>
-          <span class="highlight">
-            <a href="mailto:joseph.gefroh@gmail.com"><span class="fa fa-fw fa-envelope"></span></a>
-            <a href="https://linkedin.com/in/jgefroh"><span class="fa fa-fw fa-linkedin"></span></a>
-            <a href="https://github.com/jgefroh"><span class="fa fa-fw fa-github"></span></a>
-            <a href="{{site.baseurl}}/documents/joseph-gefroh-resume.pdf"><span class="fa fa-fw fa-file-pdf-o"></span></a>
-          </span>
-        </div>
+<img src="{{site.baseurl}}/images/photo-self-bg-min.jpg" style="display: none; opacity: 0; width: 0; height: 0;"></img>
+<section class="intro first section" style="background-image: url('{{site.baseurl}}/images/photo-self-bg-min.jpg')">
+  <div class="intro-content">
+    <div class="grab">
+      <div>
+        <span class="pre-name">Hi, I'm</span>
+        <span class="name">Joseph Gefroh</span>.<br/>
+        <span class="tagline">I <span class="highlight">lead teams</span> and <span class="highlight">develop software</span>.</span>
       </div>
     </div>
-  </section>
-  <section class="section primary">
-    <div class="container">
-      <div class="message-wrapper">
-        <div class="message">
-          <span class="header">I'm the</span>
-          <span class="name highlight">Co-founder / CTO</span>
-          <span class="blurb">
-            of <span class="highlight">HNL.IO</span>, a startup building a tech event social network in <span class="highlight">Honolulu, Hawaii</span>.
-            <br/><br/>
-            I am <span class="highlight">available to hire</span>.
-        </span>
-        </div>
-        <div class="message"></div>
-
-        <div class="message right">
-          <span class="header">In the past... <a style="font-size: 0.8rem; float: right;" href="{{site.baseurl}}/documents/joseph-gefroh-resume.pdf">Download Resume</a></span>
-          <div class="normal">
-            <span class="highlight">Tech Lead</span> eWorld Enterprise Solutions (08/2013 - 08/2015)<br/>
-            <span class="highlight">Team Adviser</span> Hike Aloha (2015 - Present)<br/>
-            <span class="highlight">IT Technician</span> Hawaii Pacific University (01/2011 - 02/2013)<br/>
-            <hr>
-            <span class="highlight">B.S. in Computer Science</span> Hawaii Pacific University (2009 - 2012)
-          </div>
-        </div>
+    <div class="detail">
+      <p>Software engineering is my passion.</p>
+      <p>
+        I enjoy crafting useful, maintainable systems regardless of technology. Angular 2? Sure! Ruby on Rails? No problem! I love learning new things and I'll dive headfirst into any technology in order to ship your software.
+      </p>
+      <p>
+        I get an immense satisfaction from mentoring and working with other developers, learning from them while sharing my own knowledge.
+      </p>
+      <p>
+        Interested in working with me? Send me a message! I'm always open to new opportunities.
+      </p>
+      <p>
+        Let's build great software together.
+      </p>
+      <p class="signature">
+        - Joseph Gefroh
+      </p>
+      <div class="links">
+        <p>
+          <a href="https://github.com/jgefroh"><span class="fa fa-fw fa-github"></span>Github</a>
+          <a href="https://linkedin.com/in/jgefroh"><span class="fa fa-fw fa-linkedin"></span>LinkedIn</a>
+          <a href="https://twitter.com/jgefroh"><span class="fa fa-fw fa-twitter"></span>Twitter</a>
+          <a href="mailto:joseph.gefroh@gmail.com"><span class="fa fa-fw fa-envelope"></span>Email</a>
+        </p>
       </div>
     </div>
-  </section>
-  <section class="section secondary">
-    <div class="container">
-      <div class="message-wrapper">
-        <div class="message">
-          <span class="header">Technologies I've Used</span>
-          <span class="normal"><span class="highlight">AngularJS</span>, Bootstrap, Bourbon, bower, Broccoli, <span class="highlight">CSS</span>, Databases,
-            DB2, dokku, Git, <span class="highlight">Google Web Toolkit (GWT)</span>, Gradle, Grunt, Gulp, HTML, <span class="highlight">Java EE</span>, <span class="highlight">JavaScript</span>, JBoss, JUnit,
-            Maven, npm, Oracle, ORMs, Postgres, Redis, REST Web Services, Ruby, <span class="highlight">Ruby on Rails</span>, Sass, SCSS, <span class="highlight">SQL</span>,
-            TomEE, WebSphere, and Wildfly.
-          </span>
-        </div>
+  </div>
+</section>
+<section class="stats-teaser">
+  <div class="top-half"></div>
+  <div class="bottom-half"></div>
+  <div class="stats-wrapper">
+    <div class="stats">
+      <div>
+        <label title="40 hours a week of work x 20 hours a week of personal development x 52 weeks a year x 3 years out of college">9360</label>
+        <span>hours spent developing software</span>
+      </div>
+      <div>
+        <label title="CPSS, PHIMS, FAMS, FormFF, TLS, hnl.io, Startup Paradise">7</labeltitle>
+        <span>professional systems in production</span>
+      </div>
+      <div>
+        <label>15+</label>
+        <span>open-source personal projects</span>
+      </div>
+      <div>
+        <label>8</label>
+        <span>developers mentored</span>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="message-wrapper">
-          <div class="message right">
-            <span class="header" style="margin-top: 3rem; margin-bottom: 1rem;">
-              Projects
-              <a href="{{site.baseurl}}/projects/" style="font-size: 0.8rem;">See all...</a>
-            </span>
-            <span class="normal">My work has focused primarily on <span class="highlight">greenfield web applications</span> (enterprise and SaaS),
-                                <span class="highlight">developer tools</span> (frameworks and libraries),
-                                and <span class="highlight">legacy system</span> maintenance and modernization.
+  </div>
+</section>
 
-                                <br/><br/>Here's a few of them...
-                              </span>
-          </div>
-      </div>
-    </div>
-  </section>
-
-
+<section class="projects-teaser section section-2 tight">
+  <div class="header">Projects built using a wide range of technologies.</div>
+  <p class="description">
+    <span class="highlight">AngularJS 1</span>, Bootstrap, Bourbon, bower, Broccoli, <span class="highlight">CSS</span>, Databases,
+      DB2, dokku, Git, <span class="highlight">Google Web Toolkit (GWT)</span>, Gradle, Grunt, Gulp, HTML, <span class="highlight">Java EE</span>, <span class="highlight">JavaScript</span>, JBoss, JUnit,
+      Maven, npm, Oracle, ORMs, Postgres, Redis, REST Web Services, Ruby, <span class="highlight">Ruby on Rails</span>, Sass, SCSS, <span class="highlight">SQL</span>,
+      TomEE, WebSphere, and Wildfly.
+    </span>
+  </p>
+</section>
+<section class="projects-teaser section section-2 tight sideless">
   {% assign projects = site.projects | sort: 'order' | reverse %}
-  {% for project in projects limit: 3 %}
+  {% for project in projects limit: 15 %}
     {% include project-listing.html %}
   {% endfor %}
+</section>
 
-  <section class="section" style="margin-bottom: 0; padding-bottom: 0;">
-    <div class="container">
-      <div class="message-wrapper">
-        <div class="message right" style="margin-bottom: 0; padding-bottom: 0;">
-          <span class="header">Here's what teammates say about me...</span>
-        </div>
+<section class="work-teaser section section-2 tight">
+  <div class="header">A career filled with valuable experience.</div>
+  <div class="description">
+    <!-- <div class="work">
+      <div class="work-basic">
+        <img src="{{site.baseurl}}/images/logos/logo-jumpsuit-square.jpg"></img>
+        <span class="title">????</span>
+        <span class="employer">
+          <a href="http://jumpsuitcommerce.com">Jumpsuit Commerce</a>
+          <span class="date">08/2016 - Present</span>
+        </span>
+        <span class="blurb">A payments processor developing a payment and donation platform.</span>
       </div>
-    </div>
-  </section>
-  {% assign testimonials = site.testimonials | sort: 'order' | reverse %}
-  {% for testimonial in testimonials limit: 5 %}
-  <section class="section {% cycle 'primary', 'secondary' %}">
-    <div class="container">
-      <div class="message-wrapper">
-        <div class="message {% cycle 'left', 'right' %}">
-          <span class="background-text">{{ testimonial.keyPhrase }}</span>
-        </div>
-        <div class="message {% cycle 'right','left' %}">
-          <div class="normal">
-            {% include testimonial-listing.html %}
-          </div>
-        </div>
+      <ul>
+        <li>???</li>
+        <li>???</li>
+        <li>???</li>
+      </ul>
+    </div> -->
+    <div class="work">
+      <div class="work-basic">
+        <img src="{{site.baseurl}}/images/logos/logo-hnlio-square.svg"></img>
+        <span class="title">Co-founder and CTO</span>
+        <span class="employer">
+          <a href="https://hnl.io">HNL.IO, LLC.</a>
+          <span class="date">08/2015 - Present</span>
+        </span>
+        <span class="blurb">A startup building an event and social network platform.</span>
       </div>
+      <ul>
+        <li>Built a useful SaaS product, leading the team and handling much of the programming and architecture.</li>
+        <li>Managed a startup, handling team issues, resource allocation, direction setting, and other day-to-day business tasks.</li>
+        <li>Become an active participant in the the local tech community.</li>
+      </ul>
     </div>
-  </section>
+    <div class="work">
+      <div class="work-basic">
+        <img src="{{site.baseurl}}/images/logos/logo-eworldes-square.png"></img>
+        <span class="title">Lead Software Engineer</span>
+        <span class="employer">
+          <a href="http://eworldes.com">eWorld Enterprise Solutions, Inc.</a>
+          <span class="date">08/2013 - 08/2015 (2 years)</span>
+        </span>
+        <span class="blurb">A small consulting company with many projects for the Hawaii state government.</span>
+      </div>
+      <ul>
+        <li>Led teams of 2-4 in successfully developing enterprise-level web applications.</li>
+        <li>Mentored and taught teams of developers engineering practices and new technologies, creating a culture of open communication and learning.</li>
+        <li>Overhauled organization's development practices, improving development effectiveness, quality, and morale across multiple teams.</li>
+      </ul>
+    </div>
+    <div class="work">
+      <div class="work-basic">
+        <img src="{{site.baseurl}}/images/logos/logo-hpu-square.gif"></img>
+        <span class="title">IT Technician</span>
+        <span class="employer">
+          <a href="http://hpu.edu">Hawaii Pacific University</a>
+          <span class="date">01/2011 - 02/2013 (2 years)</span>
+        </span>
+        <span class="blurb">A small university with heavy IT needs.</span>
+      </div>
+      <ul>
+        <li>Trained 20+ new hires in resolving technical issues.</li>
+        <li>Resolved 1000+ hardware, software, and network issues in an enterprise environment while monitoring a computer center (3500+ weekly users).</li>
+        <li>Created reports for management by analyzing datasets with 200,000+ elements.</li>
+      </ul>
+    </div>
+    <div class="education">
+      <div class="work-basic">
+        <img src="{{site.baseurl}}/images/logos/logo-hpu-square.gif"></img>
+        <span class="title">B.S. in Computer Science</span>
+        <span class="employer">
+          <a href="http://hpu.edu">Hawaii Pacific University</a>
+          <span class="date">2009 - 2012</span>
+        </span>
+        <span class="blurb">&nbsp;</span>
+      </div>
+      <ul>
+        <li>Graduated summa cum laude and with honors with a 3.99 out of 4.00 GPA.</li>
+        <li>Nominated valedictorian by the Department of Math and Computer Science.</li>
+        <li>Active officer of the Computer Club.</li>
+      </ul>
+    </div>
+    <div style="text-align: center;">
+      <a href="{{site.baseurl}}/documents/joseph-gefroh-resume.pdf" >Download Resume</a>
+    </div>
+  </div>
+</section>
+<section class="blog-teaser section tight">
+
+  <div class="header">Thoughts on Software Engineering</div>
+  {% assign posts = site.posts %}
+  {% for post in site.posts limit: 10 %}
+  {% if forloop.first %}
+    {% include post-listing-complete.html %}
+  {% else %}
+    {% include post-listing.html %}
+  {% endif %}
   {% endfor %}
+  <a href="{{site.baseurl}}/blog" style="display: block; clear: left; text-align: center; margin-top: 1rem;">Read more blog posts...</a>
+</section>
 
-  <section class="section secondary">
-    <div class="container">
-      <div class="message-wrapper">
-      <div class="message left">
-        <div class="message" style="width: 100%; display: block;">
-          <span class="header">Blog <a href="{{site.baseurl}}/blog/" style="font-size: 0.8rem;">See all...</a></span>
-          <span class="normal">
-            {% assign posts = site.posts %}
-            {% for post in site.posts limit: 5 %}
-              <div>
-                <span style="float: right;">
-                  {{post.date | date:"%B %-d %Y"}}
-                </span>
-                <a href="{{post.url}}">
-                  {{post.title}}
-                </a>
-              </div>
-            {% endfor %}
-          </span>
-        </div>
-      </div>
+<section class="testimonials-teaser section section-2 tight">
+  <div class="testimonials-content">
+    <div class="header">Teammates recommend me!</div>
+    {% assign testimonials = site.testimonials | sort: 'order' | reverse %}
+    {% for testimonial in testimonials limit: 5 %}
+      {% include testimonial-listing.html %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="header">
+    Let's have a chat.
+    <div>
+      <a href="mailto:joseph.gefroh@gmail.com">Email Me</a>
     </div>
-  </section>
-
-</div>
+  </div>
+</section>

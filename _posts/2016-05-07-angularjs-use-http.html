@@ -30,7 +30,7 @@ AngularJS has several options to choose from when making web service calls. It's
      Because it's the lowest-level service, you have full control over your calls, what they look like, and how they respond.</p>
 
   A typical call looks like below:
-  <pre>
+  <pre class="language-js">
 $http.get('http://127.0.0.1/server/hello_endpoint', {params: {queryParam: 'hello world'});
       .then(function(response) {
         //Run if call is successful
@@ -73,7 +73,7 @@ $http.get('http://127.0.0.1/server/hello_endpoint', {params: {queryParam: 'hello
       <li>Delete - delete an instance</li>
     </ul>
     Don't repeat that logic for every one of your <code>Services</code>. Exercise consistency by using standard naming/verb conventions on the backend (REST) for these calls and move the client operations into a single parent <code>Service</code> which your other <code>Services</code> can then extend:
-    <pre>
+    <pre class="language-javascript">
 (function() {
   angular
     .module('jgefrohModule')

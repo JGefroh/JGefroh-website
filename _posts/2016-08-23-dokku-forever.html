@@ -9,6 +9,7 @@ tags: [DevOps]
   It's so simple to deploy applications built on completely different techstacks with a single <code>git push</code>. The consistent API
   to set configuration variables, link containers, and set URLs helps turn once arduous deployments into no-brainers.
 </p>
+<!--break-->
 <p>
   I found out what my issue was - along with some de-activated containers, the vast majority of my disk space was taken by the many logs from my applications. Looking around,
   I saw a couple 5gb log files - pretty huge especially considering the server only has 20 gigabytes. The simplest solution was to automatically trim all the log files via <code>truncate -s 0 /var/lib/docker/containers/*/*-json.log</code>.
