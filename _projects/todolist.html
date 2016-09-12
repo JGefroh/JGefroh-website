@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-case-study
 title: ToDoList
 thumbnail: images/todolist/thumb-lg-min.jpg
 technologies: [AngularJS, Java EE, MySQL, HTML, CSS, JavaScript]
@@ -11,7 +11,132 @@ testimonialAuthorWork: Business Analyst at eWorld Enterprise Solutions
 testimonialAuthorThumbnail: images/photo-casey-min.jpg
 testimonial: <span class="highlight">ToDoList is amazing!</span> I've tried more than my share of productivity apps, but nothing comes close to this one. I use, and have come to rely on this app, every day!
 ---
-<p>
-  Never miss a responsibility again! ToDoList features trusted to-do-list functionality as well as task scheduling, planning, and time tracking capabilities. Because of the organizational power of its tag system, ToDoList is flexible enough to support users who need to do anything from tracking their grocery list to creating software feature release plans.
-  <br/><br/>I developed this by myself entirely from scratch to more efficiently track billable hours.
-</p>
+<section class="section section-2 tight case-study">
+  <div class="container">
+    <div class="about">
+      <div class="header">About the Project</div>
+      <p>
+        Never miss a responsibility again! ToDoList features trusted to-do-list functionality as well as task scheduling, planning, and time tracking capabilities. Because of the organizational power of its tag system, ToDoList is flexible enough to support users who need to do anything from tracking their grocery list to creating software feature release plans.
+      </p>
+    </div>
+    <div class="role">
+      <div class="header">My Role</div>
+      <p>
+        I was the sole developer of this web application, doing the front-end, back-end, data architecture, design, and deployment.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section tight case-study">
+  <div class="container">
+    <div class="header">Total Time Tracking Troubles</div>
+    <div class="readable">
+      <p>
+        As a consultant at eWorld Enterprise Solutions, I would work on multiple projects simultaneously and had to track the time I spent on each project.
+        Some clients didn't care about the specifics of what we worked on, and tracking time on those projects was a matter of counting the hours in general and adding them to the timesheet.
+      </p>
+      <p>
+        Some clients, however, were the opposite - they wanted
+        each and every minute counted and organized down to the task. As a result, we had to spend a significant amount effort keeping track of exactly what we worked and for how long.
+        It turned what would have been a short, 2 minute data entry exercise into a 30 minute session of cross-referencing various tasks and times across multiple sources.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 tight case-study">
+  <div class="container">
+    <div class="header">A Learning Opportunity Arises</div>
+      <div class="readable">
+        <p>
+          Towards the end of my first year at eWorld, the company hired a senior developer who pushed for the organization to adopt AngularJS over Google Web Toolkit.
+          At the time, nobody knew AngularJS (including the senior developer), nor did they know how enterprise web applications were made and structured with it. I saw an opportunity to build something that would be useful and learn a new technology at the same time.
+        </p>
+      </div>
+  </div>
+</section>
+<section class="section tight case-study">
+  <div class="container">
+    <div class="header">Overwhelmed</div>
+    <div class="readable">
+      <p>
+        Jumping into AngularJS was a massive undertaking - I had little experience with Javascript and web development in general, having experience only in the Google Web Toolkit and Java EE ecosystems. I barely knew how to use selectors in jQuery, let alone even beginning to understand the massive amount of tooling available in the ecosystem.
+        Terminology and words I never heard of at the time kept popping up - npm, bower, grunt, hoisting, minification. As a complete newbie in the world of web development, it was overwhelming - and the worst part is I had nobody to ask for help.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 tight case-study">
+  <div class="container">
+    <div class="header">Humble Beginnings</div>
+    <div class="readable">
+      <p>
+        I focused on the prize - a simple to-do list that I could use to track time. I read, watched, and listened through as much material as I could - AngularJS's documentation, blog posts, forum topics, Github comments - you name it!
+        Slowly but surely I built up an interface - first a button, then a list, then responding to input.
+      </p>
+      <p>
+        I soon figured out what all those terms meant, and in what situations and circumstances they would be useful. I learned how useful bower was when incorporating 3rd-party libraries. I saw the power of grunt, and how much faster I could develop when things were being automatically built and reloaded.
+        I learned to appreciate the power of each tool as I encountered the problems they solved one at a time. Along the way I had to unlearn some bad habits I started with - AngularJS's documentation was great for simple situations, but slowly grew unwieldy even at moderate levels of complexity.
+      </p>
+      <p>
+         Before I knew it, I had a working front-end that tracked time on tasks, and I had learned a tremendous amount! It couldn't save as it was only the front-end, so I even added a way to import / export JSON data as a temporary workaround.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section tight case-study">
+  <div class="container">
+    <div class="header">ToDoList was useful</div>
+    <div class="readable">
+      <p>
+       I used my application as a learning tool and shared the knowledge I gained with my teammates, teaching them Angular and helping them avoid the pitfalls I had encountered. I gave presentations and talks to the developers at my company
+       on AngularJS and its benefits. I established development patterns that helped them leverage AngularJS' benefits while making the transition from Google Web Toolkit and Java EE as smooth as possible.
+       <br/><br/>
+       It helped the team learn, and AngularJS was later adopted by many of the teams and is still in use as at the company as of this writing.
+      </p>
+      <p>
+        I was even using my application to keep track of my timesheets! What previously took 30 minutes to do took only 5 minutes, thanks to the stats tracking I had implemented. I had accomplished my goal! As I shared my accomplishment with others in the company, they also became interested in using my application themselves,
+        but were turned off by the fact that it didn't save. Sounds like I had sufficient demand for another feature - persistence!
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section section-2 tight case-study">
+  <div class="container">
+    <div class="header">Adding a Backend</div>
+    <div class="readable">
+      <p>
+        I quickly built the backend in the only server technology I knew at the time - Java EE. I learned how to use Angular's $http service, and how to structure the code in such a way that allowed me to automatically target
+        different environments/servers depending on the context. As part of the process of getting it deployed, I painstakingly learned how to set up a virtual machine and deploy the application on it. As someone without a systems administration background,
+        this was the most difficult part about the project. I had to learn how to set up and connect databases, servers, and reverse proxies. I even wrote a <a href="{{site.baseurl}}/blog/setting-up-tomee-mysql">blog post about my troubles</a>. I powered through the setbacks and finally got my application deployed and ready to use!
+
+        I told my friends that their pain points were now resolved - I had added saving functionality.
+        <br/><br/>
+        They started using ToDoList! Even some of their moms started using it!
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section tight case-study">
+  <div class="container">
+    <div class="header">Looking back</div>
+    <div class="readable">
+      <p>
+        Looking back on ToDoList, I now realize that what seemed like scaling a mountain at the time is no more effort than stepping over a molehill now.
+        I had conquered that mountain one step at a time, going through the entire development lifecycle and making my way through every layer of the new technology stack and ecosystem.
+      </p>
+      <p>
+        It's funny - if I were to rewrite ToDoList today, it would take me no more than a day, and it would be a lot cleaner and nicer.
+        Since ToDoList, I've become intimately familiar with the technologies, ideas, practices, and paradigms that are a part of modern web application development.
+        I've since created my own patterns, tools, and techniques to make development more effective, and have taught many others the same things I once struggled with just two years ago.
+      </p>
+      <p>
+        ToDoList was a turning point. It was undeniable proof that I could succeed in this industry no matter what challenge was thrown at me.
+        It proved to me that I was capable of learning these new, seemingly alien technologies and ideas and build great things with them. I now realize that there's really nothing drastically different between them and there's nothing to fear. Every technology,
+        every practice, every idea, every principle - they all lead to the same result: useful software.
+      </p>
+      <p>
+        I can't wait to see what becomes my next molehill.
+      </p>
+    </div>
+  </div>
+</section>

@@ -29,11 +29,15 @@ layout: default
 {{project.content}}
 
 
-<section class="projects-teaser section section-2 tight sideless">
-  <div class="header">You've reached the end of this case study!</div>
-  <div class="description" style="text-align: center;">
-    Feel free to read about my other projects.
+<section class="section section-2 tight">
+  <div class="container">
+    <div class="header">You've reached the end of this case study!</div>
+    <div class="description" style="text-align: center;">
+      Feel free to read about my other projects.
+    </div>
   </div>
+</section>
+<section class="projects-teaser section section-2 tight sideless">
   {% assign projects = site.projects | sort: 'order' | reverse %}
   {% for project in projects %}
     {% include project-listing.html %}
