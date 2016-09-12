@@ -60,12 +60,34 @@
         }
       }
 
+      .bg-cta {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 25%;
+        color: $color-primary-3-close;
+        vertical-align: center;
+
+        @include media($mobile) {
+          font-size: 1rem;
+          top: 40%;
+        }
+        @include media($desktop) {
+          font-size: 5rem;
+        }
+      }
+
       .bottom-cta {
         position: absolute;
         bottom: 0.25rem;
         left: 0;
         right: 0;
-        color: $color-primary-3-close;
+        color: $color-primary-black;
+
+        @include media($mobile) {
+          display: none;
+        }
       }
     }
   }

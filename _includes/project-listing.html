@@ -4,6 +4,8 @@
       <img src="{{ site.baseurl }}/{{project.thumbnail}}"></img>
     </div>
     <div class="description">
+      <span class="bg-cta">{{project.title}}</span>
+
       {% for technology in project.technologies %}
         <span class="technology">
           {{technology}}{% unless forloop.last %},{% endunless %}
