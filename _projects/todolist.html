@@ -6,10 +6,6 @@ technologies: [AngularJS, Java EE, MySQL, HTML, CSS, JavaScript]
 order: 2200
 liveLink: http://todolist.jgefroh.com
 sourceLink: https://github.com/jgefroh/todolist
-testimonialAuthorName: Casey Cho
-testimonialAuthorWork: Business Analyst at eWorld Enterprise Solutions
-testimonialAuthorThumbnail: images/photo-casey-min.jpg
-testimonial: <span class="highlight">ToDoList is amazing!</span> I've tried more than my share of productivity apps, but nothing comes close to this one. I use, and have come to rely on this app, every day!
 ---
 <section class="section section-2 tight case-study">
   <div class="container">
@@ -73,13 +69,18 @@ testimonial: <span class="highlight">ToDoList is amazing!</span> I've tried more
         I focused on the prize - a simple to-do list that I could use to track time. I read, watched, and listened through as much material as I could - AngularJS's documentation, blog posts, forum topics, Github comments - you name it!
         Slowly but surely I built up an interface - first a button, then a list, then responding to input.
       </p>
+      <img src="{{site.baseurl}}/images/todolist/case-study/v1-tasks.png"></img>
+
       <p>
         I soon figured out what all those terms meant, and in what situations and circumstances they would be useful. I learned how useful bower was when incorporating 3rd-party libraries. I saw the power of grunt, and how much faster I could develop when things were being automatically built and reloaded.
-        I learned to appreciate the power of each tool as I encountered the problems they solved one at a time. Along the way I had to unlearn some bad habits I started with - AngularJS's documentation was great for simple situations, but slowly grew unwieldy even at moderate levels of complexity.
+        I learned to appreciate the power of each tool as I encountered the problems they solved one at a time. Along the way I had to unlearn some bad habits I started with - AngularJS's documentation was great for simple situations, but slowly grew unwieldy even at moderate levels of complexity. I continued through, learning and developing.
+        Before I knew it, I had a working front-end that tracked time on tasks, and I had learned a tremendous amount!
       </p>
+      <img src="{{site.baseurl}}/images/todolist/case-study/v2-tasks.png"></img>
       <p>
-         Before I knew it, I had a working front-end that tracked time on tasks, and I had learned a tremendous amount! It couldn't save as it was only the front-end, so I even added a way to import / export JSON data as a temporary workaround.
+         It couldn't save as it was only the front-end, so I even added a way to import / export JSON data as a temporary workaround.
       </p>
+      <img src="{{site.baseurl}}/images/todolist/case-study/v3-save.png"></img>
     </div>
   </div>
 </section>
@@ -103,15 +104,30 @@ testimonial: <span class="highlight">ToDoList is amazing!</span> I've tried more
 <section class="section section-2 tight case-study">
   <div class="container">
     <div class="header">Adding a Backend</div>
-    <div class="readable">
+    <div class="readable" style="margin-bottom: 2rem;">
       <p>
         I quickly built the backend in the only server technology I knew at the time - Java EE. I learned how to use Angular's $http service, and how to structure the code in such a way that allowed me to automatically target
         different environments/servers depending on the context. As part of the process of getting it deployed, I painstakingly learned how to set up a virtual machine and deploy the application on it. As someone without a systems administration background,
         this was the most difficult part about the project. I had to learn how to set up and connect databases, servers, and reverse proxies. I even wrote a <a href="{{site.baseurl}}/blog/setting-up-tomee-mysql">blog post about my troubles</a>. I powered through the setbacks and finally got my application deployed and ready to use!
-
+      </p>
+      <img src="{{site.baseurl}}/images/todolist/case-study/v4-tasks.png"></img>
+      <p>
         I told my friends that their pain points were now resolved - I had added saving functionality.
-        <br/><br/>
-        They started using ToDoList! Even some of their moms started using it!
+        Guess what? They started using ToDoList! Even some of their moms started using it!
+      </p>
+    </div>
+    <div class="testimonial-listing">
+      <img src="{{site.baseurl}}/images/photo-casey-min.jpg" class="thumbnail"></img>
+      <p class="quote-wrapper-with-thumbnail">
+        <span class="author-name highlight">Casey Cho</span>
+        <span class="author-work">Business Analyst at eWorld Enterprise Solutions</span>
+        <span class="links">
+          <a href="https://www.linkedin.com/in/caseycho7" class="link"><span class="fa fa-fw fa-linkedin"></span></a>
+        </span>
+        <span class="quote" style="margin-top: 2rem;">
+          <span class="fa fa-fw fa-quote-left quote-mark quote-mark-left"></span>
+          ToDoList is amazing! I've tried more than my share of productivity apps, nothing comes close to this one. While still maintaining a very clean interface, it is packed with just the features I would ever use and need when needing to get things done. Tagging todo items, grouping them by priority, subtasks, due dates, all implemented with the utmost of pragmatism and simplicity. Why I recommend this? I use (and have come to rely on this app) every day!
+        </span><br/>
       </p>
     </div>
   </div>
@@ -137,6 +153,7 @@ testimonial: <span class="highlight">ToDoList is amazing!</span> I've tried more
       <p>
         I can't wait to see what becomes my next molehill.
       </p>
+      <img src="{{site.baseurl}}/images/todolist/case-study/now.jpg"></img>
     </div>
   </div>
 </section>

@@ -59,7 +59,6 @@
           font-size: 0.8rem;
         }
       }
-
       .bg-cta {
         position: absolute;
         left: 0;
@@ -113,6 +112,14 @@
 
 
 .case-study {
+  @include media($desktop) {
+    .testimonial-listing {
+      @include shift(1);
+      .quote-wrapper-with-thumbnail {
+        @include span-columns(7);
+      }
+    }
+  }
   img {
     width: 100%;
   }
