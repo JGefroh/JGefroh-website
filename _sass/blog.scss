@@ -27,6 +27,15 @@
 }
 
 .post {
+  pre, code {
+    background-color: $color-background-code;
+  }
+
+  blockquote {
+    border-left: 0.25rem solid $color-subtle;
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
 
   .header {
     padding: 2rem 0;

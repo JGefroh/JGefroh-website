@@ -1,0 +1,72 @@
+---
+layout: post
+title: A Bad Case of the Shinies
+blurb: Software engineers like shiny things.
+tags: [Software Engineering]
+---
+<p>
+  If you've been working within the Javascript ecosystem for longer than 3 months, you've probably come to realize that new tools and frameworks come out on a seemingly weekly basis.
+  These libraries are often accompanied by shiny new marketing pages that promise exponential improvements in quality, development speed, and performance.
+</p>
+<p>
+  The marketing works. Early adopters, eager to learn the latest and greatest, jump into the fray and crank out a tremendous amount of content for the ecosystem.<a href="#1" class="reference-link"><sup>[1]</sup></a>
+  They write new blog articles, create video tutorials, build plugins, form user groups, issue bug reports, and help the tool develop and grow. They become developer evangelists for the tool.
+  Soon, the concensus within the commuinity is that you'd have to be stupid to not use the tool in your current project.
+</p>
+
+<span class="header">The business comes first</span>
+<p>
+  I'm here to tell you it's perfectly OK to not use the latest and greatest. Sometimes, a tool that's one or two generations behind is a better decision.
+  Some developers might view this as blasphemy. They might say "you're creating technical debt if you use an old tool!"
+  I argue that in many cases, using the latest tool creates more technical debt than using an older, more established tool.
+</p>
+<p>
+  Consider the current state of Angular 2, for example. There's no question that Angular 1 is on its way out. Why would anyone start a project in Angular 1 right now? It's just silly!
+
+  Yet, at work, I just cancelled two Angular 2 projects and restarted them as Angular 1 projects. My rationale? I'd much rather pick an established tool where I know all of the pitfalls and weaknesses,
+  than a tool where the weaknesses aren't yet known. As the saying goes, better then devil you know than the devil you don't.
+</p>
+<blockquote>
+  better then devil you know than the devil you don't
+</blockquote>
+<p>
+  It's not a decision I came to lightly. I had to consider a lot of factors, some not even related to the technologies.
+  I had to consider the availability of documentation, the research cost of the team learning how things were done, the availability of libraries and tools,
+  the cost of rewrites as the unstable API changes and best practices are discovered, the available skill level in the company, the available skill level in the industry, the learnabiity of the technologies, the stability of the technologies, the liklihood of survival of the framework, the price premium on developers who know the new technology, etc.
+</p>
+<p>
+  When I pick a tool for a business-critical system, I can't be distracted by the chrome plating. Picking a tool that is in a pre-alpha or beta state is a huge risk. Consider what happens when these non-release versions are upgraded. Any code written using them has to be updated, too. Even in a good-case scenario, you would have to rewrite portions of your software 2-5 times until the API stabilizes, risking bugs and delays with every change.
+  Worst case scenario - you get stuck on a pre-alpha version of the tool, unable to advance in versions and having to work in unmaintainable hacks and workarounds before the project fails or the software is ultimately torn down and rewritten with a hopefully more stable tool.
+</p>
+<p>
+  I've seen it happen several times over the years. I've been on the short-end of the stick when it came to dealing with the consequences of these decisions.
+  Having to support a 10 year old framework that never went out of beta because the original developer on your project chose the shiniest technology back in the day is no joke.
+  Having to take a week to fix a very minor bug resolved with the newest version of a framework because you had to spend the time fixing everything that broke from updating said framework is no joke.
+  I've been there. The danger is real and it costs businesses tremendous amounts of money in unnecessary development time and missed deadlines. Poor technology decisions weigh organizations and developers down.
+</p>
+
+<span class="header">Not all that glitters is gold</span>
+<p>
+  As a developer, it's hard to resist that temptation to use the shiniest, hemorrhaging edge tool. These new tools provide developers an opportunity to become a leader within a small slice of the industry, at least for a few moments. It's no wonder that developers flock to them.
+</p>
+<p>
+  Now, don't get me wrong. I'm not saying you shouldn't learn new things. Developers should absolutely be learning new technologies, new paradigms, new patterns, and new ways of thinking. They should explore the technological ecosystems they work with and
+  become intimiately familiar with the tools available to them. Software engineering is a constantly evolving field, and it's the responsibility of the individual developer to stay up-to-date and not stagnate. Learning new technologies
+  can open up a developer's mind and provide them new approaches and new ways of thinking when they encounter other problems. You absolutely should be building prototypes, reading articles, and learning new things.<a href="#2" class="reference-link"><sup>[2]</sup></a> That's what our career is about!
+</p>
+<blockquote>
+  Developers should absolutely be learning new technologies, new paradigms, new patterns, and new ways of thinking.
+</blockquote>
+<p>
+  What I'm intending to say is that this shouldn't be done on the job on a business-critical system without careful consideration of the risks being an early adopter entails.
+  If the business is fully informed and OK with the risks involved when using brand new, untested technology, then great! You're probably working at a pretty cool company that's at the bleeding edge of technology.
+  Some companies certainly are like that and are set up to take full advantage of the discoveries.
+  However, most people probably aren't working in companies like that, and it would be a disservice to risk the success of an organization just to pad your resume with new technologies.
+</p>
+<p>
+  Think carefully when incorporating shiny new things into an organization's business - it might come back to haunt them.
+</p>
+<p class="post-footer">
+  <span id="1" class="reference"><span class="reference-id">[1]</span> Early adopters play a key role in innovation and advancing the field of software engineering, and I'm highly grateful for each and every single one of them.</span>
+  <span id="2" class="reference"><span class="reference-id">[2]</span> Prototypes are great, but keep in mind that production systems require aspects that you can't safely ignore like you could in a prototype. Production-level systems come with their own set of issues that need to be solved, and techniques acceptible for a prototype might be incredibly damaging to use in a production-level attempt.</span>
+</p>
