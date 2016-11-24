@@ -10,8 +10,9 @@
         {% endif %}
 
       </a></span>
+      <span class="{% if page.url contains 'blog' %}active{% endif %} right link"><a href="{{site.baseurl}}/blog"><span class="fa fa-fw fa-archive"></span></a></span>
       <span class="{% if page.url contains 'project' %}active{% endif %} right link"><a href="{{site.baseurl}}/projects">Projects</a></span>
-      <span class="{% if page.url contains 'blog' %}active{% endif %} right link"><a href="{{site.baseurl}}/blog">Blog</a></span>
+      <span class="right link"><a href="https://medium.com/@jgefroh" target="_blank">Blog</a></span>
     </div>
   </div>
 </nav>
