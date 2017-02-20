@@ -21,7 +21,7 @@ ul {
 }
 
 .header {
-  background-color: white;
+  background-color: #d6d2c9;
   overflow: hidden;
   box-shadow: 1px 1px 3px #282c34;
   img {
@@ -63,25 +63,44 @@ ul {
 }
 .grid-gallery {
   background-color: #282c34;
- @media (max-width : 600px){
+  @media (min-width : 0px){
    column-count: 1;
- }
- @media (min-width : 600px) {
+  }
+  @media (min-width: 440px){
+    column-count: 2;
+  }
+  @media (min-width: 720px){
+    column-count: 3;
+  }
+  @media (min-width : 1000px) {
    column-count: 4;
- }
-
- .cell {
-   padding-bottom: 1rem;
- }
+  }
+  @media (min-width : 1400px) {
+   column-count: 5;
+  }
 
   &:hover > .cell:not(:hover) {
     filter: brightness(40%);
-    transition: filter 0.2s;
+    transition: filter 0.1s;
   }
   &:hover > .cell:hover {
     filter: brightness(100%);
-    transition: filter 0.2s;
+    transition: filter 0.1s;
   }
+
+ .cell {
+   padding-bottom: 1rem;
+   .text {
+     text-align: center;
+     font-size: 3rem;
+     font-weight: 200;
+     letter-spacing: 0.2rem;
+     color: #d19a66;
+     padding: 4rem;
+     margin: 0;
+   }
+ }
+
 }
 
 img {
