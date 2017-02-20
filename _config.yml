@@ -22,12 +22,4 @@ url: "http://jgefroh.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 exclude: [untitled folder]
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-  testimonials:
-    output: true
-    permalink: /testimonials/:path/
-permalink: /blog/:title/
 livereload: true

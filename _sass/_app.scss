@@ -1,330 +1,91 @@
+@import "testimonial";
 
-@import 'bourbon/bourbon';
-@import 'neat/neat';
+html {
+  font-family: 'Roboto';
+}
+body {
+  padding: 0;
+  margin: 0;
+}
 
-@import 'base/breakpoints';
-@import 'base/variables';
-@import 'base/base';
+ul {
+  list-style: none;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  .cell {
+    flex: 1;
+    align-self: center;
+  }
+}
 
-
-@import 'blog';
-@import 'testimonials';
-@import 'projects';
-
-.navigation {
+.header {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px #282c34;
+  img {
+    width: 160px;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    @media (max-width : 600px){
+      font-size: 2.2rem;
+    }
+    @media (min-width : 600px) {
+      font-size: 3rem;
+    }
+  }
+  .tagline {
+    font-size: 1rem;
+    font-weight: normal;
+    display: block;
+  }
+  ul {
+    text-align: right;
+    padding-right: 2rem;
+    li {
+      padding-bottom: 0.4rem;
+    }
+  }
   position: fixed;
-  min-height: 2rem;
+  top: 0;
   left: 0;
   right: 0;
-  z-index:999;
-  background-color: $color-primary-white;
-  a {
-    color: $color-primary-grey;
+  z-index: 10;
+  + * {
+    padding-top: 11rem;
   }
-  .brand {
-    a {
-      color: $color-primary-black;
-    }
-  }
-  a:hover {
-    transition: color 0.5s;
-    color: $color-primary-grey-dark;
-  }
-  .active {
-    a {
-      color: $color-primary-black;
-    }
-    border-bottom: 3px solid $color-primary-black;
-  }
-
-  @include media($mobile) {
-    font-size: 1.1rem;
-    padding: 0.5rem;
-  }
-
-  @include media($desktop) {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  .link {
-    float: right;
-    margin-left: 1rem;
-    text-transform: uppercase;
-  }
-  box-shadow: 1px 1px 5px $color-subtle;
 }
+.grid-gallery {
+  background-color: #282c34;
+ @media (max-width : 600px){
+   column-count: 1;
+ }
+ @media (min-width : 600px) {
+   column-count: 4;
+ }
 
+ .cell {
+   padding-bottom: 1rem;
+ }
 
-.section {
-  padding: 1rem;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  .header {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 0;
+  &:hover > .cell:not(:hover) {
+    filter: brightness(40%);
+    transition: filter 0.2s;
   }
-  .description {
-    @include outer-container();
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-  &.half  {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-
-  &.first {
-    padding-top: 15%;
-    padding-bottom: 15%;
-  }
-
-  &.tight {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-
-  &.sideless {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-top: 0;
+  &:hover > .cell:hover {
+    filter: brightness(100%);
+    transition: filter 0.2s;
   }
 }
 
-.section {
-  background-color: $color-background;
-  color: $color-body-text;
-}
-
-.section-2 {
-  background-color: $color-body-text;
-  color: $color-body-text-inverse;
-
-  .highlight {
-    color: $color-body-text-inverse-highlight;
-  }
-}
-
-.intro {
-
-  background-size: cover;
-  // background-image: url('../images/photo-self-bg-min.jpg'); Loaded from html for performance.
-  @include media($desktop) {
-    background-position: 0 0;
-  }
-
-  @include media($mobile) {
-    background-size: cover;
-    background-position: -225px 0;
-  }
-  .intro-content {
-    padding: 2rem;
-    border-radius: 5px;
-    background-color: rgba(0,0,0, 0.7);
-    color: $color-body-text-inverse;
-    .highlight {
-      color: $color-primary-white;
-    }
-    @include outer-container();
-    .grab {
-      font-size: 2rem;
-      .pre-name {
-        font-size: 1rem;
-        display:block;
-      }
-      .name {
-        font-size: 3rem;
-      }
-      .tagline {
-        font-size: 2rem;
-      }
-
-
-      @include media($mobile) {
-        @include span-columns(12);
-      }
-
-      @include media($desktop) {
-        margin-top: 12%;
-        @include span-columns(8);
-      }
-    }
-    .detail {
-      margin-top: 2rem;
-
-      @include media($mobile) {
-        @include span-columns(12);
-      }
-
-      @include media($desktop) {
-        @include span-columns(4);
-      }
-      .links {
-        a {
-          margin-right: 0.5rem;
-          display: inline-block;
-        }
-      }
-    }
-    .signature {
-      font-family: 'Cedarville Cursive', cursive;
-      font-size: 1.5rem;
-    }
-  }
-}
-
-.stats-teaser {
-  position: relative;
-  .top-half {
-    background-color: $color-body-text;
-    height: 50%;
-    position: absolute;
-    width: 100%;
-  }
-  .bottom-half {
-    background-color: $color-body-text;
-    height: 50%;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-  }
-  .stats-wrapper {
-    @include outer-container();
-    position: relative;
-    .stats {
-      @include span-columns(12);
-      @include media($desktop) {
-        transform: translateY(-50%);
-      }
-
-      background-color: $color-body-text-inverse;
-      padding: 1rem;
-      border-radius:5px;
-      div {
-        @include media($mobile) {
-          @include span-columns(6);
-          @include omega(2n);
-          margin-top: 0.5rem;
-          margin-bottom: 0.5rem;
-        }
-        @include media($desktop) {
-          @include span-columns(3);
-        }
-      }
-      label {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-      }
-      span {
-        display: block;
-        text-align: center;
-        font-size: 0.8rem;
-        padding: 0 1rem;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-
-.blog-teaser {
-  @include outer-container();
-  padding: 20% 1rem;
-}
-
-
-.work-teaser {
-  .work-basic {
-    display: block;
-    @include media($mobile) {
-      text-align: center;
-    }
-    img {
-      background-color: $color-body-text-inverse-highlight;
-      border-radius:50%;
-      padding: 1rem;
-      height: 100px;
-      width: 100px;
-      @include media($desktop) {
-        float: left;
-        margin-right: 1rem;
-      }
-    }
-  }
-  .work, .education {
-    margin-bottom: 3rem;
-    .title, .date, .employer, .blurb {
-      display: block;
-    }
-    .title {
-      color: $color-body-text-inverse-highlight;
-      font-size: 1.5rem;
-    }
-    .date {
-      @include media($desktop) {
-        float: right;
-      }
-      font-style: italic;
-    }
-  }
-}
-
-
-
-
-.footer {
-  background-color: $color-body-text;
-  color: $color-body-text-inverse;
-  .footer-content {
-    @include outer-container();
-    padding: 2rem 1rem;
-
-    .summary {
-      @include media($mobile) {
-        @include span-columns(12);
-      }
-      @include media($desktop) {
-        @include span-columns(6);
-      }
-      .wrapper {
-        img {
-          @include span-columns(3);
-          border-radius: 50%;
-          padding-right: 1rem;
-        }
-        div {
-          @include span-columns(9);
-        }
-      }
-    }
-    .tidbit {
-      @include media($mobile) {
-        @include span-columns(12);
-      }
-      @include media($desktop) {
-        @include span-columns(4);
-      }
-    }
-    .links {
-      @include media($mobile) {
-        @include span-columns(12);
-        text-align: center;
-      }
-      @include media($desktop) {
-        @include span-columns(2);
-      }
-      a {
-        display: block;
-      }
-    }
-  }
+img {
+  cursor: pointer;
+  margin-bottom: -0.3rem;
+  width: 100%;
 }
