@@ -80,16 +80,17 @@ ul {
   }
 
   &:hover > .cell:not(:hover) {
-    filter: brightness(40%);
+    // filter: brightness(40%);
     transition: filter 0.1s;
   }
   &:hover > .cell:hover {
-    filter: brightness(100%);
+    // filter: brightness(100%);
     transition: filter 0.1s;
   }
 
  .cell {
    padding-bottom: 1rem;
+   outline: none;
    .text {
      text-align: center;
      font-size: 3rem;
