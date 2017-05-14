@@ -18,6 +18,14 @@ ul {
 * {
 }
 
+p {
+ font-family: 'Droid Serif';
+ line-height: 1.5rem;
+ font-weight: 200;
+ color: $color-text-normal;
+ font-size: 1rem;
+}
+
 .main-content {
   text-align: center;
 }
