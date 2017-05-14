@@ -63,15 +63,16 @@ p {
     padding: 0;
     padding-right: 0.5rem;
     font-size: 1rem;
-    a {
-      color: $color-link-hover;
-      text-decoration: none;
-      transition: 0.25s;
-      &:hover {
-        transition: 0.25s;
-        font-weight: bold;
-      }
-    }
 
+  }
+}
+
+a {
+  color: $color-link-hover;
+  text-decoration: none;
+  transition: 0.25s;
+  &:hover {
+    transition: 0.25s;
+    font-weight: bold;
   }
 }
