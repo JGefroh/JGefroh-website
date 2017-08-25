@@ -5,9 +5,6 @@
   </head>
   <body>
     {{ content }}
-
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Droid+Serif:200,300,400,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% if jekyll.environment == "production" %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,5 +22,13 @@
       </script><!-- end Mixpanel -->
     {% endif %}
     <script src="https://use.fontawesome.com/86f4ebf8ce.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+     WebFont.load({
+        google: {
+          families: ['Droid Serif:200,400,700', 'Roboto:400,700']
+        }
+      });
+    </script>
   </body>
 </html>
