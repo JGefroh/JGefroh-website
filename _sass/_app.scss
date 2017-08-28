@@ -1,6 +1,18 @@
 @import "variables";
 @import "listing";
 
+*:not(.wf-active) {
+  * {
+    opacity: 0;
+    transition: 0.15s;
+  }
+}
+
+.wf-active {
+  * {
+    opacity: 1;
+  }
+}
 
 html {
   font-family: 'Roboto';
