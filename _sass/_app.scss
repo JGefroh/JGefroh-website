@@ -1,21 +1,8 @@
 @import "variables";
 @import "listing";
 
-*:not(.wf-active) {
-  * {
-    opacity: 0;
-    transition: 0.15s;
-  }
-}
-
-.wf-active, .wf-inactive {
-  * {
-    opacity: 1;
-  }
-}
-
 html {
-  font-family: 'Roboto';
+  font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 16px;
 }
 body {
@@ -31,9 +18,8 @@ ul {
 }
 
 p {
- font-family: 'Droid Serif';
+ font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
  line-height: 1.5rem;
- font-weight: 200;
  color: $color-text-normal;
  font-size: 1rem;
 }
