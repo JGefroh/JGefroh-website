@@ -81,3 +81,19 @@ a {
     font-weight: bold;
   }
 }
+
+.banner {
+  text-align: center;
+  background-color: $color-alert-background;
+  color: $color-alert-text;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  & + .header {
+    padding-top: 2rem;
+  }
+}
