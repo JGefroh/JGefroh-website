@@ -22,4 +22,5 @@ url: "http://jgefroh.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 exclude: [untitled folder, "*.png"]
+include: ["apple-touch-icon.png"]
 livereload: true
