@@ -82,6 +82,12 @@ a {
   }
 }
 
+cite {
+  a.company {
+    font-size: inherit;
+  }
+}
+
 .banner {
   text-align: center;
   background-color: $color-alert-background;
