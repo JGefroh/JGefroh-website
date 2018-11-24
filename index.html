@@ -1,20 +1,9 @@
 ---
 layout: default
 ---
-<section class="header">
-      <img src="{{ site.baseurl }}/images/photos/photo-joseph.jpg" alt="Photo of Joseph Gefroh"></img>
-      <h1>Joseph Gefroh</h1>
-      <span class="subtext">Team Lead and Software Engineer</span>
-      <br/>
-      <span class="subtext-2">Seattle, Washington</span>
-      <ul class="links">
-        <li><a href="mailto:joseph.gefroh@gmail.com">Email</a></li>
-        <li><a href="https://linkedin.com/in/jgefroh">LinkedIn</a></li>
-        <li><a href="https://github.com/jgefroh">Github</a></li>
-        <li><a href="{{ site.baseurl }}/documents/joseph-gefroh-resume.pdf">Resume</a></li>
-        <li><a href="https://medium.com/@jgefroh">Blog</a></li>
-      </ul>
-</section>
+
+{% include header.html %}
+
 
 <section class="main-content">
   <section class="section">
@@ -488,5 +477,25 @@ layout: default
         </blockquote>
       </section>
     </section>
+  </section>
+
+  <section class="section">
+    <h1 class="section-heading">Popular Articles</h1>
+    <section class="listing">
+      <div class="thumbnail-wrapper">
+          &nbsp;
+      </div>
+      <blockquote>
+        <header>
+          <cite>
+            <a href="{% post_url 2017-09-04-a-guide-to-using-nginx-for-static-websites %}" class="name">A guide to hosting static websites using NGINX</a><br/>
+            Learn how to host a static website using a VM and NGINX!
+          </cite>
+        </header>
+        <span class="subtext">Sep 4, 2017</span>
+        <p></p>
+      </blockquote>
+    </section>
+  </section>
   </section>
 </section>

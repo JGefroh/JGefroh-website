@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/posts.css">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+{% if page.title %}
+  <title>{{ page.title }} | Joseph Gefroh</title>
+{% else %}
+  <title>Joseph Gefroh | Software Engineering Leadership</title>
+{% endif %}
+<meta name="description" content="{{ page.description }}">
+
+<meta property="og:url"         content="{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:site_name"   content="Joseph Gefroh" />
+<meta property="og:title"       content="{{ page.title }} | Joseph Gefroh" />
+<meta property="og:type"        content="website" />
+<meta property="og:description" content="{{ page.description }}" />
+
+<!--Twitter Metadata-->
+<meta name="twitter:site" content="{{ site.baseurl }}{{ page.url }}" />
+<meta name="twitter:title" content="{{ page.title }} | Joseph Gefroh" />
+<meta name="twitter:description" content="{{ page.description }}" />
+<meta name="twitter:card" content="summary" />

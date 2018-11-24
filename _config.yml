@@ -18,7 +18,10 @@ email: joseph.gefroh@gmail.com
 description: Joseph Gefroh is a full-stack software engineer with a specialty in leading development teams.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jgefroh.com" # the base hostname & protocol for your site
-
+collections:
+  posts:
+    output: true
+    permalink: slug    
 # Build settings
 markdown: kramdown
 exclude: [untitled folder, "*.png"]

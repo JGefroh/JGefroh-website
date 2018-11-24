@@ -1,5 +1,6 @@
 @import "variables";
 @import "listing";
+@import "header";
 
 html {
   font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -34,41 +35,7 @@ p {
   margin-top: 3rem;
 }
 
-.header {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  .subtext {
-    color: $color-subtle-text;
-    font-size: 1.25rem;
-  }
-  .subtext-2 {
-    color: $color-subtle-text;
-    font-size: 1rem;
-  }
-  h1 {
-    margin-bottom: 0.75rem;
-  }
-  img {
-    border-radius: 50%;
-    width: 7.5rem;
-    border: 3px solid white;
-    box-shadow: 0 0 3px $color-subtle-text;
-  }
-}
 
-.links {
-  margin: 0.5rem 0;
-  padding: 0;
-  li {
-    display: inline-block;
-    padding: 0;
-    padding-right: 0.5rem;
-    font-size: 1rem;
-
-  }
-}
 
 a {
   color: $color-link-hover;
