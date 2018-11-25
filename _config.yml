@@ -21,7 +21,8 @@ url: "http://jgefroh.com" # the base hostname & protocol for your site
 collections:
   posts:
     output: true
-    permalink: slug    
+    permalink: slug
+permalink: slug
 # Build settings
 markdown: kramdown
 exclude: [untitled folder, "*.png"]

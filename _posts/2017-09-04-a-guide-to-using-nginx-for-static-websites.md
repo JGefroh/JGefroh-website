@@ -1,6 +1,6 @@
 ---
 layout: 'posts'
-permalink: '/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940'
+permalink: '/@jgefroh/a-guide-to-using-nginx-for-static-websites-d96a9d034940/'
 title: 'A guide to using NGINX for static websites'
 description: 'Learn how to host a static website using a VM and NGINX!'
 ---
@@ -336,7 +336,7 @@ gzip compression can greatly decrease the size of files during transmission (som
   This will ensure that javascript files, images, and CSS files are always compressed.
 </p>
 
-<blockquote>
+<blockquote class="sidequote">
   <strong>Warning:</strong>
 
   A <a href="https://en.wikipedia.org/wiki/CRIME">security vulnerability</a> exists when you enable gzip compression in conjunction with HTTPS that allows attackers to decrypt data. For static websites that don’t serve users sensitive data, this is less of an issue, but for any site serving sensitive information you should disable compression for those resources.
