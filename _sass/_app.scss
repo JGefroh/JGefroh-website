@@ -1,72 +1,39 @@
 @import "variables";
-@import "listing";
 @import "header";
-
+@import "jobs";
+@import "listings";
+@import "timelines";
 html {
   font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 16px;
 }
+
 body {
   padding: 0;
   margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-ul {
-  list-style: none;
-}
-
-* {
-}
-
-p {
- font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
- line-height: 1.5rem;
- color: $color-text-normal;
- font-size: 1rem;
-}
-
-.main-content {
-  text-align: center;
+.section {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 5rem;
 }
 
 .section-heading {
-  font-size: 1.75rem;
-  margin: 2rem;
-  margin-top: 3rem;
-}
-
-
-
-a {
-  color: $color-link-hover;
-  text-decoration: none;
-  transition: 0.25s;
-  font-size: 1rem;
-  cursor: pointer;
-  &:hover {
-    transition: 0.25s;
-    font-weight: bold;
-  }
-}
-
-cite {
-  a.company {
-    font-size: inherit;
-  }
-}
-
-.banner {
   text-align: center;
-  background-color: $color-alert-background;
-  color: $color-alert-text;
-  padding: 0.5rem;
-  font-size: 1.25rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
 
-  & + .header {
-    padding-top: 2rem;
+
+.links {
+  text-align: center;
+  .link {
+    cursor: pointer;
+    color: $color-link;
+    text-decoration: none;
   }
 }
