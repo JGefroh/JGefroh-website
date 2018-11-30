@@ -49,6 +49,24 @@
     }
   }
 
+  .main-photo {
+    .photo {
+      display: inherit;
+    }
+    .turtle {
+      display: none;
+    }
+  }
+  .main-photo:hover {
+    .turtle {
+      display: inherit;
+    }
+    .photo {
+      display: none;
+    }
+  }
+
+
 
   p {
    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
