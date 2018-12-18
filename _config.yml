@@ -22,6 +22,8 @@ collections:
   posts:
     output: true
     permalink: slug
+  recommendations:
+    output: true
 permalink: slug
 # Build settings
 markdown: kramdown

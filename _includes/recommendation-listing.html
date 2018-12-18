@@ -1,0 +1,20 @@
+<section class="recommendation-listing">
+  <div class="recommendation-text">
+  {{ recommendation.content }}
+  </div>
+  <div class="recommendation-citation">
+    <div class="recommendation-author">
+      <a href="{{recommendation.authorLink}}">
+        {{ recommendation.author }}
+      </a>
+      <div class="recommendation-author-details">
+        <span class="recommendation-author-details-role">{{recommendation.role}}</span> at <a href="{{recommendation.companyLink}}" class="recommendation-author-details-company">{{ recommendation.company }}</a>
+      </div>
+    </div>
+    <div class="recommendation-logo-wrapper">
+      <a href="{{recommendation.authorLink}}">
+        <img class="recommendation-logo" src="{{ site.baseurl }}{{ recommendation.authorImage }}" />
+      </a>
+    </div>
+  </div>
+</section>

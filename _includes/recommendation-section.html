@@ -1,0 +1,11 @@
+<section class="recommendation-section">
+  <div class="recommendation-wrapper">
+    <span class="quote-mark">&ldquo;</span>
+    {% assign recommendations = site.recommendations | sort:"order"%}
+    {% for recommendation in recommendations limit: 1 %}
+      {% include recommendation-listing.html recommendation=recommendation%}
+    {% endfor %}
+    <!-- {% include recommendation-listing.html recommendation=site.recommendations.first %} -->
+
+  </div>
+</section>

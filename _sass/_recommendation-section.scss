@@ -1,0 +1,52 @@
+.recommendation-section {
+  $color-recommendation-text: white;
+  color: $color-recommendation-text;
+
+  width: 50%;
+  a {
+    color: $color-recommendation-text;
+    text-decoration: none;
+  }
+
+  .recommendation-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+
+    .quote-mark {
+      font-size: 10rem;
+      position: absolute;
+      top: 0;
+      left: 2rem;
+    }
+
+  }
+
+  .recommendation-listing {
+    clear: both;
+    margin-left: 7.5rem;
+    .recommendation-text {
+    }
+
+    .recommendation-citation {
+      text-align: right;
+      .recommendation-author {
+        display: inline-block;
+        margin-right: 1.5rem;
+        text-align: right;
+        .recommendation-author-details {
+          .recommendation-author-details-role { }
+          .recommendation-author-details-company { }
+        }
+      }
+
+      .recommendation-logo-wrapper {
+          display: inline-block;
+          vertical-align: middle;
+
+          .recommendation-logo {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+}
