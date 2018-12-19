@@ -1,0 +1,36 @@
+
+.timeline {
+  display: inline-block;
+  width: 5px;
+  height: 500px;
+}
+
+.timeline-point::before {
+  background-color: $timeline-color;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 10px;
+  position: absolute;
+  left: -4px;
+  top: 5%;
+  width: 10px;
+}
+
+.timeline-point {
+  padding-left: $timeline-margin-left;
+}
+
+.with-timeline {
+  border-left: 1px solid $timeline-color;
+  padding-left: $timeline-margin-left;
+
+  p {
+    margin-bottom: 0;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.without-timeline {
+  padding-left: $timeline-margin-left;
+}

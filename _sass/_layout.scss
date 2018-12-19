@@ -1,0 +1,21 @@
+$break-mobile: 320px;
+$break-tablet-vertical: 600px;
+$break-desktop: 1024px;
+
+@mixin when-media($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-mobile) { @content; }
+  }
+  @else if $media == tablet-vertical {
+    @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-tablet-vertical) { @content; }
+  }
+  @else if $media == tablet-horizontal {
+    @media only screen and (min-width: $break-tablet-vertical + 1) and (max-width: $break-desktop - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-desktop) { @content; }
+  }
+}
+
+html, body {
+}
