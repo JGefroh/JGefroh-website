@@ -27,6 +27,7 @@
     clear: both;
     margin: 0 auto;
     width: 80%;
+    margin-bottom: 2.5rem;
     .recommendation-text {
     }
 
@@ -48,6 +49,8 @@
 
           .recommendation-logo {
             border-radius: 50%;
+            max-height: 85px;
+            max-width: 85px;
           }
         }
       }

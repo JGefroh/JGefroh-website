@@ -1,14 +1,15 @@
 <div class="page-section">
   <div class="header">See what people say about me</div>
   <section class="recommendation-section">
+  {% assign recommendations = site.recommendations | sort:"order"%}
+  {% for recommendation in recommendations limit: 20 %}
     <div class="recommendation-wrapper">
       <span class="quote-mark">&ldquo;</span>
-      {% assign recommendations = site.recommendations | sort:"order"%}
-      {% for recommendation in recommendations limit: 1 %}
         {% include recommendation-listing.html recommendation=recommendation%}
-      {% endfor %}
       <!-- {% include recommendation-listing.html recommendation=site.recommendations.first %} -->
 
     </div>
+    {% endfor %}
+    
   </section>
 </div>
