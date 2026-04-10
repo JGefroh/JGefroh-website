@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f0f0;
+        }
+        canvas {
+            border: 2px solid #333;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Load two images
+        const img1 = new Image();
+        const img2 = new Image();
+
+        // Replace these with actual image URLs
+        img1.src = 'https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Image+1';
+        img2.src = 'https://via.placeholder.com/400x300/4ECDC4/FFFFFF?text=Image+2';
+
+        let animationTime = 0;
+        const transitionDuration = 2000; // 2 seconds per transition
+        const pauseDuration = 1000; // 1 second pause on each image
+
+        function animate() {
+            // Calculate where we are in the cycle
+            const cycleDuration = (transitionDuration + pauseDuration) * 2;
+            const cycleTime = animationTime % cycleDuration;
+
+            let opacity1 = 1;
+            let opacity2 = 0;
+
+            if (cycleTime < pauseDuration) {
+                // Image 1 visible
+                opacity1 = 1;
+                opacity2 = 0;
+            } else if (cycleTime < pauseDuration + transitionDuration) {
+                // Transition from 1 to 2
+                const progress = (cycleTime - pauseDuration) / transitionDuration;
+                opacity1 = 1 - progress;
+                opacity2 = progress;
+            } else if (cycleTime < pauseDuration * 2 + transitionDuration) {
+                // Image 2 visible
+                opacity1 = 0;
+                opacity2 = 1;
+            } else {
+                // Transition from 2 to 1
+                const progress = (cycleTime - pauseDuration * 2 - transitionDuration) / transitionDuration;
+                opacity1 = progress;
+                opacity2 = 1 - progress;
+            }
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw image 1
+            ctx.globalAlpha = opacity1;
+            ctx.drawImage(img1, 0, 0, canvas.width, canvas.height);
+
+            // Draw image 2
+            ctx.globalAlpha = opacity2;
+            ctx.drawImage(img2, 0, 0, canvas.width, canvas.height);
+
+            ctx.globalAlpha = 1;
+
+            animationTime += 16; // ~60fps
+            requestAnimationFrame(animate);
+        }
+
+        // Start animation once images load
+        let imagesLoaded = 0;
+        function onImageLoad() {
+            imagesLoaded++;
+            if (imagesLoaded === 2) {
+                animate();
+            }
+        }
+
+        img1.onload = onImageLoad;
+        img2.onload = onImageLoad;
+    </script>
+</body>
+</html>
